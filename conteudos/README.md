@@ -50,8 +50,8 @@ Captura: **nome + WhatsApp**, com aceite explícito de LGPD. Não usamos e-mail 
 
 1. Copiar `rotina/index.html` como base.
 2. Trocar o conteúdo, o `<title>`, a `description`, o `canonical` e o `og:url`.
-3. No script, ajustar `ORIGEM` para o slug da pasta e `LINK_PACOTE` para o link do Drive.
-4. Publicar em `aglabs.ia.br/conteudos/<slug>`.
+3. Em um script próprio para o novo material (o atual é `assets/rotina.js`), ajustar `ORIGEM` para o slug da pasta e `LINK_PACOTE` para o link do Drive.
+4. Adicionar o material ao índice da raiz e publicar em `aglabs.ia.br/conteudos/<slug>`.
 5. Só então liberar o post correspondente na `fila/`.
 
 O passo 5 é regra: **post que promete material não vai ao ar antes da página existir.**

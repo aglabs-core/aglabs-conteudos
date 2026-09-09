@@ -1,44 +1,68 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Materiais gratuitos | AG LABS</title>
-<meta name="description" content="Materiais gratuitos da AG LABS: prompts, guias e passo a passo.">
-<meta name="robots" content="noindex">
-<meta name="theme-color" content="#0F0F0F">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0F0F0F;color:#FAFAFA;font-family:"Inter",system-ui,sans-serif;font-size:15px;
-  line-height:1.55;-webkit-font-smoothing:antialiased;display:flex;min-height:100vh;
-  align-items:center;justify-content:center;padding:24px}
-.w{max-width:520px;width:100%}
-.k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#60A5FA;margin-bottom:14px}
-h1{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
-p{margin-top:12px;color:#9CA3AF}
-ul{margin-top:26px;list-style:none;display:grid;gap:8px}
-a.card{display:block;border:1px solid rgba(255,255,255,.09);border-radius:4px;padding:16px 18px;
-  text-decoration:none;color:#FAFAFA}
-a.card:hover{border-color:rgba(255,255,255,.25)}
-a.card b{font-weight:600}
-a.card span{display:block;margin-top:3px;font-size:13.5px;color:#6B7280}
-footer{margin-top:30px;font-size:12.5px;color:#6B7280}
-footer a{color:#60A5FA;text-decoration:none}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca gratuita | AG LABS</title>
+<meta name="description" content="Do post para a prática. Explore os prompts e guias gratuitos da AG LABS para usar inteligência artificial no dia a dia.">
+<meta name="theme-color" content="#0f0f0f"><meta property="og:title" content="Biblioteca gratuita | AG LABS"><meta property="og:description" content="Os materiais dos nossos posts, reunidos em um só lugar."><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest"><link rel="stylesheet" href="/assets/biblioteca.css">
+<link rel="stylesheet" href="/assets/marca.css">
 </head>
 <body>
-  <div class="w">
-    <div class="k">AG LABS</div>
-    <h1>Materiais gratuitos</h1>
-    <p>O que a gente promete nos posts fica aqui, aberto.</p>
-    <ul>
-      <li><a class="card" href="/conteudos/rotina">
-        <b>As 5 rotinas do Claude</b>
-        <span>Cinco prompts prontos para copiar · palavra-chave ROTINA</span>
-      </a></li>
-    </ul>
-    <footer><a href="https://aglabs.ia.br">aglabs.ia.br</a> · <a href="https://instagram.com/ag_labs">@ag_labs</a></footer>
+<a class="skip" href="#principal">Pular para o conteúdo</a>
+<header><div class="container header-inner"><a class="brand" href="/" aria-label="AG LABS — início"><img class="brand-image" src="/assets/logo-ag.png" alt="" width="24" height="24">LABS <small>BIBLIOTECA</small></a><a class="social" href="https://instagram.com/ag_labs">@ag_labs <span>↗</span></a></div></header>
+<main id="principal" class="container">
+<section class="hero" aria-labelledby="titulo">
+  <h1 id="titulo">Do post para a prática.</h1>
+  <p>Prompts e guias gratuitos para usar IA no dia a dia.</p>
+</section>
+<section id="materiais" aria-labelledby="materiais-titulo">
+  <form class="search" role="search" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+    <label class="sr-only" for="busca">Buscar materiais por título, tema ou palavra-chave</label>
+    <input id="busca" type="search" placeholder="Buscar por tema ou palavra-chave" autocomplete="off" aria-controls="catalogo">
+    <button type="button" id="limpar" hidden>Limpar</button>
+  </form>
+  <div class="section-heading"><h2 id="materiais-titulo">Materiais</h2><span id="contagem" role="status" aria-live="polite" aria-atomic="true">3 materiais</span></div>
+  <div id="catalogo">
+    <!-- Cada article entra automaticamente na busca. Inclua sinônimos em data-keywords. -->
+    <article class="featured" data-keywords="rotina rotinas produtividade claude briefing diário email e-mail emails triagem relatório semanal organização arquivos pauta conteúdo contexto">
+      <div class="cover" aria-hidden="true"><span class="cover-label">CLAUDE</span><div class="cover-title">5 rotinas.<br><span>Menos trabalho<br> repetitivo.</span></div><span class="cover-note">PROMPTS PRONTOS PARA USAR</span></div>
+      <div class="featured-content">
+        <span class="category">Produtividade</span>
+        <h3>5 rotinas para usar no Claude</h3>
+        <p>Organize e-mails, relatórios, arquivos e ideias com cinco prompts para copiar e adaptar.</p>
+        <span class="meta">5 prompts · 6 min de leitura</span>
+        <a class="button" href="/conteudos/rotina/">Abrir guia <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="featured" data-keywords="perfil foto de perfil retrato preto e branco monocromatico headshot linkedin avatar prompts fotografia editorial identidade">
+      <div class="cover" aria-hidden="true"><span class="cover-label">FOTO DE PERFIL</span><div class="cover-title">Seu retrato.<br><span>Um novo olhar.</span></div><span class="cover-note">3 PROMPTS PARA COPIAR</span></div>
+      <div class="featured-content">
+        <span class="category">Prompts</span>
+        <h3>Foto de perfil em preto e branco</h3>
+        <p>Crie retratos em preto e branco a partir de uma foto sua, com três prompts para diferentes estilos.</p>
+        <span class="meta">3 prompts · 4 min de leitura</span>
+        <a class="button" href="/conteudos/perfil/">Abrir guia <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="featured" data-keywords="claw openclaw assistente agente ia local open source codigo aberto automacao whatsapp telegram memoria persistente instalacao seguranca">
+      <div class="cover" aria-hidden="true"><span class="cover-label">OPENCLAW</span><div class="cover-title">Um assistente.<br><span>5 formas de usar.</span></div><span class="cover-note">GUIA PARA COMEÇAR</span></div>
+      <div class="featured-content">
+        <span class="category">Ferramentas</span>
+        <h3>OpenClaw: link oficial e 5 casos de uso</h3>
+        <p>Conheça o OpenClaw, confira os cuidados de instalação e explore cinco usos para o dia a dia.</p>
+        <span class="meta">5 casos de uso · 5 min de leitura</span>
+        <a class="button" href="/conteudos/claw/">Abrir guia <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
   </div>
-</body>
-</html>
+  <div class="empty" id="vazio" hidden><h3>Nenhum material encontrado.</h3><p>Tente outro tema ou uma palavra-chave do post.</p><button type="button" id="ver-todos">Ver todos os materiais</button></div>
+</section>
+</main><footer class="container"><span>Conteúdo gratuito, direto ao ponto.</span><a href="https://aglabs.ia.br">AG LABS ↗</a></footer>
+<script src="/assets/biblioteca.js" defer></script>
+</body></html>
