@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>As 5 rotinas do Claude | AG LABS</title>
+<meta name="description" content="Cinco prompts prontos para transformar tarefas repetidas em rotinas que o Claude executa. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://aglabs.ia.br/conteudos/rotina">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="As 5 rotinas do Claude | AG LABS">
+<meta property="og:description" content="Cinco prompts prontos para copiar.">
+<meta property="og:url" content="https://aglabs.ia.br/conteudos/rotina">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0F0F0F; --bg2:#141415; --line:rgba(255,255,255,.09);
+  --ink:#FAFAFA; --dim:#9CA3AF; --dim2:#6B7280; --blue:#60A5FA; --blue-d:#2563EB;
+  --r:4px;
+  --f:"Inter",system-ui,sans-serif; --m:"JetBrains Mono",ui-monospace,monospace;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:15px;
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+b{color:var(--ink);font-weight:600}
+code{font-family:var(--m);font-size:.88em;color:var(--blue)}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;max-width:1080px}
+header .logo{font-weight:700;font-size:13px;letter-spacing:.16em;color:#D4D4D4}
+header nav a{font-size:12px;letter-spacing:.08em;color:var(--dim2);text-transform:uppercase;
+  margin-left:20px;font-weight:500}
+
+.hero{padding:52px 0 34px}
+.kick{font-family:var(--m);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:16px}
+h1{font-size:clamp(30px,5vw,42px);font-weight:800;line-height:1.06;letter-spacing:-.03em}
+h1 span{color:var(--dim2)}
+.lead{margin-top:14px;font-size:16px;color:var(--dim);max-width:520px}
+.meta{margin-top:20px;font-family:var(--m);font-size:11.5px;letter-spacing:.05em;color:var(--dim2)}
+
+.sec{padding:30px 0;border-top:1px solid var(--line)}
+h2{font-size:18px;font-weight:700;letter-spacing:-.015em}
+h2 em{font-style:normal;font-family:var(--m);font-size:12px;font-weight:500;
+  color:var(--blue);letter-spacing:.14em;margin-right:9px}
+.sub{margin-top:6px;font-size:15px;color:var(--dim)}
+ol{margin-top:14px;padding-left:18px;color:var(--dim);font-size:14.5px}
+ol li{margin-bottom:5px}
+ol li::marker{color:var(--dim2);font-family:var(--m);font-size:12px}
+.note{margin-top:12px;font-size:13.5px;color:var(--dim2)}
+
+.box{margin-top:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2)}
+.box .bar{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 12px;
+  border-bottom:1px solid var(--line)}
+.box .bar span{font-family:var(--m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim2)}
+.box .bar button{background:transparent;color:var(--dim);border:1px solid var(--line);
+  border-radius:var(--r);padding:5px 10px;font-family:var(--f);font-weight:500;font-size:12px;
+  cursor:pointer}
+.box .bar button:hover{color:var(--ink);border-color:rgba(255,255,255,.25)}
+.box .bar button.ok{color:#4ADE80;border-color:rgba(74,222,128,.4)}
+.box pre{padding:14px 12px;overflow-x:auto;font-family:var(--m);font-size:12.5px;
+  line-height:1.68;color:#C7CBD1;white-space:pre-wrap;word-break:break-word}
+
+.pack{padding:30px 0;border-top:1px solid var(--line)}
+.pack .card{border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);
+  padding:20px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pack .t{font-size:15.5px;font-weight:600}
+.pack .d{margin-top:4px;font-size:13.5px;color:var(--dim2)}
+.btn{background:var(--blue-d);color:#fff;border:0;border-radius:var(--r);padding:11px 18px;
+  font-family:var(--f);font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#1D4ED8}
+.btn:disabled{background:#374151;cursor:not-allowed}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.btn.ghost:hover{background:transparent;border-color:rgba(255,255,255,.25)}
+
+.end{padding:30px 0 44px;border-top:1px solid var(--line)}
+.acts{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.acts a{display:inline-block;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:20px 0 30px;color:var(--dim2);font-size:12.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;max-width:1080px}
+
+/* modal */
+.ov{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.72);backdrop-filter:blur(3px);
+  display:none;align-items:center;justify-content:center;padding:20px}
+.ov.on{display:flex}
+.md{width:100%;max-width:400px;background:var(--bg2);border:1px solid var(--line);
+  border-radius:var(--r);padding:22px}
+.md .hd{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.md h3{font-size:16px;font-weight:700;letter-spacing:-.01em}
+.md .x{background:transparent;border:0;color:var(--dim2);font-size:20px;line-height:1;
+  cursor:pointer;padding:0 2px}
+.md .x:hover{color:var(--ink)}
+.md .why{margin-top:6px;font-size:13px;color:var(--dim2)}
+.md form{margin-top:16px;display:grid;gap:8px}
+.md input[type=text],.md input[type=tel]{width:100%;background:#0F0F0F;border:1px solid var(--line);
+  border-radius:var(--r);padding:10px 11px;color:var(--ink);font-family:var(--f);font-size:15px}
+.md input::placeholder{color:#4B5563}
+.md input:focus{outline:0;border-color:var(--blue)}
+.md .ck{display:flex;gap:8px;align-items:flex-start;margin-top:2px;font-size:12px;
+  color:var(--dim2);line-height:1.45}
+.md .ck input{margin-top:2px;accent-color:var(--blue-d);width:15px;height:15px;flex:none}
+.md .msg{font-size:13px;min-height:0}
+.md .msg.err{color:#F87171;margin-top:2px}
+.md .done{display:none;text-align:center;padding:6px 0 2px}
+.md .done.on{display:block}
+.md .done p{font-size:14.5px;color:#4ADE80;font-weight:600}
+.md .done a{display:inline-block;margin-top:14px;background:var(--blue-d);color:#fff;
+  border-radius:var(--r);padding:11px 20px;font-weight:600;font-size:14px}
+.md .done a:hover{background:#1D4ED8;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/">AG LABS</a>
+  <nav><a href="/solucoes">Soluções</a><a href="/blog">Blog</a><a href="/contato">Contato</a></nav>
+</div></header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kick">material gratuito</div>
+    <h1>As 5 rotinas<br><span>que o Claude assume por você.</span></h1>
+    <p class="lead">Cinco prompts prontos para copiar. Sem cadastro para ler.</p>
+    <div class="meta">5 prompts · 6 min · não precisa programar</div>
+  </div>
+
+  <div class="sec">
+    <h2>Como funciona</h2>
+    <p class="sub">Cada rotina é um <b>Projeto do Claude</b>: instruções fixas + os arquivos do
+      seu negócio.</p>
+    <ol>
+      <li>Crie um Projeto com o nome da rotina.</li>
+      <li>Cole o prompt nas instruções do projeto.</li>
+      <li>Suba o <code>contexto.md</code> abaixo no conhecimento.</li>
+      <li>Troque os campos entre <b>[COLCHETES]</b>.</li>
+      <li>Rode, aponte o que saiu torto e cole a correção nas instruções.</li>
+    </ol>
+    <p class="note">O passo 5 é o que quase todo mundo pula. É o que faz a rotina prestar.</p>
+  </div>
+
+  <div class="sec">
+    <h2>O arquivo de contexto</h2>
+    <p class="sub">Vale para as cinco. Sem ele, a resposta sai genérica.</p>
+    <div class="box">
+      <div class="bar"><span>contexto.md</span><button data-copy>copiar</button></div>
+      <pre>NEGÓCIO
+o que a empresa faz, em 3 linhas · para quem vende
+ticket médio e ciclo de venda
+
+MERCADO
+5 concorrentes, com o site de cada um
+os canais que eu acompanho
+
+MINHA ROTINA
+o que eu faço toda semana e me consome tempo
+
+VOCABULÁRIO
+como a gente chama as coisas internamente
+o jargão que a gente evita</pre>
+    </div>
+    <p class="note">Não precisa ficar bonito. Precisa ser verdadeiro.</p>
+  </div>
+
+  <div class="sec">
+    <h2><em>01</em>Briefing diário</h2>
+    <p class="sub">Você para de começar o dia procurando informação.</p>
+    <div class="box">
+      <div class="bar"><span>briefing diário</span><button data-copy>copiar</button></div>
+      <pre>Você é meu analista de mercado. Quando eu mandar "briefing", resuma o setor
+de [SEU SETOR] no Brasil nas últimas 24 horas.
+
+1. O QUE MUDOU — até 5 fatos, um por linha, cada um com a fonte.
+   Só fato novo. Análise não é fato.
+2. O QUE SIGNIFICA PRA MIM — 2 frases ligando ao negócio do contexto.md.
+3. O QUE FAZER HOJE — no máximo uma ação. Ou "nada urgente hoje".
+
+Regras:
+- Sem fato relevante, escreva "sem novidade relevante hoje". É resposta válida.
+- Nunca invente fonte. Sem link verificável, não entra.
+- Nada de frase genérica sobre "o avanço da IA".
+- Máximo 200 palavras.</pre>
+    </div>
+    <p class="note">A regra do <code>"sem novidade relevante hoje"</code> é a mais importante.
+      Sem ela o modelo inventa relevância todo dia e você para de ler em duas semanas.</p>
+  </div>
+
+  <div class="sec">
+    <h2><em>02</em>Triagem de e-mail</h2>
+    <p class="sub">Você não delega a decisão. Delega a triagem.</p>
+    <div class="box">
+      <div class="bar"><span>triagem de e-mail</span><button data-copy>copiar</button></div>
+      <pre>Você faz a triagem da minha caixa. Eu colo os e-mails, você devolve a fila
+de trabalho. Você NÃO responde nada por mim sem eu pedir.
+
+1. RESPONDER HOJE — só o que trava alguém ou perde valor se esperar.
+   Formato: remetente — o que quer, em uma linha — o que decidir.
+2. PODE ESPERAR — uma linha por item.
+3. NÃO PRECISA DE VOCÊ — só a contagem: "7 itens".
+4. RASCUNHOS — para os itens do bloco 1 que são resposta padrão.
+   Meu tom: [DIRETO E CORDIAL / FORMAL / INFORMAL].
+
+Regras:
+- Nunca prometa prazo, preço ou entrega que eu não tenha dito.
+- Thread longa vira uma linha: o que pediram e o que falta.
+- E-mail com cara de golpe ou pedido de dado sensível: marque SUSPEITO
+  e não escreva rascunho.
+- Não invente contexto que não está no e-mail.</pre>
+    </div>
+    <p class="note">A linha sobre <b>nunca prometer prazo ou preço</b> é o que impede um rascunho
+      educado de virar compromisso que você não fez.</p>
+  </div>
+
+  <div class="sec">
+    <h2><em>03</em>Relatório semanal</h2>
+    <p class="sub">Menos tempo montando. Mais tempo entendendo.</p>
+    <div class="box">
+      <div class="bar"><span>relatório semanal</span><button data-copy>copiar</button></div>
+      <pre>Você monta meu relatório semanal. Eu dou os números crus, você devolve
+o relatório pronto para ler em dois minutos.
+
+1. OS NÚMEROS — até 4 indicadores, com a variação sobre a semana anterior.
+2. O QUE CHAMOU ATENÇÃO — 2 ou 3 linhas. O que saiu do padrão.
+   Diga o que os dados mostram, não o que você imagina que causou.
+3. PONTOS DE ATENÇÃO — o que piorou e ainda dá tempo de corrigir.
+4. PRIORIDADES DA PRÓXIMA — no máximo três, em ordem.
+
+Regras:
+- Número que eu não mandei não existe. Nunca estimar para preencher.
+- Faltou dado, escreva "sem dado" e siga.
+- Sem adjetivo de animação. Relatório é instrumento, não torcida.
+- Máximo 250 palavras.</pre>
+    </div>
+    <p class="note">Modelo de linguagem gosta de preencher buraco.
+      <code>Número que eu não mandei não existe</code> é o que segura isso.</p>
+  </div>
+
+  <div class="sec">
+    <h2><em>04</em>Organização de arquivos</h2>
+    <p class="sub">Serve para colocar ordem no que já existe.</p>
+    <div class="box">
+      <div class="bar"><span>organização de arquivos</span><button data-copy>copiar</button></div>
+      <pre>Você organiza documentos. Recebe uma pilha e devolve um plano de arrumação.
+Você propõe; quem move os arquivos sou eu.
+
+1. O QUE TEM AQUI — agrupado por tipo, com contagem.
+2. PADRÃO DE NOME — um só, no formato AAAA-MM-DD_cliente_tipo_versao.
+   Tabela: nome atual -> nome novo.
+3. RESUMO — uma linha por documento: do que trata e a data.
+4. O QUE PARECE VELHO — duplicado, versão antiga, vencido.
+   Marcar. NUNCA sugerir apagar sem eu confirmar item por item.
+
+Regras:
+- Não deu para saber pelo nome? Escreva "não sei". Não adivinhe.
+- Documento com CPF, contrato assinado ou dado bancário recebe [SENSÍVEL]
+  e não vai para pasta compartilhada.</pre>
+    </div>
+    <p class="note">Repare que a rotina <b>propõe</b> e não executa. Arquivo apagado por engano
+      não volta.</p>
+  </div>
+
+  <div class="sec">
+    <h2><em>05</em>Pauta de conteúdo</h2>
+    <p class="sub">Você deixa de ter página em branco. Passa a ter versão para editar.</p>
+    <div class="box">
+      <div class="bar"><span>pauta de conteúdo</span><button data-copy>copiar</button></div>
+      <pre>Você monta a pauta da minha semana. O trabalho não é escrever bonito:
+é tirar a página em branco da minha frente.
+
+1. TEMAS — 5, ligados ao que está acontecendo no meu setor OU a uma dúvida
+   real de cliente. Nada de tema atemporal genérico.
+2. PARA CADA UM — o gancho (primeira frase) · o argumento em uma frase ·
+   a prova que eu tenho, ou "falta prova".
+3. RASCUNHO DO MELHOR — completo, no tom dos exemplos que subi.
+4. ADAPTAÇÃO — o mesmo conteúdo em post, roteiro de vídeo e e-mail.
+
+Regras:
+- Tema sem prova fica marcado "falta prova". Não inventar número nem caso.
+- Nada de "no mundo atual", "cada vez mais", "não é segredo que".
+- Se os 5 ficarem parecidos, diga isso e me peça mais contexto.</pre>
+    </div>
+    <p class="note">Suba <b>3 exemplos seus que deram certo</b> no projeto. Sem isso o rascunho sai
+      no tom de todo mundo.</p>
+  </div>
+
+  <div class="pack">
+    <div class="card">
+      <div>
+        <div class="t">Os 5 em arquivo</div>
+        <div class="d">Prompts separados + modelo de contexto + guia. Enviamos no WhatsApp.</div>
+      </div>
+      <button class="btn" id="abrir">Receber o pacote</button>
+    </div>
+  </div>
+
+  <div class="end">
+    <h2>Comece pelo mais chato</h2>
+    <p class="sub">Uma tarefa só: a que se repete, consome tempo, segue sempre o mesmo padrão
+      e que você vive adiando.</p>
+    <p class="note">Projeto do Claude não dispara sozinho — você abre e manda a palavra. Para
+      rodar sem ninguém abrir nada, chegando no WhatsApp no horário certo, é preciso ligar a API
+      a um orquestrador. Essa parte a gente monta. Mas comece pela versão manual: se ela não for
+      útil na mão, automatizar só entrega coisa inútil mais rápido.</p>
+    <div class="acts">
+      <a href="/contato"><span class="btn">Falar com a AG LABS</span></a>
+      <a href="/blog"><span class="btn ghost">Ver o blog</span></a>
+    </div>
+  </div>
+
+</div>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="/">aglabs.ia.br</a></span>
+</div></footer>
+
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mdt">
+  <div class="md">
+    <div class="hd">
+      <h3 id="mdt">Receber o pacote</h3>
+      <button class="x" id="fechar" aria-label="Fechar">&times;</button>
+    </div>
+    <p class="why">Os 5 prompts em arquivos separados, o modelo de contexto e o guia de montagem.</p>
+
+    <form id="f" novalidate>
+      <input type="text" id="nome" placeholder="Seu nome" autocomplete="name" maxlength="120">
+      <input type="tel" id="zap" placeholder="WhatsApp com DDD" autocomplete="tel" inputmode="numeric">
+      <label class="ck">
+        <input type="checkbox" id="ok">
+        <span>Autorizo a AG LABS a me enviar este material e conteúdos sobre IA no WhatsApp.
+          Posso sair quando quiser respondendo "sair".</span>
+      </label>
+      <div class="msg" id="msg"></div>
+      <button class="btn" type="submit" style="width:100%">Enviar</button>
+    </form>
+
+    <div class="done" id="done">
+      <p>Pronto. Enviamos o link no seu WhatsApp.</p>
+      <a id="dl" href="#" target="_blank" rel="noopener">Baixar agora</a>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click', function(){
+    navigator.clipboard.writeText(b.closest('.box').querySelector('pre').innerText).then(function(){
+      b.textContent = 'copiado'; b.classList.add('ok');
+      setTimeout(function(){ b.textContent = 'copiar'; b.classList.remove('ok'); }, 1600);
+    });
+  });
+});
+
+var SUPABASE_URL = 'https://meunnuxoojhbuddcskgm.supabase.co';
+var SUPABASE_KEY = 'sb_publishable_N1GXD6QXEQiZ5eVQKv7rLA_RXP3QX1q';
+var ORIGEM = 'rotina';
+var LINK_PACOTE = 'https://drive.google.com/drive/folders/1GlxkbosfeyfKVKfDXLjUS2IiahDJEGG8?usp=drive_link';
+
+var ov = document.getElementById('ov'), f = document.getElementById('f'),
+    msg = document.getElementById('msg');
+
+function abre(){ ov.classList.add('on'); document.body.style.overflow = 'hidden';
+  setTimeout(function(){ document.getElementById('nome').focus(); }, 40); }
+function fecha(){ ov.classList.remove('on'); document.body.style.overflow = ''; }
+
+document.getElementById('abrir').addEventListener('click', abre);
+// aglabs.ia.br/conteudos/rotina#pacote abre o formulario direto (link do direct)
+if (location.hash === '#pacote') abre();
+document.getElementById('fechar').addEventListener('click', fecha);
+ov.addEventListener('click', function(e){ if (e.target === ov) fecha(); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && ov.classList.contains('on')) fecha(); });
+
+function normalizaZap(v){
+  var d = (v || '').replace(/\D/g, '');
+  if (d.length === 10 || d.length === 11) return '55' + d;
+  if (d.length === 12 || d.length === 13) return d;
+  return null;
+}
+function erro(t){ msg.className = 'msg err'; msg.textContent = t; }
+
+f.addEventListener('submit', function(e){
+  e.preventDefault();
+  var nome = document.getElementById('nome').value.trim();
+  var zap  = normalizaZap(document.getElementById('zap').value);
+
+  if (nome.length < 2) return erro('Escreva o seu nome.');
+  if (!zap) return erro('WhatsApp inválido. DDD + número.');
+  if (!document.getElementById('ok').checked) return erro('Marque a autorização.');
+
+  var btn = f.querySelector('button[type=submit]');
+  btn.disabled = true; btn.textContent = 'Enviando...';
+  msg.className = 'msg'; msg.textContent = '';
+
+  fetch(SUPABASE_URL + '/rest/v1/leads_conteudo', {
+    method: 'POST',
+    headers: { 'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + SUPABASE_KEY,
+               'Content-Type': 'application/json' },
+    body: JSON.stringify({ nome: nome, whatsapp: zap, origem: ORIGEM,
+      consentimento: true, user_agent: navigator.userAgent.slice(0, 300) })
+  }).then(function(r){
+    // 409 = ja cadastrado neste material. Para a pessoa, e sucesso.
+    if (!r.ok && r.status !== 409) throw new Error(r.status);
+    document.getElementById('dl').href = LINK_PACOTE;
+    f.style.display = 'none';
+    document.getElementById('done').classList.add('on');
+  }).catch(function(){
+    btn.disabled = false; btn.textContent = 'Enviar';
+    erro('Não consegui registrar agora. Tenta de novo.');
+  });
+});
+</script>
+</body>
+</html>
