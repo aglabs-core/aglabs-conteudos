@@ -1,0 +1,90 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0F0F0F; --bg2:#141415; --line:rgba(255,255,255,.09);
+  --ink:#FAFAFA; --dim:#9CA3AF; --dim2:#6B7280; --blue:#FF6B5E; --blue-d:#D6342A;
+  --r:4px;
+  --f:"Inter",system-ui,sans-serif; --m:"JetBrains Mono",ui-monospace,monospace;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:15px;
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+b{color:var(--ink);font-weight:600}
+code{font-family:var(--m);font-size:.88em;color:var(--blue)}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:52px;max-width:1080px}
+header .logo{font-weight:700;font-size:13px;letter-spacing:.16em;color:#D4D4D4}
+header nav a{font-size:12px;letter-spacing:.08em;color:var(--dim2);text-transform:uppercase;
+  margin-left:20px;font-weight:500}
+
+.hero{padding:52px 0 34px}
+.kick{font-family:var(--m);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--blue);margin-bottom:16px}
+h1{font-size:clamp(30px,5vw,42px);font-weight:800;line-height:1.06;letter-spacing:-.03em}
+h1 span{color:var(--dim2)}
+.lead{margin-top:14px;font-size:16px;color:var(--dim);max-width:520px}
+.meta{margin-top:20px;font-family:var(--m);font-size:11.5px;letter-spacing:.05em;color:var(--dim2)}
+
+.sec{padding:30px 0;border-top:1px solid var(--line)}
+h2{font-size:18px;font-weight:700;letter-spacing:-.015em}
+h2 em{font-style:normal;font-family:var(--m);font-size:12px;font-weight:500;
+  color:var(--blue);letter-spacing:.14em;margin-right:9px}
+.sub{margin-top:6px;font-size:15px;color:var(--dim)}
+ol{margin-top:14px;padding-left:18px;color:var(--dim);font-size:14.5px}
+ol li{margin-bottom:5px}
+ol li::marker{color:var(--dim2);font-family:var(--m);font-size:12px}
+.note{margin-top:12px;font-size:13.5px;color:var(--dim2)}
+
+.box{margin-top:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2)}
+.box .bar{display:flex;align-items:center;justify-content:space-between;padding:8px 10px 8px 12px;
+  border-bottom:1px solid var(--line)}
+.box .bar span{font-family:var(--m);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim2)}
+.box .bar button{background:transparent;color:var(--dim);border:1px solid var(--line);
+  border-radius:var(--r);padding:5px 10px;font-family:var(--f);font-weight:500;font-size:12px;
+  cursor:pointer}
+.box .bar button:hover{color:var(--ink);border-color:rgba(255,255,255,.25)}
+.box .bar button.ok{color:#4ADE80;border-color:rgba(74,222,128,.4)}
+.box pre{padding:14px 12px;overflow-x:auto;font-family:var(--m);font-size:12.5px;
+  line-height:1.68;color:#C7CBD1;white-space:pre-wrap;word-break:break-word}
+
+.pack{padding:30px 0;border-top:1px solid var(--line)}
+.pack .card{border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);
+  padding:20px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.pack .t{font-size:15.5px;font-weight:600}
+.pack .d{margin-top:4px;font-size:13.5px;color:var(--dim2)}
+.btn{background:var(--blue-d);color:#fff;border:0;border-radius:var(--r);padding:11px 18px;
+  font-family:var(--f);font-weight:600;font-size:14px;cursor:pointer;white-space:nowrap}
+.btn:hover{background:#1D4ED8}
+.btn:disabled{background:#374151;cursor:not-allowed}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.btn.ghost:hover{background:transparent;border-color:rgba(255,255,255,.25)}
+
+.end{padding:30px 0 44px;border-top:1px solid var(--line)}
+.acts{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.acts a{display:inline-block;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:20px 0 30px;color:var(--dim2);font-size:12.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;max-width:1080px}
+
+/* modal */
+
+
+/* base de acessibilidade e navegacao, igual ao rotina.css */
+html{scroll-behavior:smooth;scroll-padding-top:24px;color-scheme:dark}
+:root{--dim2:#9a9faa}
+:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.back{display:inline-block;font-size:12px;margin-bottom:24px;color:var(--dim)}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.jump a{padding:6px 10px;border:1px solid var(--line);border-radius:4px;font-size:12px}
+@media(max-width:480px){header nav a{margin-left:12px;font-size:10px}.hero{padding-top:32px}.meta{font-size:10px}.acts .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* antes e depois */
+.cmp{margin-top:14px;display:grid;gap:8px}
+.cmp div{border:1px solid var(--line);border-left-width:3px;border-radius:var(--r);
+  background:var(--bg2);padding:14px 16px;font-size:14.5px;line-height:1.5;color:var(--dim)}
+.cmp div b{color:var(--ink)}
+.cmp div.x{border-left-color:#4B5563}
+.cmp div.o{border-left-color:var(--blue);color:var(--ink)}

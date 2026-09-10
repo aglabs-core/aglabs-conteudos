@@ -27,6 +27,11 @@
       "source": "/colagem",
       "destination": "/conteudos/colagem",
       "permanent": false
+    },
+    {
+      "source": "/especifico",
+      "destination": "/conteudos/especifico",
+      "permanent": false
     }
   ],
   "headers": [

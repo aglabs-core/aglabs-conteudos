@@ -18,11 +18,13 @@ Projeto transferido para `D:\projetos github\conteudos-gratuito` com histórico 
 - `assets/claw.css` e `assets/claw.js`: estilos e cópia do guia do OpenClaw.
 - `assets/gpt.css` e `assets/gpt.js`: estilos e cópia do guia dos 5 prompts do ChatGPT.
 - `assets/colagem.css` e `assets/colagem.js`: estilos e cópia do guia de colagem editorial.
+- `assets/especifico.css` e `assets/especifico.js`: estilos e cópia do guia de conteúdo específico.
 - `conteudos/rotina/index.html`: guia com cinco prompts de rotina. Slug da palavra-chave `ROTINA`.
 - `conteudos/rotina/pacote/`: arquivos originais do material.
 - `conteudos/perfil/index.html`: três prompts de foto de perfil em preto e branco. Slug da palavra-chave `perfil`.
 - `conteudos/gpt/index.html`: cinco prompts cirúrgicos para o ChatGPT. Slug da palavra-chave `GPT`.
-- `conteudos/colagem/index.html`: cinco prompts de colagem editorial. Palavra-chave `PROMPT`, slug pelo tema.
+- `conteudos/colagem/index.html`: quatro prompts de colagem editorial. Palavra-chave `PROMPT`, slug pelo tema.
+- `conteudos/especifico/index.html`: dois prompts de conteúdo específico, em quatro etapas. Slug da palavra-chave `ESPECIFICO`.
 - `conteudos/claw/index.html`: link oficial do OpenClaw e cinco casos de uso. Slug da palavra-chave `CLAW`.
 - `vercel.json`: URLs limpas e cabeçalhos de segurança.
 
@@ -50,7 +52,8 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
-| `PROMPT` → por post | `/conteudos/colagem` | 5 prompts de colagem editorial |
+| `PROMPT` → por post | `/conteudos/colagem` | 4 prompts de colagem editorial |
+| `ESPECIFICO` | `/conteudos/especifico` | O prompt que tira o conteúdo do genérico |
 
 Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
 

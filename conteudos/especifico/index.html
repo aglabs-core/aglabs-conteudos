@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O prompt que tira o seu conteúdo do genérico | AG LABS</title>
+<meta name="description" content="Dois prompts para o Claude ou o ChatGPT: um que diagnostica onde o seu conteúdo está genérico e o corrige em quatro camadas, e um de ganchos. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/especifico">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="O prompt que tira o seu conteúdo do genérico | AG LABS">
+<meta property="og:description" content="Quatro etapas, com o teste que a maioria dos prompts não tem.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/especifico">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/especifico.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">← Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Conteúdo específico<br><span>em quatro etapas.</span></h1>
+    <p class="lead">Dois prompts prontos para copiar. Sem cadastro.</p>
+    <div class="meta">2 prompts · 4 etapas · 7 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#teste">O teste</a><a href="#e1">Etapa 1</a><a href="#e2">Etapa 2</a><a href="#e3">Etapa 3</a><a href="#e4">Etapa 4</a><a href="#ganchos">Ganchos</a></nav>
+  </div>
+
+  <div class="sec" id="teste">
+    <h2>O teste de uma frase</h2>
+    <p class="sub">Leia o seu último post e responda: <b>isso poderia ter sido postado por
+      qualquer pessoa do meu nicho?</b></p>
+    <p class="note">Se a resposta for sim, o problema não é o texto. É que não existe ninguém do
+      outro lado — você escreveu <b>sobre um assunto</b>, não <b>para uma pessoa</b>.</p>
+    <p class="note">E a IA piora isso, porque entrega exatamente o que você pediu. "Crie um post
+      sobre como vender mais" devolve um post sobre como vender mais: dez ideias tecnicamente
+      corretas e nenhuma que dê vontade de publicar. O problema estava no pedido.</p>
+    <div class="cmp">
+      <div class="x"><b>Amplo:</b> como usar IA para criar conteúdo.</div>
+      <div class="o"><b>Específico:</b> para quem abriu o Claude às 22h, pediu 10 ideias de
+        post, recebeu 10 ideias corretas e não teve vontade de publicar nenhuma.</div>
+    </div>
+    <p class="note">Mesma ideia. A diferença é que agora existe alguém reconhecível.</p>
+  </div>
+
+  <div class="sec">
+    <h2>Como usar</h2>
+    <ol>
+      <li>Rode as quatro etapas <b>na ordem</b>, uma mensagem por vez, na mesma conversa.</li>
+      <li>Não pule a etapa 1 — é ela que impede o modelo de já sair reescrevendo.</li>
+      <li>Na etapa 3, deixe o loop rodar até ele responder "não".</li>
+    </ol>
+    <p class="note">Funciona no Claude, no ChatGPT ou em qualquer assistente de texto. O que faz
+      diferença não é o modelo, é a ordem das etapas.</p>
+  </div>
+
+  <div class="sec" id="e1">
+    <h2><em>01</em>O diagnóstico</h2>
+    <p class="sub">Antes de melhorar, achar onde está amplo. Esta etapa <b>proíbe</b> reescrever.</p>
+    <div class="box">
+      <div class="bar"><span>etapa 1</span><button data-copy>copiar</button></div>
+      <pre>Vou colar um conteúdo meu. Antes de sugerir qualquer melhoria, faça só isto:
+
+Sublinhe as frases que qualquer pessoa do meu nicho poderia ter escrito. Para cada uma, diga em uma linha por que ela é genérica.
+
+Não reescreva nada ainda. Só me mostre onde eu estou sendo amplo demais.
+
+Conteúdo: (COLE AQUI)</pre>
+    </div>
+    <p class="note"><b>Por que separar:</b> se o diagnóstico e a reescrita vêm juntos, o modelo
+      pula para a solução e você nunca vê o padrão do seu próprio texto. Separado, você aprende
+      a reconhecer sozinho.</p>
+  </div>
+
+  <div class="sec" id="e2">
+    <h2><em>02</em>As quatro camadas</h2>
+    <p class="sub">Pessoa, número, cena e linguagem — com antes e depois de cada frase.</p>
+    <div class="box">
+      <div class="bar"><span>etapa 2</span><button data-copy>copiar</button></div>
+      <pre>Agora aplique as quatro camadas de especificidade e me mostre antes e depois de cada frase que você sublinhou:
+
+PESSOA: em vez de "quem quer crescer", para quem exatamente? Profissão, momento de vida, situação.
+
+NÚMERO: que dado, prazo ou quantidade tira a frase do vago?
+
+CENA: que situação real e visual eu descrevo, em vez de explicar o conceito?
+
+LINGUAGEM: que palavras essa pessoa usa no dia a dia, em vez de termos de marketing?</pre>
+    </div>
+    <p class="note"><b>A camada que mais gente esquece é a cena.</b> Descrever a situação faz o
+      leitor se reconhecer; explicar o conceito faz ele concordar e seguir rolando.</p>
+  </div>
+
+  <div class="sec" id="e3">
+    <h2><em>03</em>O teste</h2>
+    <p class="sub">A etapa que quase nenhum prompt de conteúdo tem: o modelo testa o próprio
+      resultado.</p>
+    <div class="box">
+      <div class="bar"><span>etapa 3</span><button data-copy>copiar</button></div>
+      <pre>Agora teste o seu próprio resultado. Releia o texto reescrito e responda:
+
+Ele ainda poderia ter sido postado por qualquer pessoa do meu nicho?
+
+Se a resposta for sim, não me elogie: diga qual das quatro camadas ficou fraca e reescreva só aquela parte.
+
+Repita até a resposta ser não. Só então me entregue a versão final.</pre>
+    </div>
+    <p class="note"><b>Por que isso muda tudo:</b> sem o teste, o modelo entrega a primeira
+      versão e diz que ficou ótima. Com o teste, ele tem um critério de saída e é obrigado a
+      apontar a camada fraca. É a diferença entre pedir melhoria e pedir prova.</p>
+  </div>
+
+  <div class="sec" id="e4">
+    <h2><em>04</em>Os três formatos</h2>
+    <p class="sub">A mesma ideia vira legenda, carrossel e Reels — sem trocar de público no meio
+      do caminho.</p>
+    <div class="box">
+      <div class="bar"><span>etapa 4</span><button data-copy>copiar</button></div>
+      <pre>Com a versão final aprovada, gere três peças mantendo a mesma pessoa, o mesmo número e a mesma cena:
+
+1. Legenda — abertura em uma linha, corpo em blocos curtos, pergunta no fim.
+
+2. Carrossel — capa, 5 slides e CTA, um pensamento por slide.
+
+3. Roteiro de Reels — gancho de 3 segundos, desenvolvimento e fecho, com o que aparece na tela.
+
+Não troque a pessoa entre os formatos.</pre>
+    </div>
+    <p class="note"><b>A trava importa:</b> sem "não troque a pessoa", cada formato inventa um
+      público novo e todo o trabalho das camadas se perde na hora de distribuir.</p>
+  </div>
+
+  <div class="sec" id="ganchos">
+    <h2><em>05</em>Prompt 2 — ganchos</h2>
+    <p class="sub">Separado de propósito: ganchos são um trabalho diferente de reescrever.</p>
+    <div class="box">
+      <div class="bar"><span>prompt de ganchos</span><button data-copy>copiar</button></div>
+      <pre>Pegue a pessoa, o número e a cena que a gente definiu e escreva 10 ganchos de primeira linha.
+
+Regras: cada gancho cita a pessoa ou a cena, nenhum começa com pergunta, nenhum usa "você sabia", "descubra" ou "o segredo".
+
+Depois marque os 3 que só fariam sentido para essa pessoa — e descarte o resto.</pre>
+    </div>
+    <p class="note"><b>A última regra é a mais útil.</b> Gancho que serve para qualquer um é
+      gancho genérico com outro nome — e o próprio modelo consegue identificar isso quando você
+      pede.</p>
+  </div>
+
+  <div class="sec">
+    <h2>Adaptando para o seu caso</h2>
+    <p class="sub">As quatro etapas são um esqueleto. O que dá para trocar:</p>
+    <ol>
+      <li>A camada: acrescente <code>OBJEÇÃO</code> — que dúvida essa pessoa tem antes de agir.</li>
+      <li>O critério do teste: troque por <code>alguém do meu nicho já postou isso este mês?</code></li>
+      <li>Os formatos da etapa 4: troque Reels por <code>e-mail</code> ou <code>proposta</code>.</li>
+    </ol>
+    <p class="note">O que não dá para tirar é a etapa 3. Sem o teste, você volta a confiar na
+      primeira versão — que é exatamente o hábito que gerou o conteúdo genérico.</p>
+  </div>
+
+  <div class="end">
+    <h2>Conteúdo específico não resolve operação.</h2>
+    <p class="sub">Esses dois prompts melhoram o que você publica. O que eles não fazem é
+      responder o cliente às 22h, cobrar quem ficou de retornar ou manter o site no ar — e é
+      essa parte que a gente monta.</p>
+    <div class="acts">
+      <a href="https://wa.me/556493259857"><span class="btn">Falar com a AG LABS</span></a>
+      <a href="/"><span class="btn ghost">Ver outros materiais</span></a>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/especifico.js" defer></script>
+</body>
+</html>
