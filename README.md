@@ -16,9 +16,11 @@ Projeto transferido para `D:\projetos github\conteudos-gratuito` com histórico 
 - `assets/favicons/`: ícones azuis e manifesto para navegadores e dispositivos.
 - `assets/perfil.css` e `assets/perfil.js`: estilos e cópia do guia de foto de perfil.
 - `assets/claw.css` e `assets/claw.js`: estilos e cópia do guia do OpenClaw.
+- `assets/gpt.css` e `assets/gpt.js`: estilos e cópia do guia dos 5 prompts do ChatGPT.
 - `conteudos/rotina/index.html`: guia com cinco prompts de rotina. Slug da palavra-chave `ROTINA`.
 - `conteudos/rotina/pacote/`: arquivos originais do material.
 - `conteudos/perfil/index.html`: três prompts de foto de perfil em preto e branco. Slug da palavra-chave `perfil`.
+- `conteudos/gpt/index.html`: cinco prompts cirúrgicos para o ChatGPT. Slug da palavra-chave `GPT`.
 - `conteudos/claw/index.html`: link oficial do OpenClaw e cinco casos de uso. Slug da palavra-chave `CLAW`.
 - `vercel.json`: URLs limpas e cabeçalhos de segurança.
 
@@ -43,8 +45,21 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `ROTINA` | `/conteudos/rotina` | As 5 rotinas do Claude |
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
+| `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
 
-Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário. `KIT` e `COMUNIDADE` são entregues por automação no n8n e não têm página — material que cabe numa mensagem é fluxo, não página.
+Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
+
+**Palavras reservadas — não usar como slug aqui:**
+
+| palavra | vai para | por quê |
+|---|---|---|
+| `PROMPT` / `PROMPTS` | biblioteca de prompts do app `aglabs.app.br` | quando o prompt já existe no app, mandar para lá converte mais do que uma página estática |
+| `KIT` | automação n8n | material que cabe numa mensagem é fluxo, não página |
+| `COMUNIDADE` | automação n8n | idem — links da comunidade |
+
+Por isso o post dos 5 prompts do ChatGPT usa `GPT`, e não `PROMPTS`: o plural cairia perto demais do gatilho do app.
+
+**Regra de destino**, na dúvida: prompt que já está na biblioteca do app → app. Pack ou passo a passo que precisa de explicação → página aqui. Link ou lista curta → n8n.
 
 ## Formulário
 
