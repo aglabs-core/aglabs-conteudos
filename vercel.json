@@ -2,13 +2,49 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/rotina",
+      "destination": "/conteudos/rotina",
+      "permanent": false
+    },
+    {
+      "source": "/perfil",
+      "destination": "/conteudos/perfil",
+      "permanent": false
+    },
+    {
+      "source": "/claw",
+      "destination": "/conteudos/claw",
+      "permanent": false
+    },
+    {
+      "source": "/gpt",
+      "destination": "/conteudos/gpt",
+      "permanent": false
+    },
+    {
+      "source": "/colagem",
+      "destination": "/conteudos/colagem",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
       ]
     }
   ]

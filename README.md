@@ -17,10 +17,12 @@ Projeto transferido para `D:\projetos github\conteudos-gratuito` com histórico 
 - `assets/perfil.css` e `assets/perfil.js`: estilos e cópia do guia de foto de perfil.
 - `assets/claw.css` e `assets/claw.js`: estilos e cópia do guia do OpenClaw.
 - `assets/gpt.css` e `assets/gpt.js`: estilos e cópia do guia dos 5 prompts do ChatGPT.
+- `assets/colagem.css` e `assets/colagem.js`: estilos e cópia do guia de colagem editorial.
 - `conteudos/rotina/index.html`: guia com cinco prompts de rotina. Slug da palavra-chave `ROTINA`.
 - `conteudos/rotina/pacote/`: arquivos originais do material.
 - `conteudos/perfil/index.html`: três prompts de foto de perfil em preto e branco. Slug da palavra-chave `perfil`.
 - `conteudos/gpt/index.html`: cinco prompts cirúrgicos para o ChatGPT. Slug da palavra-chave `GPT`.
+- `conteudos/colagem/index.html`: cinco prompts de colagem editorial. Palavra-chave `PROMPT`, slug pelo tema.
 - `conteudos/claw/index.html`: link oficial do OpenClaw e cinco casos de uso. Slug da palavra-chave `CLAW`.
 - `vercel.json`: URLs limpas e cabeçalhos de segurança.
 
@@ -40,12 +42,15 @@ Na raiz, execute `python -m http.server 3045 --bind 127.0.0.1` e abra `http://12
 
 Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o post pede no comentário. Post novo já nasce com o endereço definido, e quem responde os comentários sabe o link de cabeça.
 
+**Atalho curto:** cada slug também responde na raiz — `/gpt` redireciona para `/conteudos/gpt`. É a forma que a gente manda no direct, porque cabe melhor na mensagem. **Slug novo exige uma linha nova em `redirects` no `vercel.json`**, senão a URL curta dá 404.
+
 | palavra-chave | página | post |
 |---|---|---|
 | `ROTINA` | `/conteudos/rotina` | As 5 rotinas do Claude |
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
+| `PROMPT` → por post | `/conteudos/colagem` | 5 prompts de colagem editorial |
 
 Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
 
@@ -53,13 +58,29 @@ Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio
 
 | palavra | vai para | por quê |
 |---|---|---|
-| `PROMPT` / `PROMPTS` | biblioteca de prompts do app `aglabs.app.br` | quando o prompt já existe no app, mandar para lá converte mais do que uma página estática |
+| `PROMPT` / `PROMPTS` | **depende do post** | ver abaixo |
 | `KIT` | automação n8n | material que cabe numa mensagem é fluxo, não página |
 | `COMUNIDADE` | automação n8n | idem — links da comunidade |
 
 Por isso o post dos 5 prompts do ChatGPT usa `GPT`, e não `PROMPTS`: o plural cairia perto demais do gatilho do app.
 
-**Regra de destino**, na dúvida: prompt que já está na biblioteca do app → app. Pack ou passo a passo que precisa de explicação → página aqui. Link ou lista curta → n8n.
+### `PROMPT` é uma palavra de muitos posts
+
+Todo post de prompt de **imagem** pede a mesma palavra: `PROMPT`. Quem decide o destino é o
+`media_id` do post, na data table `MSG POR POST AGLABS` do n8n. Uma palavra para o seguidor
+lembrar, e a resposta certa para cada post.
+
+| o post entrega | destino |
+|---|---|
+| um prompt só | biblioteca do app — o prompt e o botão de gerar no mesmo lugar |
+| um pack de vários | página aqui, e a página leva para o app |
+| nada cadastrado | biblioteca do app (fallback do workflow) |
+
+Nesses casos o **slug é o tema do pack**, não a palavra-chave — `colagem`, não `prompt`. A
+regra "slug = palavra-chave" continua valendo para as palavras exclusivas de um post só.
+
+**Regra de destino**, na dúvida: prompt que gera imagem → app, porque o app é o gerador.
+Prompt de ação ou texto → página aqui. Link ou lista curta → n8n.
 
 ## Formulário
 
