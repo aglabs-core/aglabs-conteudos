@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 cenas de desktop flutuante, em prompt | AG LABS</title>
+<meta name="description" content="Quatro prompts que colocam interface 3D flutuando ao seu redor: mesa branca de dia, madrugada, explosão criativa e sol da tarde. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/desktop">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4 cenas de desktop flutuante, em prompt | AG LABS">
+<meta property="og:description" content="A mesma pessoa em quatro cenas. Quatro prompts para copiar.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/desktop">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/desktop.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">← Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Desktop flutuante<br><span>em quatro cenas.</span></h1>
+    <p class="lead">Quatro prompts prontos para copiar. Sem cadastro.</p>
+    <div class="meta">4 prompts · 1 foto sua · 6 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#c1">Mesa branca</a><a href="#c2">Madrugada</a><a href="#c3">Explosão</a><a href="#c4">Sol da tarde</a><a href="#adaptar">Adaptar</a></nav>
+  </div>
+
+  <div class="sec" id="como">
+    <h2>Como usar</h2>
+    <ol>
+      <li>Abra um gerador que aceite <b>foto de referência</b> — o app da AG LABS, o ChatGPT ou outro.</li>
+      <li>Suba <b>uma foto sua</b> de rosto, bem iluminada e de frente.</li>
+      <li>Cole o prompt inteiro, incluindo o trecho entre colchetes e o <code>Negative prompt</code>.</li>
+      <li>Troque a roupa e o ambiente se quiser. <b>Não mexa no bloco FLOATING ELEMENTS</b> — é ele que faz a cena.</li>
+    </ol>
+    <p class="note">As quatro fotos do post são a mesma pessoa e a mesma foto de referência.
+      O que muda entre elas é a cena e a luz.</p>
+  </div>
+
+  <div class="sec">
+    <h2>O truque: objeto real, não efeito</h2>
+    <p class="sub">A diferença entre uma imagem que parece montagem e uma que parece foto está
+      numa frase que todos os quatro prompts repetem:</p>
+    <div class="box">
+      <div class="bar"><span>a frase que faz a cena</span><button data-copy>copiar</button></div>
+      <pre>Real objects with real thickness and real contact shadows.</pre>
+    </div>
+    <p class="note">Sem ela, o modelo desenha a interface <b>por cima</b> da foto, como um
+      adesivo — sem sombra, sem espessura, sem peso. Com ela, cada painel vira um objeto que
+      existe no lugar: projeta sombra na mesa, na roupa e no braço, e a foto passa a parecer
+      uma foto de verdade com coisas flutuando, não uma colagem.</p>
+    <p class="note">É a mesma lógica do bloco de textura: <b>descrever material rende mais
+      realismo do que pedir "realista"</b>. Vidro fosco com refração, plástico fosco na pasta,
+      alumínio escovado na mesa.</p>
+  </div>
+
+  <div class="sec">
+    <h2>A linha que não pode sair</h2>
+    <p class="sub">Todo prompt aqui carrega este trecho:</p>
+    <div class="box">
+      <div class="bar"><span>trava de identidade</span><button data-copy>copiar</button></div>
+      <pre>[MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]</pre>
+    </div>
+    <p class="note">Sem ela, o modelo trata a sua foto como inspiração e devolve <b>outra
+      pessoa</b> parecida com você. O <code>Negative prompt</code> reforça pelo avesso, com
+      <code>altered identity</code> e <code>different person</code>.</p>
+  </div>
+
+  <div class="sec">
+    <h2>Por que o negative prompt lista ícone e logo</h2>
+    <p class="sub">Repare que os quatro negativos começam com
+      <code>application icons, dock, app tiles, company logos, brand marks</code>.</p>
+    <p class="note">Não é frescura: <b>aconteceu na produção deste post</b>. A primeira versão
+      da cena 01 veio com uma barra de ícones no rodapé, e um deles era o ícone colorido de um
+      aplicativo real, reconhecível. Publicar isso é usar marca de terceiro na sua peça.</p>
+    <p class="note">A correção foi tirar a barra da cena e mandar que <b>todo elemento de
+      interface seja uma forma geométrica inventada, de uma cor só</b>. O visual continua o
+      mesmo e some o problema. Se você for usar comercialmente, mantenha essa linha.</p>
+  </div>
+
+  <div class="sec" id="c1">
+    <h2><em>01</em>Mesa branca, luz de dia</h2>
+    <p class="sub">Fundo branco e luz difusa. É a cena que vira foto de site, capa de proposta
+      ou banner — a mais utilizável das quatro.</p>
+    <div class="box">
+      <div class="bar"><span>cena 01</span><button data-copy>copiar</button></div>
+      <pre>Hyper-realistic wide-angle photograph of a man at a bright minimalist desk, with translucent 3D user-interface elements floating in the real physical space around him. [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]
+
+SUBJECT: seated at a polished aluminium desk in a dark jacket over a plain tee, leaning back, relaxed, smiling warmly at the camera. One hand rests on a laptop keyboard, the other reaches up and touches a floating translucent panel.
+
+FLOATING ELEMENTS: soft-edged sky-blue 3D folder shapes at several depths, a large translucent frosted-glass panel angled toward camera, grids of muted colour swatches, thin cursor arrows and small square selection handles connected by hairlines. Real objects with real thickness and real contact shadows on the desk and on his jacket.
+
+LIGHT: bright, soft, even daylight from a large source front-left; clean white seamless background; gentle contact shadows under every floating object.
+
+TEXTURE: real skin with visible pores and beard detail, frosted glass with subtle refraction and edge highlights, matte plastic on the folders, brushed aluminium on the desk.
+
+CAMERA: 24mm wide angle, f/2.8, eye level, face tack sharp, 35mm film grain.
+
+Negative prompt: application icons, icon bar, dock, app tiles, multicoloured pinwheel or camera symbols, company logos, brand marks, readable words, text, altered identity, different person, cartoon, 3D render of a person.</pre>
+    </div>
+    <p class="note"><b>Se quiser usar como foto institucional</b>, troque
+      <code>dark jacket</code> pela sua roupa de trabalho e mantenha o resto. O fundo branco
+      recorta fácil depois.</p>
+  </div>
+
+  <div class="sec" id="c2">
+    <h2><em>02</em>Duas da manhã</h2>
+    <p class="sub">A tela do notebook é a única luz. Essa cena não vende serviço — ela cria
+      clima, e é a que mais funciona como post de bastidor.</p>
+    <div class="box">
+      <div class="bar"><span>cena 02</span><button data-copy>copiar</button></div>
+      <pre>Hyper-realistic intimate photograph of a man working alone late at night at a minimalist desk, with translucent 3D user-interface elements floating in the real physical space around him. [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]
+
+SUBJECT: in a black knit sweater, candid three-quarter view, not posing, face lit only by the laptop screen. One hand on the trackpad, chin low, tired but focused, looking at the screen rather than the camera.
+
+FLOATING ELEMENTS: translucent note windows with rough scribbles hovering beside the laptop, three soft blue folder shapes suspended above the desk, a thin progress bar stretching across the desk edge, a small focus card glowing in the haze. Real objects with real thickness and real contact shadows.
+
+LIGHT: the laptop screen is the key light, cold and close; one small warm practical lamp far in the background; everything else falls to near black. Rich shadows, visible atmospheric haze.
+
+TEXTURE: real skin with pores and stubble catching the screen light, knit wool, brushed aluminium, glass with soft refraction.
+
+CAMERA: 50mm, f/1.4, low-key lighting, shallow depth of field, eyes tack sharp, 35mm film grain with slight sensor noise.
+
+Negative prompt: application icons, dock, app tiles, company logos, brand marks, readable words, text, bright environment, flat lighting, altered identity, different person, cartoon.</pre>
+    </div>
+    <p class="note"><b>O detalhe que faz a cena:</b> <code>candid, not posing, looking at the
+      screen rather than the camera</code>. Olhar para a câmera às duas da manhã destrói a
+      história — a foto vira pose de banco de imagens.</p>
+  </div>
+
+  <div class="sec" id="c3">
+    <h2><em>03</em>A explosão criativa</h2>
+    <p class="sub">Centenas de peças em espiral ao redor da cabeça. É a mais chamativa e a
+      mais fácil de errar.</p>
+    <div class="box">
+      <div class="bar"><span>cena 03</span><button data-copy>copiar</button></div>
+      <pre>Hyper-realistic wide-angle fashion portrait of a man at the exact centre of a dramatic creative explosion of translucent 3D user-interface elements. [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]
+
+SUBJECT: seated backward on a minimalist polished-aluminium chair in a seamless grey studio, arms folded over the backrest, composed and confident, direct eye contact.
+
+FLOATING ELEMENTS: hundreds of small pieces orbiting in a controlled spiral — translucent photo windows, miniature mood boards, typography specimen cards, colour-picker panels, waveform fragments, calendar blocks, electric-blue folders, tiny icons, selection marquees, cursor arrows. Dense near his head, thinning outward, transitioning from crisp glass into loose sheets of real paper further out.
+
+LIGHT: strong radial composition directing everything toward his face; large soft source from camera left, hard white rim light from behind; silver-grey environment with cobalt, acid green and orange micro-accents coming only from the floating elements.
+
+CAMERA: 24mm, f/2.8, close distance for controlled perspective exaggeration, crisp face, motion blur only on the peripheral objects.
+
+Negative prompt: chaotic composition without focal point, objects covering the face, application icons, company logos, brand marks, readable words, text, altered identity, different person, cartoon.</pre>
+    </div>
+    <p class="note"><b>Duas travas seguram esta cena.</b> <code>controlled spiral</code> e
+      <code>dense near his head, thinning outward</code> dão uma regra de distribuição — sem
+      elas o modelo espalha tudo igual e a imagem vira ruído. E
+      <code>objects covering the face</code> no negativo é o que impede uma pastinha azul de
+      aterrissar no seu nariz.</p>
+  </div>
+
+  <div class="sec" id="c4">
+    <h2><em>04</em>Sol das cinco</h2>
+    <p class="sub">O mesmo recurso fora do estúdio: luz quente de fim de tarde, sombra longa,
+      ambiente de trabalho real.</p>
+    <div class="box">
+      <div class="bar"><span>cena 04</span><button data-copy>copiar</button></div>
+      <pre>Hyper-realistic photograph of a man standing in a warm workshop-style office, with translucent 3D user-interface elements floating in the real physical space around him. [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]
+
+SUBJECT: standing three-quarters to camera in a plain white tee and open grey overshirt, sleeves rolled, one hand mid-gesture as if sliding a panel sideways, glancing down at it with a faint focused smile.
+
+FLOATING ELEMENTS: a stack of frosted-glass panels fanned out in mid-air at chest height like cards being dealt, warm amber folder shapes, a translucent circular dial, small square selection handles with thin connecting lines, a soft-edged toggle switch. Everything casts real shadows onto his shirt and onto the wooden workbench.
+
+LIGHT: warm directional afternoon sun from the right, soft bounce fill from the left, golden tone, dust visible in the sunbeam. Wooden bench, plants out of focus behind.
+
+TEXTURE: real skin with pores and beard detail, cotton weave, frosted glass with warm refraction, wood grain.
+
+CAMERA: 35mm, f/2.0, eye level, shallow depth of field, face tack sharp, 35mm film grain.
+
+Negative prompt: application icons, dock, app tiles, company logos, brand marks, readable words, text, cold flat lighting, altered identity, different person, cartoon.</pre>
+    </div>
+    <p class="note"><b>Repare que a cor dos elementos mudou para âmbar.</b> Interface azul sob
+      sol de fim de tarde entrega a montagem na hora — a luz da cena e a cor dos objetos
+      precisam combinar. É a correção mais barata e a que ninguém faz.</p>
+  </div>
+
+  <div class="app">
+    <div>
+      <div class="t">Gerar sem instalar nada</div>
+      <div class="d">A cena 01 já está salva na biblioteca de prompts do app — é subir a foto e gerar.</div>
+    </div>
+    <a class="btn" href="https://aglabs.app.br/prompts">Abrir no app ↗</a>
+  </div>
+
+  <div class="sec" id="adaptar">
+    <h2>Adaptando para o seu caso</h2>
+    <p class="sub">As quatro cenas são esqueletos. O que dá para trocar sem quebrar:</p>
+    <ol>
+      <li>Os objetos: troque <code>folder shapes</code> por <code>invoice cards</code>, <code>chat bubbles</code> ou <code>chart panels</code>, conforme o que você vende.</li>
+      <li>O ambiente: <code>workshop-style office</code> vira <code>clinic</code>, <code>kitchen</code>, <code>shop floor</code>.</li>
+      <li>A cor: combine a cor dos elementos com a luz da cena, como na cena 04.</li>
+    </ol>
+    <p class="note">O que não dá para tirar é a trava de identidade, a frase dos objetos reais
+      e a lista de ícone e logo no negativo.</p>
+  </div>
+
+  <div class="end">
+    <h2>Foto boa não resolve operação.</h2>
+    <p class="sub">Esses prompts melhoram a sua imagem. O que eles não fazem é responder o
+      cliente às 22h, cobrar quem ficou de retornar ou manter o site no ar — e é essa parte
+      que a gente monta.</p>
+    <div class="acts">
+      <a href="https://wa.me/556493259857"><span class="btn">Falar com a AG LABS</span></a>
+      <a href="/"><span class="btn ghost">Ver outros materiais</span></a>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/desktop.js" defer></script>
+</body>
+</html>
