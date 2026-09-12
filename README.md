@@ -55,6 +55,8 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
 | `PROMPT` → por post | `/conteudos/colagem` | 4 prompts de colagem editorial |
 | `ESPECIFICO` | `/conteudos/especifico` | O prompt que tira o conteúdo do genérico |
+| `DIRECAO` | `/conteudos/direcao` | A ficha de seis blocos |
+| `CONFIGURA` | `/conteudos/configura` | Configure o Claude antes da primeira pergunta |
 
 Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
 

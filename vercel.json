@@ -29,6 +29,11 @@
       "permanent": false
     },
     {
+      "source": "/configura",
+      "destination": "/conteudos/configura",
+      "permanent": false
+    },
+    {
       "source": "/direcao",
       "destination": "/conteudos/direcao",
       "permanent": false
