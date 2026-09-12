@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A ficha de seis blocos: pare de descrever, comece a dirigir | AG LABS</title>
+<meta name="description" content="O framework de direção de arte para prompts de imagem, em seis blocos nomeados, com um exemplo pronto de cada um. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/direcao">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A ficha de seis blocos: pare de descrever, comece a dirigir | AG LABS">
+<meta property="og:description" content="Imagem de IA não precisa de mais palavras. Precisa de direção.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/direcao">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/direcao.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">← Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Pare de descrever.<br><span>Comece a dirigir.</span></h1>
+    <p class="lead">A ficha de seis blocos, com um exemplo pronto de cada um. Sem cadastro.</p>
+    <div class="meta">6 blocos · 1 modelo pronto · 8 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#porque">Por que</a><a href="#ficha">A ficha</a><a href="#b1">Referência</a><a href="#b2">Sujeito</a><a href="#b3">Luz</a><a href="#b4">Material</a><a href="#b5">Cena</a><a href="#b6">Restrições</a><a href="#pronto">Modelo pronto</a></nav>
+  </div>
+
+  <div class="sec" id="porque">
+    <h2>Por que o prompt não basta</h2>
+    <p class="sub">O modelo foi treinado com bilhões de imagens. <b>O que você não diz, ele
+      preenche com o que acha que combina.</b></p>
+    <p class="note">Ele inventa o material, o tom da cor, a luz, o enquadramento e o clima —
+      e acerta às vezes. Por isso você regenera sete vezes até sair uma que serve.</p>
+    <p class="note">Não é que a IA seja ruim. É que ela não sabe o que importa para você.
+      <b>Direção é precisão. Prompt solto é chute.</b></p>
+    <div class="cmp">
+      <div class="x"><b>Descrição:</b> "mulher bonita em um café com luz natural."</div>
+      <div class="o"><b>Direção:</b> "retrato editorial, 50mm f/2.2, luz difusa de janela a
+        5600K vindo da esquerda, rebatedor suave à direita, regra dos terços, pele realista
+        com poros visíveis, ambiente de café quente desfocado em f/2.2, expressão calma e
+        confiante, paleta de tons terrosos."</div>
+    </div>
+    <p class="note">Mesma cena. Outra linguagem. Outro resultado — e, na prática, menos
+      tentativas até chegar lá, porque não sobrou nada para o modelo adivinhar.</p>
+  </div>
+
+  <div class="sec">
+    <h2>O prompt mais longo funciona mais rápido</h2>
+    <p class="sub">Parece contradição. Não é.</p>
+    <p class="note">O prompt dirigido é maior porque <b>dirige em vez de descrever</b>. As
+      palavras a mais não são enfeite — são quatro coisas específicas:</p>
+    <ol>
+      <li><b>Temperatura da luz.</b> <code>5600K</code>, <code>warm amber</code>, <code>cold blue key</code>.</li>
+      <li><b>Comportamento da lente.</b> <code>85mm f/1.8</code>, <code>shallow depth of field</code>, <code>low angle</code>.</li>
+      <li><b>Física do material.</b> <code>visible skin pores</code>, <code>frosted glass with refraction</code>, <code>knit wool</code>.</li>
+      <li><b>Intenção emocional.</b> <code>calm confident</code>, <code>tired but focused</code>, <code>aspirational</code>.</li>
+    </ol>
+    <p class="note"><b>Adjetivo o modelo ignora. Instrução ele executa.</b> "Foto profissional
+      e incrível" não diz nada que ele possa desenhar. "Luz de janela a 5600K pela esquerda,
+      sem preenchimento" diz.</p>
+  </div>
+
+  <div class="sec" id="ficha">
+    <h2>A ficha de seis blocos</h2>
+    <p class="sub">Escreva o prompt nesta ordem, um bloco por linha, com o nome do bloco em
+      maiúsculas. É a estrutura que os modelos de imagem novos respondem melhor.</p>
+    <div class="box">
+      <div class="bar"><span>o esqueleto</span><button data-copy>copiar</button></div>
+      <pre>REFERÊNCIA: (o papel da foto que você subiu, dito em voz alta)
+SUJEITO: (enquadramento, lente, altura do olhar, o que faz com as mãos)
+LUZ: (a fonte, a direção, o que ela acerta e onde apaga)
+MATERIAL: (poro, fio de cabelo, vidro, tecido — textura é o realismo)
+CENA: (onde é, com que atmosfera)
+RESTRIÇÕES: (o que não pode aparecer e onde precisa sobrar espaço)</pre>
+    </div>
+    <p class="note"><b>Por que blocos e não um parágrafo:</b> num texto corrido, o pedido de
+      luz compete com o de fundo e com o de lente, e o modelo escolhe um. Separado, cada
+      instrução tem endereço — e você consegue mudar <b>só a luz</b> sem reescrever o resto.</p>
+  </div>
+
+  <div class="sec" id="b1">
+    <h2><em>01</em>Referência</h2>
+    <p class="sub">O bloco que impede o modelo de devolver outra pessoa.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 1</span><button data-copy>copiar</button></div>
+      <pre>REFERÊNCIA: todas as imagens anexas são a mesma pessoa. Reproduza a semelhança exata — (dois ou três traços marcantes: cabelo, barba, óculos, brinco). Construa o rosto correto primeiro, depois ilumine a cena sobre ele.</pre>
+    </div>
+    <p class="note"><b>A ordem importa.</b> "Construa o rosto primeiro, depois a cena" muda o
+      resultado: sem isso, tratamento gráfico forte (colagem, neon, meio-tom) sobrescreve os
+      traços e volta outra pessoa parecida com você.</p>
+  </div>
+
+  <div class="sec" id="b2">
+    <h2><em>02</em>Sujeito</h2>
+    <p class="sub">Onde a câmera está e o que a pessoa faz. Sem isso vem sempre o mesmo
+      retrato frontal de meio corpo.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 2</span><button data-copy>copiar</button></div>
+      <pre>SUJEITO: enquadrado da cabeça até a cintura, altura dos olhos, lente 85mm. Olhar direto para a câmera, expressão calma e confiante. Uma mão no bolso, a outra relaxada ao lado do corpo. Camiseta preta de gola careca.</pre>
+    </div>
+    <p class="note"><b>Mão sempre.</b> Se você não disser o que as mãos fazem, o modelo
+      improvisa — e mão improvisada é onde a imagem entrega que é de IA.</p>
+  </div>
+
+  <div class="sec" id="b3">
+    <h2><em>03</em>Luz</h2>
+    <p class="sub">O bloco de maior retorno. É ele que separa uma foto bonita de uma foto
+      qualquer.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 3</span><button data-copy>copiar</button></div>
+      <pre>LUZ: a única fonte é (uma janela / um painel / um spot), vindo de (direção), a (temperatura). Ela acerta (o que ilumina) e o lado oposto cai em sombra fechada. Sem luz de preenchimento.</pre>
+    </div>
+    <p class="note"><b>"A única fonte" e "sem preenchimento" fazem metade do trabalho.</b> O
+      padrão do modelo é iluminar tudo por igual — que é exatamente a luz chapada que denuncia
+      imagem gerada.</p>
+  </div>
+
+  <div class="sec" id="b4">
+    <h2><em>04</em>Material</h2>
+    <p class="sub">Realismo não vem de pedir "realista". Vem de nomear textura.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 4</span><button data-copy>copiar</button></div>
+      <pre>MATERIAL: pele real com poros visíveis e linhas finas, fios de barba individuais pegando a luz, brilho natural na testa, trama do algodão da camiseta, grão de filme 35mm.</pre>
+    </div>
+    <p class="note"><b>Um item por superfície da cena.</b> Se tem vidro, diga como ele refrata.
+      Se tem metal, diga se é escovado ou polido. O modelo desenha o que é nomeado e suaviza o
+      que não é.</p>
+  </div>
+
+  <div class="sec" id="b5">
+    <h2><em>05</em>Cena</h2>
+    <p class="sub">Curto. Onde é e que ar tem.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 5</span><button data-copy>copiar</button></div>
+      <pre>CENA: uma sala escura de pé-direito alto, quase preta com um tom azulado, névoa no ar pegando a luz em feixes visíveis.</pre>
+    </div>
+    <p class="note"><b>A névoa é barata e resolve muito.</b> É ela que torna o feixe de luz
+      visível — e feixe visível é o que faz a imagem parecer cinema em vez de render.</p>
+  </div>
+
+  <div class="sec" id="b6">
+    <h2><em>06</em>Restrições</h2>
+    <p class="sub">O bloco que quase todo mundo esquece, e o que mais economiza tentativa.</p>
+    <div class="box">
+      <div class="bar"><span>bloco 6</span><button data-copy>copiar</button></div>
+      <pre>RESTRIÇÕES: fotografia real, não ilustração nem render 3D. O terço inferior do quadro fica escuro e vazio, reservado para uma legenda. Sem logotipos, sem marcas, sem texto, sem marca d'água.
+
+Negative prompt: rosto distorcido, identidade alterada, pessoa diferente, membros extras, mãos deformadas, cartum, ilustração, baixa qualidade.</pre>
+    </div>
+    <p class="note"><b>Duas coisas moram aqui.</b> A primeira é o que não pode aparecer. A
+      segunda, que quase ninguém usa: <b>reservar espaço vazio</b>. Se a imagem vai levar um
+      título por cima, peça o espaço no prompt — senão o sujeito ocupa exatamente onde o texto
+      entraria e você descobre isso só na hora de montar.</p>
+  </div>
+
+  <div class="sec" id="pronto">
+    <h2>O modelo pronto, com tudo junto</h2>
+    <p class="sub">Troque o que está entre parênteses e cole inteiro.</p>
+    <div class="box">
+      <div class="bar"><span>prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Fotografia real, não ilustração. Retrato editorial cinematográfico.
+
+REFERÊNCIA: todas as imagens anexas são a mesma pessoa. Reproduza a semelhança exata — (traço 1), (traço 2), (traço 3). Construa o rosto correto primeiro, depois ilumine a cena sobre ele.
+
+SUJEITO: enquadrado da cabeça até a cintura, altura dos olhos, lente 85mm. (o que faz com o corpo e com as mãos). Olhar (para onde), expressão (qual). Vestindo (roupa).
+
+LUZ: a única fonte é (qual), vindo de (direção), a (temperatura). Acerta (o quê) e o lado oposto cai em sombra fechada. Sem luz de preenchimento.
+
+MATERIAL: pele real com poros visíveis e linhas finas, (textura da roupa), (textura do cenário), grão de filme 35mm.
+
+CENA: (onde), (atmosfera), névoa leve no ar.
+
+RESTRIÇÕES: fotorrealista, profundidade de campo rasa com o rosto em foco absoluto. (onde precisa sobrar espaço vazio). Sem logotipos, sem marcas, sem texto, sem marca d'água.
+
+Negative prompt: rosto distorcido, identidade alterada, pessoa diferente, membros extras, mãos deformadas, cartum, ilustração, baixa qualidade.</pre>
+    </div>
+    <p class="note">Ajuste <b>um bloco por rodada</b> e olhe o resultado. Mudar três coisas de
+      uma vez e não saber qual delas resolveu é o jeito mais rápido de voltar às sete
+      tentativas.</p>
+  </div>
+
+  <div class="app">
+    <div>
+      <div class="t">Ver a ficha aplicada</div>
+      <div class="d">Os prompts da biblioteca do app são escritos nessa estrutura — dá para ler e comparar.</div>
+    </div>
+    <a class="btn" href="https://aglabs.app.br/prompts">Abrir no app ↗</a>
+  </div>
+
+  <div class="end">
+    <h2>Imagem boa não resolve operação.</h2>
+    <p class="sub">Essa ficha melhora o que você publica. O que ela não faz é responder o
+      cliente às 22h, cobrar quem ficou de retornar ou manter o site no ar — e é essa parte
+      que a gente monta.</p>
+    <div class="acts">
+      <a href="https://wa.me/556493259857"><span class="btn">Falar com a AG LABS</span></a>
+      <a href="/"><span class="btn ghost">Ver outros materiais</span></a>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/direcao.js" defer></script>
+</body>
+</html>
