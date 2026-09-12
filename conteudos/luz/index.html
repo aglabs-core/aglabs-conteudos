@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 setups de luz de estúdio, em prompt | AG LABS</title>
+<meta name="description" content="Quatro prompts de retrato que mudam só a iluminação: gel magenta e ciano, monocromático vermelho, chiaroscuro e contraluz com halo. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/luz">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4 setups de luz de estúdio, em prompt | AG LABS">
+<meta property="og:description" content="A mesma pessoa em quatro luzes diferentes. Quatro prompts para copiar.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/luz">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/luz.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">← Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>4 setups de luz<br><span>no mesmo rosto.</span></h1>
+    <p class="lead">Quatro prompts de retrato prontos para copiar. Sem cadastro.</p>
+    <div class="meta">4 prompts · 1 foto sua · 5 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#s1">Magenta e ciano</a><a href="#s2">Vermelho</a><a href="#s3">Chiaroscuro</a><a href="#s4">Contraluz</a><a href="#adaptar">Adaptar</a></nav>
+  </div>
+
+  <div class="sec" id="como">
+    <h2>Como usar</h2>
+    <ol>
+      <li>Abra um gerador de imagem que aceite <b>foto de referência</b> — o app da AG LABS, o ChatGPT ou qualquer outro.</li>
+      <li>Suba <b>uma foto sua</b> de rosto, bem iluminada e de frente. É ela que o modelo vai preservar.</li>
+      <li>Cole o prompt inteiro, incluindo o trecho entre colchetes e o <code>Negative prompt</code>.</li>
+      <li>Troque a roupa descrita se quiser. <b>Não troque o bloco LIGHT</b> — é ele que faz o setup.</li>
+    </ol>
+    <p class="note">As quatro fotos do post são a mesma pessoa e a mesma foto de referência. A única
+      coisa que muda entre elas é o bloco de luz.</p>
+  </div>
+
+  <div class="sec">
+    <h2>Por que o prompt é dividido em blocos</h2>
+    <p class="sub">Cada prompt aqui tem <code>LIGHT</code>, <code>BACKGROUND</code>,
+      <code>TEXTURE</code> e <code>CAMERA</code> separados, em vez de um parágrafo corrido.</p>
+    <p class="note">Não é estética: é o que os modelos de imagem novos respondem melhor. Num
+      parágrafo único, o pedido de luz compete com o de fundo e com o de lente, e o modelo
+      escolhe um. Separado, cada instrução tem endereço — e você consegue mudar <b>só a luz</b>
+      sem reescrever o resto.</p>
+    <p class="note">É por isso que dá para trocar um setup pelo outro copiando três linhas.</p>
+  </div>
+
+  <div class="sec">
+    <h2>A linha que não pode sair</h2>
+    <p class="sub">Todo prompt aqui carrega este trecho:</p>
+    <div class="box">
+      <div class="bar"><span>trava de identidade</span><button data-copy>copiar</button></div>
+      <pre>[MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA]</pre>
+    </div>
+    <p class="note">Sem ela, o modelo trata a sua foto como inspiração e devolve <b>outra
+      pessoa</b> parecida com você. O <code>Negative prompt</code> reforça o mesmo pedido pelo
+      avesso, com <code>altered identity</code> e <code>different person</code>. Os dois juntos
+      funcionam melhor do que qualquer um sozinho.</p>
+  </div>
+
+  <div class="sec" id="s1">
+    <h2><em>01</em>Gel magenta e ciano</h2>
+    <p class="sub">Duas cores opostas, uma de cada lado, e nada de luz de preenchimento. É o
+      setup que mais parece capa de disco.</p>
+    <div class="box">
+      <div class="bar"><span>setup 01</span><button data-copy>copiar</button></div>
+      <pre>Ultra-realistic cinematic studio portrait, medium close-up, [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA], direct eye contact with camera, calm confident expression, plain black crew-neck t-shirt, shoulders slightly turned.
+
+LIGHT: magenta gel key light from front-left at 45 degrees, cyan rim light from behind-right separating the shoulder from the background, no fill light so the far side of the face falls into closed shadow.
+
+BACKGROUND: smooth dark grey seamless with a soft magenta-to-purple gradient, subject positioned slightly off-center.
+
+TEXTURE: visible skin pores, individual beard hairs, natural skin sheen, both gel colours reflected in the eyes.
+
+CAMERA: 85mm, f/1.8, shallow depth of field, focus on the near eye, 8k, a real photograph.
+
+Negative prompt: distorted face, altered identity, different person, oversaturated skin, extra limbs, cartoon, illustration, low quality, deformed hands.</pre>
+    </div>
+    <p class="note"><b>O detalhe que faz a diferença:</b> <code>no fill light</code>. Sem essa
+      trava o modelo ilumina o lado escuro do rosto e as duas cores viram um roxo chapado.</p>
+  </div>
+
+  <div class="sec" id="s2">
+    <h2><em>02</em>Monocromático vermelho</h2>
+    <p class="sub">Fundo e luz na mesma cor. A foto inteira vira um tom só, e o rosto aparece
+      por forma, não por cor.</p>
+    <div class="box">
+      <div class="bar"><span>setup 02</span><button data-copy>copiar</button></div>
+      <pre>Ultra-realistic cinematic fashion portrait, medium shot, [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA], relaxed posture, head slightly turned, confident editorial presence, black oversized shirt.
+
+LIGHT: the entire scene is lit by saturated red light only, one source high and to the left, dramatic shadow transitions, monochromatic red across skin and fabric.
+
+BACKGROUND: seamless red wall in the same tone as the light, so subject and background merge into one colour.
+
+TEXTURE: realistic facial structure, detailed skin texture, subtle specular highlights on the forehead and nose, strong fashion photography aesthetic.
+
+CAMERA: Canon EOS R5, 50mm, f/1.8, shallow depth of field, ultra detailed, 8k, a real photograph.
+
+Negative prompt: multiple colors, cluttered background, exaggerated facial features, altered identity, cartoon, low resolution, bad anatomy.</pre>
+    </div>
+    <p class="note"><b>Funciona com qualquer cor.</b> Troque as três ocorrências de
+      <code>red</code> por <code>deep blue</code>, <code>emerald green</code> ou
+      <code>amber</code>. Só troque as três juntas — se sobrar uma, o fundo briga com a luz.</p>
+  </div>
+
+  <div class="sec" id="s3">
+    <h2><em>03</em>Chiaroscuro</h2>
+    <p class="sub">Fundo preto e um feixe estreito atravessando o rosto. O que a luz não
+      atinge, simplesmente some.</p>
+    <div class="box">
+      <div class="bar"><span>setup 03</span><button data-copy>copiar</button></div>
+      <pre>Ultra-realistic dramatic portrait, centered composition, [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA], black turtleneck sweater, intense gaze, neutral expression, cinematic mood.
+
+LIGHT: deep black background in complete darkness, a single narrow diagonal beam of warm sunlight crossing one eye and part of the face, strong chiaroscuro, the rest of the face preserved in shadow but still readable.
+
+BACKGROUND: pure black, no detail, the darkness surrounds the subject completely.
+
+TEXTURE: precise facial lighting, realistic skin texture, visible micro detail where the beam lands, cinematic facial shadows, editorial photography style.
+
+CAMERA: 85mm, f/2.0, ultra-sharp focus, HDR, volumetric atmosphere, 8k, a real photograph.
+
+Negative prompt: soft lighting, flat lighting, bright background, smiling expression, altered face, low contrast, blur, CGI look, cartoon, painting.</pre>
+    </div>
+    <p class="note"><b>Repare no <code>still readable</code>.</b> Sem ele o modelo escurece
+      tanto que some meio rosto e a pessoa fica irreconhecível. Com ele, a sombra continua
+      sendo sombra — e ainda dá para ver quem é.</p>
+  </div>
+
+  <div class="sec" id="s4">
+    <h2><em>04</em>Contraluz com halo</h2>
+    <p class="sub">Spot em cima da cabeça e câmera abaixo da linha do olho. É o setup de pôster
+      de filme.</p>
+    <div class="box">
+      <div class="bar"><span>setup 04</span><button data-copy>copiar</button></div>
+      <pre>Ultra-realistic low-angle cinematic portrait, [MANTER EXATAMENTE O ROSTO DA FOTO DE REFERÊNCIA], white crew-neck t-shirt, athletic posture, head tilted slightly upward, eyes looking above the camera, dramatic and aspirational mood.
+
+LIGHT: a strong overhead spotlight directly above the head creating a halo effect behind it, light wrapping the jawline and collarbone from above, sculpted facial shadows under the brow and nose.
+
+BACKGROUND: dark blue gradient, darkest at the edges, glowing softly right behind the head.
+
+TEXTURE: realistic skin texture, highly detailed facial structure, hero composition with the subject centered and low perspective emphasizing presence.
+
+CAMERA: 35mm, f/2.2, volumetric light rays, cinematic depth, ultra-sharp focus, 8k, a real photograph.
+
+Negative prompt: smiling, weak lighting, bright environment, distorted face, altered identity, low detail, cartoon style.</pre>
+    </div>
+    <p class="note"><b>São duas instruções, não uma.</b> <code>low-angle</code> coloca a câmera
+      embaixo e <code>overhead spotlight</code> coloca a luz em cima. Se você tirar o ângulo
+      baixo, vira só uma luz de topo comum.</p>
+  </div>
+
+  <div class="app">
+    <div>
+      <div class="t">Gerar sem instalar nada</div>
+      <div class="d">O setup 01 já está salvo na biblioteca de prompts do app — é subir a foto e gerar.</div>
+    </div>
+    <a class="btn" href="https://aglabs.app.br/prompts">Abrir no app ↗</a>
+  </div>
+
+  <div class="sec" id="adaptar">
+    <h2>Adaptando para o seu caso</h2>
+    <p class="sub">Os quatro são esqueletos. O que dá para trocar sem quebrar:</p>
+    <ol>
+      <li>A roupa: <code>black crew-neck t-shirt</code> vira <code>white shirt and blazer</code> se o uso for mais formal.</li>
+      <li>O corte: <code>medium close-up</code> vira <code>waist-up</code> para caber mais corpo.</li>
+      <li>A lente: <code>85mm</code> achata os traços e favorece; <code>35mm</code> aproxima e dramatiza.</li>
+    </ol>
+    <p class="note">O que não dá para tirar é a trava de identidade e o <code>Negative prompt</code>.
+      São eles que impedem o modelo de devolver outra pessoa.</p>
+  </div>
+
+  <div class="end">
+    <h2>Foto boa não resolve operação.</h2>
+    <p class="sub">Esses prompts melhoram a sua imagem. O que eles não fazem é responder o
+      cliente às 22h, cobrar quem ficou de retornar ou manter o site no ar — e é essa parte
+      que a gente monta.</p>
+    <div class="acts">
+      <a href="https://wa.me/556493259857"><span class="btn">Falar com a AG LABS</span></a>
+      <a href="/"><span class="btn ghost">Ver outros materiais</span></a>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/luz.js" defer></script>
+</body>
+</html>

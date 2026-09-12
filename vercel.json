@@ -29,6 +29,11 @@
       "permanent": false
     },
     {
+      "source": "/luz",
+      "destination": "/conteudos/luz",
+      "permanent": false
+    },
+    {
       "source": "/especifico",
       "destination": "/conteudos/especifico",
       "permanent": false
