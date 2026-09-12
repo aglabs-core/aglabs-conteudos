@@ -1,29 +1,23 @@
-AG LABS — Saia do óbvio
+AG LABS — 3 prompts para sair do óbvio
+Preencha os campos entre colchetes.
 
-Inversão de perspectiva
+PROMPT 1
+Assuma a perspectiva de alguém do meu público que está cansado dos conteúdos repetitivos sobre [tema]. Meu público é [descreva quem é, o que deseja e o que já tentou].
 
-Meu público é [descreva]. Meu tema é [tema]. Estas são dúvidas e reclamações reais que recebi: [cole exemplos].
+Liste 5 frustrações que essa pessoa teria ao consumir esses conteúdos. Para cada uma, diga qual conselho virou clichê, o que ele ignora e qual pergunta continua sem resposta.
 
-Identifique 5 frustrações nesses relatos. Para cada uma, proponha um ângulo de conteúdo, um gancho e um exemplo prático que responda à dúvida.
+Transforme cada frustração em uma pauta: crie um gancho, apresente um ponto de vista e sugira um exemplo que torne o conteúdo útil e surpreendente. Trate as frustrações como hipóteses a validar.
 
-Separe o que está nos relatos do que é hipótese. Se faltar contexto, faça perguntas antes de criar.
+PROMPT 2
+Atue como um estrategista criativo. Meu nicho é [nicho], meu público é [público] e o tema é [tema]. Conecte esse tema a três universos distantes: [área 1], [área 2] e [área 3].
 
----
+Para cada conexão, encontre um princípio que funcione nos dois universos e explique como ele muda a forma de enxergar o tema. Evite analogias que só trocam os nomes.
 
-Conexão entre mundos
+Entregue um gancho provocativo, uma estrutura de conteúdo em 5 partes e um exemplo prático. Ao final, escolha a conexão menos previsível e explique por que ela faz sentido para o meu público.
 
-Meu nicho é [nicho] e meu público é [público]. Conecte o tema [tema] com estas 3 áreas: [área 1], [área 2] e [área 3].
+PROMPT 3
+Atue como um pesquisador de tendências. Meu nicho é [nicho] e meu público é [público]. Investigue conteúdos que ganharam destaque nesse nicho nos últimos 3 anos.
 
-Para cada conexão, explique a relação, crie um gancho e um roteiro de 5 tópicos com um exemplo concreto.
+Organize a análise por ano: tema, formato, gancho, motivo do interesse e fonte com data. Identifique o que se repetiu, o que perdeu força e quais necessidades do público continuam abertas.
 
-Mostre onde a analogia deixa de funcionar. Descarte conexões forçadas e não prometa originalidade sem verificar.
-
----
-
-Arqueologia de tendências
-
-Analise estes conteúdos do meu nicho: [cole exemplos, datas e métricas disponíveis].
-
-Identifique padrões de tema, gancho e formato. Cite o exemplo que sustenta cada observação e separe os dados das hipóteses.
-
-Proponha 3 ideias para testar, com uma mudança por teste e uma métrica de sucesso. Não invente resultados nem garanta viralização.
+A partir desses sinais, proponha 3 apostas de conteúdo para os próximos 6 meses. Para cada uma, entregue a hipótese, um gancho e um teste. Se não puder pesquisar, peça exemplos e métricas. Não invente fontes nem garanta viralização.
