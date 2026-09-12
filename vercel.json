@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/game",
+      "destination": "/conteudos/game",
+      "permanent": false
+    },
+    {
       "source": "/desktop",
       "destination": "/conteudos/desktop",
       "permanent": false
