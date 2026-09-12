@@ -64,6 +64,7 @@ Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio
 | `PROMPT` / `PROMPTS` | **depende do post** | ver abaixo |
 | `KIT` | automação n8n | material que cabe numa mensagem é fluxo, não página |
 | `COMUNIDADE` | automação n8n | idem — links da comunidade |
+| `APP` | automação n8n | link do app (`aglabs.app.br`); serve a qualquer post, não é material de um post só |
 
 Por isso o post dos 5 prompts do ChatGPT usa `GPT`, e não `PROMPTS`: o plural cairia perto demais do gatilho do app.
 
