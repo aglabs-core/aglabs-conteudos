@@ -47,6 +47,11 @@
       "source": "/especifico",
       "destination": "/conteudos/especifico",
       "permanent": false
+    },
+    {
+      "source": "/obvio",
+      "destination": "/conteudos/obvio",
+      "permanent": false
     }
   ],
   "headers": [

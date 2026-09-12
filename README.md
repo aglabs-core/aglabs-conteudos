@@ -48,6 +48,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 
 | palavra-chave | página | post |
 |---|---|---|
+| `OBVIO` | `/conteudos/obvio` | Saia do óbvio: 3 prompts para conteúdo |
 | `ROTINA` | `/conteudos/rotina` | As 5 rotinas do Claude |
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
