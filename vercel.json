@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/europa",
+      "destination": "/conteudos/europa",
+      "permanent": false
+    },
+    {
       "source": "/game",
       "destination": "/conteudos/game",
       "permanent": false
