@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/elegante",
+      "destination": "/conteudos/elegante",
+      "permanent": false
+    },
+    {
       "source": "/marca",
       "destination": "/conteudos/marca",
       "permanent": false
