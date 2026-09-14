@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/marca",
+      "destination": "/conteudos/marca",
+      "permanent": false
+    },
+    {
       "source": "/europa",
       "destination": "/conteudos/europa",
       "permanent": false

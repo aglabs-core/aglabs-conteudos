@@ -59,6 +59,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `ESPECIFICO` | `/conteudos/especifico` | O prompt que tira o conteúdo do genérico |
 | `DIRECAO` | `/conteudos/direcao` | A ficha de seis blocos |
 | `CONFIGURA` | `/conteudos/configura` | Configure o Claude antes da primeira pergunta |
+| `MARCA` | `/conteudos/marca` | E-mails da sua marca com o Claude Design |
 
 Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
 
