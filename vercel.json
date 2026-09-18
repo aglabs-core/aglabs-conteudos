@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/chrome",
+      "destination": "/conteudos/chrome",
+      "permanent": false
+    },
+    {
       "source": "/criativos",
       "destination": "/conteudos/criativos",
       "permanent": false
