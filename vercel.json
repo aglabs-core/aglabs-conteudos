@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/criativos",
+      "destination": "/conteudos/criativos",
+      "permanent": false
+    },
+    {
       "source": "/elegante",
       "destination": "/conteudos/elegante",
       "permanent": false
