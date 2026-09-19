@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/cinema",
+      "destination": "/conteudos/cinema",
+      "permanent": false
+    },
+    {
       "source": "/poster",
       "destination": "/conteudos/poster",
       "permanent": false
