@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/operacao",
+      "destination": "/conteudos/operacao",
+      "permanent": false
+    },
+    {
       "source": "/cinema",
       "destination": "/conteudos/cinema",
       "permanent": false
