@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/poster",
+      "destination": "/conteudos/poster",
+      "permanent": false
+    },
+    {
       "source": "/chrome",
       "destination": "/conteudos/chrome",
       "permanent": false
