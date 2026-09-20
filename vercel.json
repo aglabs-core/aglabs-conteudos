@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/casos",
+      "destination": "/conteudos/casos",
+      "permanent": false
+    },
+    {
       "source": "/rotina",
       "destination": "/conteudos/rotina",
       "permanent": false
