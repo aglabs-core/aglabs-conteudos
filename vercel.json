@@ -39,6 +39,11 @@
       "permanent": false
     },
     {
+      "source": "/estetica",
+      "destination": "/conteudos/estetica",
+      "permanent": false
+    },
+    {
       "source": "/mini",
       "destination": "/conteudos/mini",
       "permanent": false
