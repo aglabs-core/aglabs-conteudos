@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dicionario do Claude Code: 8 termos essenciais | AG LABS</title>
+<meta name="description" content="CLAUDE.md, janela de contexto, modo de planejamento, MCP, hooks, subagentes, skills e checkpoints: o que cada termo do Claude Code significa e o comando que ativa. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/dicionario">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dicionario do Claude Code: 8 termos essenciais | AG LABS">
+<meta property="og:description" content="O que cada termo significa, por que importa e o comando que ativa.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/dicionario">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/dicionario.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Dicion&aacute;rio do<br><span>Claude Code.</span></h1>
+    <p class="lead">Os 8 termos que aparecem toda hora &mdash; o que cada um significa, por que importa
+    e o comando ou o caminho que ativa aquilo de verdade.</p>
+    <div class="meta">8 termos &middot; 6 min de leitura</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#t1">Claude.Md</a><a href="#t2">Janela De Contexto</a><a href="#t3">Modo De Planejamento</a><a href="#t4">Mcp</a><a href="#t5">Hooks</a><a href="#t6">Subagentes</a><a href="#t7">Skills</a><a href="#t8">Checkpoints</a></nav>
+  </div>
+
+  <div class="sec">
+    <h2>Por que esses 8</h2>
+    <p class="note"><b>Todos mudam o comportamento, n&atilde;o s&oacute; o vocabul&aacute;rio.</b> N&atilde;o &eacute; jarg&atilde;o para
+    parecer avan&ccedil;ado: cada um desses termos corresponde a uma alavanca que altera o que o Claude
+    faz, o quanto ele acerta e o quanto voc&ecirc; consegue conferir depois.</p>
+    <p class="note"><b>Tr&ecirc;s s&atilde;o sobre contexto</b> &mdash; CLAUDE.md, janela de contexto e skills. S&atilde;o os que
+    resolvem o problema de ter que explicar a mesma coisa toda vez.</p>
+    <p class="note"><b>Tr&ecirc;s s&atilde;o sobre controle</b> &mdash; modo de planejamento, hooks e checkpoints. S&atilde;o os
+    que deixam voc&ecirc; liberar o agente sem perder o freio.</p>
+    <p class="note"><b>Dois s&atilde;o sobre alcance</b> &mdash; MCP e subagentes. S&atilde;o os que tiram o agente da
+    conversa isolada e o colocam em contato com as suas ferramentas e com mais de uma frente de trabalho.</p>
+  </div>
+
+  <div class="sec" id="t1">
+    <h2><em>01</em>CLAUDE.MD</h2>
+    <p>É o arquivo que ensina o Claude a entender o seu projeto antes de começar.</p><p>Nele você registra como a operação funciona, quais padrões devem ser seguidos e o que não pode acontecer.</p><p>Em vez de repetir instrução toda vez, você escreve uma vez e o trabalho fica consistente.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>Fica na raiz do projeto, com o nome CLAUDE.md.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t2">
+    <h2><em>02</em>JANELA DE CONTEXTO</h2>
+    <p>O Claude trabalha com um espaço de atenção limitado. Tudo que ele leu naquela conversa ocupa espaço.</p><p>Quando você mistura três tarefas, dez arquivos e instruções soltas, ele perde precisão — não porque ficou pior, mas porque a atenção dele está dividida.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>/context mostra o que está ocupando · /compact comprime a conversa.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t3">
+    <h2><em>03</em>MODO DE PLANEJAMENTO</h2>
+    <p>Antes de sair fazendo, o Claude pensa e te mostra a estrutura primeiro.</p><p>Ele analisa o cenário, organiza os passos e espera a sua aprovação antes de executar qualquer mudança.</p><p>Isso reduz retrabalho e devolve a decisão para você, que é quem sabe o que vale a pena.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>Shift+Tab cicla os modos até chegar no plan.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t4">
+    <h2><em>04</em>MCP</h2>
+    <p>É o padrão que permite ao Claude conversar com as suas outras ferramentas.</p><p>Em vez de você copiar dado de um lugar e colar no outro, ele consulta a fonte direto: o banco, o repositório, o gerenciador de tarefas, a planilha.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>/mcp lista e gerencia os servidores conectados.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t5">
+    <h2><em>05</em>HOOKS</h2>
+    <p>São automações que rodam antes ou depois de uma ação dele.</p><p>Podem validar, checar padrão, rodar o teste ou impedir que algo aconteça.</p><p>Em vez de depender da memória do agente, a regra passa a ser garantida pelo sistema.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>Ficam configurados na pasta .claude/hooks/ do projeto.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t6">
+    <h2><em>06</em>SUBAGENTES</h2>
+    <p>São assistentes menores que dividem o trabalho em paralelo.</p><p>Cada um recebe uma frente específica e tem o seu próprio contexto, então o que um leu não entope a conversa principal.</p><p>Acelera tarefa grande e mantém a linha de raciocínio limpa.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>Definidos em .claude/agents/, um arquivo por agente.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t7">
+    <h2><em>07</em>SKILLS</h2>
+    <p>São processos prontos que você salva para reutilizar sempre que precisar.</p><p>Em vez de explicar a mesma coisa do zero, você guarda o passo a passo com o nome dele e chama quando quer.</p><p>É o que transforma um jeito seu de trabalhar em algo repetível.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>/skills mostra as disponíveis · vivem em .claude/skills/.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="t8">
+    <h2><em>08</em>CHECKPOINTS</h2>
+    <p>São pontos de segurança antes das mudanças maiores.</p><p>Se o resultado não ficou do jeito que você imaginava, você volta ao estado anterior sem ter que desfazer na mão.</p><p>É o tipo de recurso que reduz o risco de deixar o agente executar.</p>
+    <div class="box">
+      <div class="bar"><span>na pr&aacute;tica</span><button data-copy>copiar</button></div>
+      <pre>Esc Esc com o campo vazio abre o menu · /rewind faz o mesmo.</pre>
+    </div>
+  </div>
+
+
+  <div class="sec">
+    <h2>Onde conferir</h2>
+    <p>Tudo aqui foi conferido na documenta&ccedil;&atilde;o oficial em
+    <a href="https://code.claude.com/docs">code.claude.com/docs</a> &mdash; principalmente as p&aacute;ginas de
+    <a href="https://code.claude.com/docs/en/slash-commands">comandos</a>,
+    <a href="https://code.claude.com/docs/en/interactive-mode">modo interativo</a> e
+    <a href="https://code.claude.com/docs/en/checkpointing">checkpointing</a>.
+    Atalhos podem variar conforme o terminal e a vers&atilde;o.</p>
+    <p>A AG LABS n&atilde;o tem rela&ccedil;&atilde;o com a Anthropic &mdash; este guia &eacute; material editorial.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/dicionario.js" defer></script>
+</body>
+</html>

@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/dicionario",
+      "destination": "/conteudos/dicionario",
+      "permanent": false
+    },
+    {
       "source": "/automacoes",
       "destination": "/conteudos/automacoes",
       "permanent": false
