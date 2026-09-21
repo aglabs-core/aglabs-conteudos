@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/ensaio",
+      "destination": "/conteudos/ensaio",
+      "permanent": false
+    },
+    {
       "source": "/surpresa",
       "destination": "/conteudos/surpresa",
       "permanent": false

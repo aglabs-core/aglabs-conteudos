@@ -53,6 +53,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
+| `PROMPT` → por post | `/conteudos/ensaio` | 5 prompts de ensaio masculino |
 | `SURPRESA` | `/conteudos/surpresa` | 5 coisas que o Claude faz |
 | `DICIONARIO` | `/conteudos/dicionario` | Dicionário do Claude Code, 8 termos |
 | `AUTOMACAO` | `/conteudos/automacoes` | OpenClaw: as 5 automações que mais uso |
