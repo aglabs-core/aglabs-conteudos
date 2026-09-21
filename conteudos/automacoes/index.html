@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenClaw: as 5 automacoes que mais uso | AG LABS</title>
+<meta name="description" content="Os cinco fluxos que rodam todo dia no OpenClaw: pipeline de conteudo, caixa de entrada, deploy e DNS no Cloudflare, GitHub e campanhas. Com o que pedir, o que autorizar e o que deixar travado. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/automacoes">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenClaw: as 5 automacoes que mais uso | AG LABS">
+<meta property="og:description" content="O que pedir, o que o agente executa e o que nunca sai sem confirmacao.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/automacoes">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/automacoes.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>OpenClaw<br><span>as 5 automa&ccedil;&otilde;es que mais uso.</span></h1>
+    <p class="lead">A diferen&ccedil;a entre um chatbot e um agente &eacute; uma palavra: feito. Aqui est&aacute; o que pedir,
+    o que o agente executa e o que nunca deve sair sem a sua confirma&ccedil;&atilde;o.</p>
+    <div class="meta">5 fluxos &middot; 7 min de leitura</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#antes">Antes de montar</a><a href="#c01">01</a><a href="#c02">02</a><a href="#c03">03</a><a href="#c04">04</a><a href="#c05">05</a></nav>
+  </div>
+
+  <div class="sec" id="antes">
+    <h2>Antes de montar qualquer um dos cinco</h2>
+    <ol>
+      <li><b>Escreva a regra antes do fluxo.</b> O que &eacute; prioridade, o que &eacute; ru&iacute;do, o que nunca pode
+      ser feito sem voc&ecirc;. &Eacute; esse arquivo que separa um agente &uacute;til de um chatbot gen&eacute;rico.</li>
+      <li><b>Comece com aprova&ccedil;&atilde;o obrigat&oacute;ria.</b> Nas primeiras semanas o agente prepara e voc&ecirc;
+      solta. Depois de umas trinta rodadas voc&ecirc; decide, caso a caso, o que pode sair sozinho.</li>
+      <li><b>D&ecirc; credencial com escopo m&iacute;nimo.</b> Um token que s&oacute; alcan&ccedil;a a zona, o reposit&oacute;rio ou
+      a conta que aquele fluxo precisa. Nunca a chave que abre tudo.</li>
+      <li><b>Cuidado com o conte&uacute;do que ele l&ecirc;.</b> Um agente que l&ecirc; e-mail, issue e p&aacute;gina web pode
+      receber instru&ccedil;&atilde;o maliciosa escrita ali para ele obedecer. Trate tudo que ele l&ecirc; como dado, nunca
+      como ordem: pedido que chega de fora passa por voc&ecirc;.</li>
+      <li><b>Deixe o log ligado.</b> Voc&ecirc; precisa poder ler depois o que ele fez, em que ordem e por qu&ecirc;.</li>
+    </ol>
+  </div>
+
+  <div class="sec">
+    <h2>Por que esses cinco e n&atilde;o outros</h2>
+    <p class="note"><b>S&atilde;o tarefas com come&ccedil;o e fim claros.</b> Existe um estado inicial, uma sequ&ecirc;ncia de
+    passos e um resultado que d&aacute; para conferir em dez segundos. &Eacute; isso que torna um fluxo confi&aacute;vel.</p>
+    <p class="note"><b>Todos t&ecirc;m um limite &oacute;bvio.</b> Em cada um dos cinco existe uma linha depois da qual o
+    erro custa caro &mdash; dinheiro, dom&iacute;nio em produ&ccedil;&atilde;o, hist&oacute;rico do reposit&oacute;rio. Essa linha fica com voc&ecirc;.</p>
+    <p class="note"><b>Nenhum exige programar.</b> Exige descrever com clareza o que voc&ecirc; quer, uma vez s&oacute;.</p>
+  </div>
+
+  <div class="sec" id="c01">
+    <h2><em>01</em>Um pipeline de conteúdo que fecha sozinho</h2>
+    <p>Ele lê a marca, escolhe o tema, escreve, gera as imagens, monta o arquivo e publica. Eu entro em um ponto só: aprovar.</p>
+    <p class="note"><b>O pedido:</b> &ldquo;Fecha o post de quinta seguindo o guia da marca.&rdquo;</p>
+    <p><b>O que ele executa:</b></p>
+    <ul><li>Leu o guia da marca e os últimos 30 posts</li><li>Levantou 12 temas, descartou 9, defendeu 3</li><li>Escreveu os 9 slides e a legenda no meu tom</li><li>Gerou as 4 imagens e montou o arquivo final</li><li>Agendou para quinta, 12h, e pediu meu ok</li></ul>
+    <p class="note"><b>Resultado:</b> Publicado às 12h04. Print e link no meu WhatsApp.</p>
+    <p><b>Precisa existir antes.</b> Um arquivo de marca (tom de voz, o que nunca dizer, formatos) e acesso a pasta dos posts antigos.</p>
+    <p class="note"><b>Onde travar.</b> A publicacao. Deixe o agente agendar e pedir o seu ok — postar sozinho e o ultimo passo a liberar, quando ja tiver umas trinta rodadas de historico.</p>
+  </div>
+
+  <div class="sec" id="c02">
+    <h2><em>02</em>A caixa de entrada gerenciada, não só lida</h2>
+    <p>A diferença é essa: ele não me manda um resumo e para. Ele responde o que é padrão, arquiva o que é ruído e abre tarefa do que exige mão minha.</p>
+    <p class="note"><b>O pedido:</b> &ldquo;Cuida da caixa. Não responde nada de dinheiro sem mim.&rdquo;</p>
+    <p><b>O que ele executa:</b></p>
+    <ul><li>47 mensagens lidas, 6 precisam de mim</li><li>Respondeu 11 dúvidas repetidas com o texto aprovado</li><li>Arquivou 28 e-mails de notificação e newsletter</li><li>Abriu 6 tarefas com prazo e link da conversa</li><li>Separou 2 cobranças para eu decidir</li></ul>
+    <p class="note"><b>Resultado:</b> 6 e-mails na minha frente. Os outros 41 já resolvidos.</p>
+    <p><b>Precisa existir antes.</b> A regra escrita do que e prioridade, do que e ruido, e os textos aprovados para as duvidas que se repetem.</p>
+    <p class="note"><b>Onde travar.</b> Qualquer coisa que envolva valor, prazo contratual ou dado de cliente. E cuidado: um e-mail pode conter instrucao maliciosa escrita para o agente obedecer — por isso ele nunca deve executar pedido que chegou por e-mail sem passar por voce.</p>
+  </div>
+
+  <div class="sec" id="c03">
+    <h2><em>03</em>Deploy e DNS sem eu abrir o painel</h2>
+    <p>Eu descrevo no chat e ele executa no Cloudflare: sobe o build, aponta o domínio, espera o certificado, limpa o cache e me devolve o log do que fez.</p>
+    <p class="note"><b>O pedido:</b> &ldquo;Sobe a nova versão e aponta o domínio novo.&rdquo;</p>
+    <p><b>O que ele executa:</b></p>
+    <ul><li>Rodou o build e subiu o deploy de produção</li><li>Criou o registro do subdomínio e ativou o proxy</li><li>Esperou o certificado ficar ativo</li><li>Purgou o cache das rotas que mudaram</li><li>Testou as 8 páginas: todas respondendo 200</li></ul>
+    <p class="note"><b>Resultado:</b> No ar em 3 min. Log completo colado no chat.</p>
+    <p><b>Precisa existir antes.</b> O token de API com escopo minimo (so a zona e o projeto que ele precisa mexer) e o comando de build do projeto.</p>
+    <p class="note"><b>Onde travar.</b> Apagar registro, trocar nameserver e mexer em dominio de producao que ja esta no ar atendendo cliente. Criar e atualizar, sim; destruir, com confirmacao.</p>
+  </div>
+
+  <div class="sec" id="c04">
+    <h2><em>04</em>O repositório cuidado por ele</h2>
+    <p>Não é o agente sugerindo o diff para eu copiar. Ele abre a branch, aplica, abre o PR explicando o que mudou, responde o review e faz o merge quando o CI passa.</p>
+    <p class="note"><b>O pedido:</b> &ldquo;Corrige o bug do formulário e abre o PR.&rdquo;</p>
+    <p><b>O que ele executa:</b></p>
+    <ul><li>Reproduziu o erro e achou a causa</li><li>Abriu a branch e aplicou a correção</li><li>Escreveu o teste que falhava antes</li><li>Abriu o PR explicando a causa e o efeito</li><li>CI verde, respondeu o review e fez o merge</li></ul>
+    <p class="note"><b>Resultado:</b> PR #142 mergeado. Issue fechada com o commit.</p>
+    <p><b>Precisa existir antes.</b> CI configurado e a regra de que nada entra sem teste. E o agente trabalhando em branch, nunca direto na main.</p>
+    <p class="note"><b>Onde travar.</b> Force push, merge sem CI verde e qualquer alteracao em segredo do repositorio. O merge automatico so depois que voce confiar no CI.</p>
+  </div>
+
+  <div class="sec" id="c05">
+    <h2><em>05</em>Campanha acompanhada de hora em hora</h2>
+    <p>Ele não me manda relatório para eu agir. Ele age: pausa o criativo que estourou o custo, reforça o que está performando e me conta o que fez e por quê.</p>
+    <p class="note"><b>O pedido:</b> &ldquo;Acompanha a campanha. Teto de R$ 40 por lead.&rdquo;</p>
+    <p><b>O que ele executa:</b></p>
+    <ul><li>Leu os números de hora em hora</li><li>Pausou o criativo 3: custo por lead em R$ 71</li><li>Subiu 30% do orçamento no criativo 1, a R$ 22</li><li>Trocou o público do conjunto que saturou</li><li>Registrou cada mudança com o motivo</li></ul>
+    <p class="note"><b>Resultado:</b> Custo médio de R$ 61 para R$ 29 em dois dias.</p>
+    <p><b>Precisa existir antes.</b> O teto de custo por lead, o orcamento maximo diario e quais criativos ele pode pausar.</p>
+    <p class="note"><b>Onde travar.</b> Aumentar o orcamento total, criar campanha nova e mexer em publico salvo. Pausar e redistribuir dentro do orcamento ja aprovado e o que ele faz sozinho.</p>
+  </div>
+
+
+  <div class="sec">
+    <h2>Sobre o OpenClaw</h2>
+    <p>Assistente de IA open source (MIT), mantido pela OpenClaw Foundation. Roda na sua pr&oacute;pria
+    m&aacute;quina &mdash; estado, mem&oacute;ria e credenciais ficam no seu hardware &mdash; e atende nos canais que voc&ecirc;
+    j&aacute; usa, de WhatsApp e Telegram a Slack e Discord. O modelo &eacute; plug&aacute;vel: Claude, GPT ou um modelo
+    local. N&atilde;o tem plano pago nem vers&atilde;o hospedada.</p>
+    <p>Site oficial: <a href="https://openclaw.ai">openclaw.ai</a> &middot;
+       Documenta&ccedil;&atilde;o: <a href="https://docs.openclaw.ai">docs.openclaw.ai</a> &middot;
+       C&oacute;digo: <a href="https://github.com/openclaw/openclaw">github.com/openclaw/openclaw</a>.
+       A AG LABS n&atilde;o tem rela&ccedil;&atilde;o com o projeto &mdash; este guia &eacute; material editorial.</p>
+    <p>Quer os dez casos de uso antes de escolher um fluxo? Est&atilde;o em
+       <a href="/conteudos/casos/">10 casos de uso pr&aacute;ticos</a>.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/automacoes.js" defer></script>
+</body>
+</html>
