@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>10 casos de uso de agentes de IA | AG LABS</title>
-<meta name="description" content="Dez casos de uso praticos de agentes de IA para a rotina de quem toca um negocio: caixa de entrada, cobranca, relatorio semanal, dossie de reuniao e mais. Material gratuito da AG LABS.">
+<title>OpenClaw: 10 casos de uso praticos | AG LABS</title>
+<meta name="description" content="Dez casos de uso praticos do OpenClaw, o assistente de IA open source que roda na sua propria maquina: briefing da manha, triagem de e-mail, notas fiscais, cobranca, monitoramento de pagina e mais. Material gratuito da AG LABS.">
 <link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/casos">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="10 casos de uso de agentes de IA | AG LABS">
-<meta property="og:description" content="O que cada agente faz, o que ele precisa receber e o resultado na pratica.">
+<meta property="og:title" content="OpenClaw: 10 casos de uso praticos | AG LABS">
+<meta property="og:description" content="O que cada caso faz, o que o agente precisa receber e o resultado na pratica.">
 <meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/casos">
 <meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
 <meta property="og:locale" content="pt_BR">
@@ -37,10 +37,21 @@
   <div class="hero">
     <a class="back" href="/">&larr; Todos os materiais</a>
     <div class="kick">material gratuito</div>
-    <h1>10 casos de uso<br><span>de agentes de IA na rotina.</span></h1>
-    <p class="lead">Nada de conceito. S&atilde;o dez tarefas que j&aacute; acontecem na sua semana e que um agente executa sozinho.</p>
+    <h1>OpenClaw<br><span>10 casos de uso pr&aacute;ticos.</span></h1>
+    <p class="lead">Nada de conceito. S&atilde;o dez tarefas que j&aacute; acontecem na sua semana e que o agente executa sozinho.</p>
     <div class="meta">10 casos &middot; 8 min de leitura</div>
-    <nav class="jump" aria-label="Neste guia"><a href="#antes">Antes de come&ccedil;ar</a><a href="#c1">01</a><a href="#c2">02</a><a href="#c3">03</a><a href="#c4">04</a><a href="#c5">05</a><a href="#c6">06</a><a href="#c7">07</a><a href="#c8">08</a><a href="#c9">09</a><a href="#c10">10</a></nav>
+    <nav class="jump" aria-label="Neste guia"><a href="#oque">O que &eacute;</a><a href="#antes">Antes de come&ccedil;ar</a><a href="#c1">01</a><a href="#c2">02</a><a href="#c3">03</a><a href="#c4">04</a><a href="#c5">05</a><a href="#c6">06</a><a href="#c7">07</a><a href="#c8">08</a><a href="#c9">09</a><a href="#c10">10</a></nav>
+  </div>
+
+  <div class="sec" id="oque">
+    <h2>O que &eacute; o OpenClaw</h2>
+    <p>É um assistente de IA open source que roda no seu próprio computador e te encontra nos canais que você já usa: WhatsApp, Telegram, Discord, Slack, iMessage e mais de vinte outros. Tem app para Mac, Windows, Linux, iPhone e Android.</p>
+    <p>Diferente de um chatbot, ele executa: navega na internet, lê e escreve arquivos, roda código, monitora páginas e encadeia tarefas sozinho. Os dados, a memória e as suas credenciais ficam no seu hardware. O modelo é plugável — Claude, GPT, ou um modelo local pelo Ollama.</p>
+    <p class="note"><b>É mantido pela OpenClaw Foundation, é MIT, e não tem plano pago nem versão hospedada. O que você paga é o modelo que escolher usar.</b></p>
+    <p>Site oficial: <a href="https://openclaw.ai">openclaw.ai</a> &middot;
+       Documenta&ccedil;&atilde;o: <a href="https://docs.openclaw.ai">docs.openclaw.ai</a> &middot;
+       C&oacute;digo: <a href="https://github.com/openclaw/openclaw">github.com/openclaw/openclaw</a>.
+       A AG LABS n&atilde;o tem rela&ccedil;&atilde;o com o projeto &mdash; este guia &eacute; material editorial.</p>
   </div>
 
   <div class="sec" id="antes">
@@ -48,86 +59,86 @@
     <ol>
       <li><b>Escolha um caso s&oacute;.</b> Quem tenta montar os dez de uma vez n&atilde;o termina nenhum. Comece pelo que mais consome o seu tempo hoje.</li>
       <li><b>Escreva a regra antes do prompt.</b> O agente precisa saber o que &eacute; urgente, o que &eacute; ru&iacute;do e o que nunca deve ser feito sem voc&ecirc;.</li>
-      <li><b>Deixe a aprova&ccedil;&atilde;o com voc&ecirc; nas primeiras semanas.</b> O agente prepara, voc&ecirc; confere e solta. Depois de umas trinta rodadas, voc&ecirc; decide o que pode sair sozinho.</li>
-      <li><b>Nada de dado sens&iacute;vel sem crit&eacute;rio.</b> Senha, dado banc&aacute;rio e documento de cliente ficam fora do que o agente l&ecirc;.</li>
+      <li><b>Deixe a aprova&ccedil;&atilde;o com voc&ecirc; nas primeiras semanas.</b> O agente prepara, voc&ecirc; confere e solta. Depois de umas trinta rodadas voc&ecirc; decide o que pode sair sozinho.</li>
+      <li><b>Cuidado com o que ele acessa.</b> Um agente que l&ecirc; a sua caixa de entrada e navega na internet pode ser induzido por um e-mail ou por uma p&aacute;gina maliciosa. Limite o que ele pode concluir sem confirma&ccedil;&atilde;o, principalmente onde envolve dinheiro, senha ou dado de cliente.</li>
     </ol>
   </div>
 
   <div class="sec">
     <h2>O que todos os dez t&ecirc;m em comum</h2>
-    <p class="note"><b>S&atilde;o tarefas recorrentes, n&atilde;o decis&otilde;es.</b> O agente faz o trabalho de juntar, filtrar, organizar e rascunhar. A decis&atilde;o continua sendo sua &mdash; s&oacute; que agora ela chega com o contexto pronto.</p>
+    <p class="note"><b>S&atilde;o tarefas recorrentes, n&atilde;o decis&otilde;es.</b> O agente junta, filtra, organiza e rascunha. A decis&atilde;o continua sendo sua &mdash; s&oacute; que agora ela chega com o contexto pronto.</p>
     <p class="note"><b>Todos exigem um contexto escrito uma vez.</b> Quem voc&ecirc; atende, como voc&ecirc; escreve, o que &eacute; prioridade. &Eacute; esse arquivo que separa um agente &uacute;til de um chatbot gen&eacute;rico.</p>
     <p class="note"><b>Nenhum exige programar.</b> Exige descrever o que voc&ecirc; quer com clareza, uma vez s&oacute;.</p>
   </div>
 
   <div class="sec" id="c1">
-    <h2><em>01</em>Prioridade na caixa de entrada</h2>
-    <p>Você abre o e-mail de manhã e já tem 47 mensagens. Newsletter, lead quente, cobrança, spam disfarçado, cliente esperando resposta há 18 horas. Tudo parece urgente. Nada está organizado.</p>
-    <p>O agente roda em segundo plano, lê cada mensagem e interpreta o contexto: quem enviou, qual o histórico com essa pessoa, se há um prazo implícito. Com o tempo ele aprende o que você responde e o que você ignora.</p>
-    <p class="note"><b>O resultado: você abre a caixa e vê uma lista curta do que exige ação sua. O resto já foi categorizado, arquivado ou respondido no seu tom.</b></p>
+    <h2><em>01</em>Briefing das 7h no seu WhatsApp</h2>
+    <p>Você acorda e a primeira meia hora vai embora abrindo agenda, e-mail, painel de vendas e grupo da equipe só para descobrir como está o dia.</p>
+    <p>Você agenda uma tarefa recorrente: às 6h40 o agente varre a agenda, os e-mails da madrugada, os números do dia anterior e as pendências em aberto. Às 7h o resumo chega no seu WhatsApp, organizado por prioridade.</p>
+    <p class="note"><b>Você não começa o dia se organizando. Começa executando — e já sabendo o que mudou enquanto dormia.</b></p>
   </div>
 
   <div class="sec" id="c2">
-    <h2><em>02</em>Conteúdo que soa como você</h2>
-    <p>Você passa 20 minutos editando um texto gerado por IA porque o conteúdo parece genérico, formal demais, ou simplesmente não é você.</p>
-    <p>O agente analisa o seu histórico real de conteúdo: posts, legendas, e-mails. Ele mapeia padrões concretos — as expressões que você usa, o tamanho médio dos parágrafos, se você começa com dado ou com pergunta, o seu ritmo de escrita.</p>
-    <p class="note"><b>Com esse perfil construído, o conteúdo gerado já sai calibrado para a sua voz. Não é template: é o seu estilo operando em escala.</b></p>
+    <h2><em>02</em>Caixa de entrada triada pela sua regra</h2>
+    <p>47 mensagens não lidas. Newsletter, lead quente, cobrança, spam disfarçado e um cliente esperando resposta há 18 horas. Tudo parece urgente e nada está organizado.</p>
+    <p>Você escreve uma vez o que é prioridade, o que é ruído e o que nunca pode ser respondido sem você. O agente lê cada mensagem, usa o histórico com aquela pessoa para entender o contexto, e separa: responder agora, responder depois, arquivar.</p>
+    <p class="note"><b>Você abre o e-mail e vê uma lista curta do que exige ação sua. O resto já foi classificado — e os rascunhos do que dá para responder já estão prontos esperando o seu ok.</b></p>
   </div>
 
   <div class="sec" id="c3">
-    <h2><em>03</em>Backlog que executa enquanto você dorme</h2>
-    <p>São 23h. Você tem uma lista de tarefas que não andou hoje: analisar os dados da última campanha, pesquisar referências para o próximo conteúdo, rascunhar três variações de copy para o lançamento.</p>
-    <p>Antes de fechar o computador, você delega essas tarefas ao agente com instruções simples. Ele executa cada uma de forma autônoma: puxa os dados, pesquisa nas fontes configuradas, produz os rascunhos e organiza tudo em pastas com nome, data e contexto.</p>
-    <p class="note"><b>Você não acorda com a lista intacta. Acorda com ela feita esperando a sua revisão.</b></p>
+    <h2><em>03</em>Nota fiscal e boleto que chegam por e-mail</h2>
+    <p>Todo mês os mesmos PDFs caem na caixa: nota do fornecedor, boleto do aluguel, fatura da ferramenta. Você baixa, renomeia, joga numa pasta e no fim do mês não acha metade.</p>
+    <p>O agente monitora a caixa, identifica os anexos que são documento fiscal, lê o valor, o vencimento e o emissor, renomeia com um padrão e arquiva na pasta certa. O que está perto de vencer ele avisa.</p>
+    <p class="note"><b>No fim do mês a pasta do contador já está montada. Você para de fazer o trabalho de digitação e só confere.</b></p>
   </div>
 
   <div class="sec" id="c4">
-    <h2><em>04</em>Monitor de concorrentes</h2>
-    <p>Você sabe que deveria acompanhar seus concorrentes com mais consistência. Mas na prática isso significa abrir dezenas de abas, checar redes sociais, ler comunicados, e ainda assim sentir que perdeu alguma coisa importante.</p>
-    <p>O agente conecta em fontes como Google Alerts, perfis públicos de redes sociais e sites de reviews do seu nicho. Ele filtra o ruído, detecta movimentos relevantes — um novo produto, uma mudança de posicionamento, uma campanha crescendo — e entrega um resumo diário ou semanal.</p>
-    <p class="note"><b>Você para de caçar informação e começa a receber inteligência. A diferença é enorme.</b></p>
+    <h2><em>04</em>Back-office do seu serviço</h2>
+    <p>Você fecha o serviço no WhatsApp, promete o orçamento para hoje, esquece. Depois esquece de emitir a nota. Depois adia a cobrança porque cobrar é constrangedor.</p>
+    <p>O agente pega o combinado da conversa, monta o orçamento no seu modelo, te manda para aprovar, envia. Registra o aceite, lembra da emissão da nota e acompanha o vencimento — disparando o lembrete leve no terceiro dia e a segunda cobrança na semana seguinte.</p>
+    <p class="note"><b>O dinheiro que ficava parado por esquecimento ou por vergonha volta a entrar, sem você ter a conversa difícil toda vez.</b></p>
   </div>
 
   <div class="sec" id="c5">
-    <h2><em>05</em>A cobrança que ninguém quer fazer</h2>
-    <p>Três clientes estão com pagamento atrasado. Você sabe. Você adia porque cobrar é constrangedor, e quando lembra já passaram mais duas semanas.</p>
-    <p>O agente acompanha os vencimentos, identifica quem atrasou e há quantos dias, e dispara a mensagem certa para cada caso: lembrete leve no terceiro dia, segunda cobrança na semana seguinte, aviso formal depois disso. Tudo com o seu texto, aprovado por você uma vez.</p>
-    <p class="note"><b>O dinheiro que ficava parado por vergonha volta a entrar. Sem você precisar ter a conversa difícil toda vez.</b></p>
+    <h2><em>05</em>Monitor de página: preço, vaga, disponibilidade</h2>
+    <p>Tem uma coisa que você fica conferindo na mão: o preço de um insumo, a abertura de um edital, a vaga na agenda de um fornecedor, o estoque de um concorrente.</p>
+    <p>O agente abre a página no navegador quantas vezes por dia você mandar, compara com a última leitura e só te chama quando algo muda de verdade. Sem alerta falso e sem você abrir vinte abas.</p>
+    <p class="note"><b>Você para de conferir e passa a ser avisado. É a diferença entre vigiar e ser notificado.</b></p>
   </div>
 
   <div class="sec" id="c6">
-    <h2><em>06</em>O relatório que se escreve sozinho</h2>
-    <p>Sexta-feira, fim do dia. Você precisa fechar a semana: quanto entrou, quantos leads, o que performou, o que travou. Acaba sempre no domingo à noite, no olho.</p>
-    <p>O agente puxa os números direto das fontes — planilha, gateway de pagamento, métricas das redes — compara com a semana anterior e escreve o resumo em texto, apontando o que mudou e o que merece atenção.</p>
-    <p class="note"><b>Você deixa de montar o relatório e passa a ler o relatório. O tempo vai todo para a decisão.</b></p>
+    <h2><em>06</em>Áudio de cliente que vira tarefa</h2>
+    <p>O cliente manda quatro minutos de áudio com três pedidos no meio. Você ouve, acha que memorizou, e no dia seguinte lembra de dois.</p>
+    <p>O agente transcreve o áudio, separa o que é pedido do que é conversa, e transforma cada pedido em item com prazo e responsável na sua lista. O que ficou ambíguo ele marca como dúvida para você confirmar.</p>
+    <p class="note"><b>Nada mais se perde dentro de um áudio. E você tem o registro escrito do que foi combinado.</b></p>
   </div>
 
   <div class="sec" id="c7">
-    <h2><em>07</em>Leitura de comunidade em tempo real</h2>
-    <p>Seu grupo de clientes tem 400 pessoas. Os comentários dos últimos posts, mais algumas centenas. Tem dúvida, reclamação, sugestão e tendência surgindo ali dentro. Você não consegue ler tudo.</p>
-    <p>O agente monitora essas conversas e identifica padrões de linguagem: temas que aparecem com frequência, perguntas que se repetem, sentimentos predominantes em cada canal. Ele organiza isso em relatórios periódicos com os sinais mais relevantes.</p>
-    <p class="note"><b>O que antes se perdia no volume de mensagens vira coisa concreta: o próximo tema de conteúdo, o ponto de atrito que precisa de ajuste.</b></p>
+    <h2><em>07</em>Editais e vagas que combinam com você</h2>
+    <p>Existe oportunidade boa aparecendo toda semana — edital, licitação, chamada, vaga — e você só descobre quando já passou o prazo.</p>
+    <p>Você entrega ao agente o seu perfil: o que você faz, para quem, qual porte de projeto vale a pena. Ele varre as fontes que você indicar, compara cada oportunidade com esse perfil e descarta o que não encaixa.</p>
+    <p class="note"><b>Chega para você só o que dá para ganhar, com o prazo em destaque e o motivo de ter passado no filtro.</b></p>
   </div>
 
   <div class="sec" id="c8">
-    <h2><em>08</em>Ideias que não se perdem</h2>
-    <p>Você tem uma ideia no banho. Outra no meio de uma reunião. Outra às 23h antes de dormir. Registra em lugares diferentes: nota no celular, áudio, papel, thread no WhatsApp. Depois não acha mais, ou acha e não lembra o contexto.</p>
-    <p>O agente captura essas ideias de múltiplas fontes, identifica duplicatas, agrupa por tema e organiza num backlog estruturado com tags, contexto original e nível de maturidade.</p>
-    <p class="note"><b>Ideias rasas ficam marcadas para desenvolver. Ideias mais elaboradas já entram com sugestão de próximo passo.</b></p>
+    <h2><em>08</em>Segundo cérebro que responde</h2>
+    <p>Você tem anotação no celular, print na galeria, link salvo, PDF baixado e áudio gravado. Tem tudo. Mas não acha nada na hora que precisa.</p>
+    <p>O agente organiza esse material em arquivos Markdown na sua própria máquina — dá para usar com o Obsidian — indexa por significado e não por palavra exata. Aí você pergunta em linguagem normal: o que a gente combinou com aquele fornecedor em março?</p>
+    <p class="note"><b>O arquivo morto vira consulta. E como tudo está no seu disco, você não depende de nenhuma nuvem para continuar consultando.</b></p>
   </div>
 
   <div class="sec" id="c9">
-    <h2><em>09</em>Dossiê antes da reunião</h2>
-    <p>Reunião às 14h com um cliente novo. Às 13h50 você ainda está procurando o site dele, tentando lembrar o que foi combinado no último contato e o que a empresa faz exatamente.</p>
-    <p>O agente lê o convite da agenda, identifica quem são os participantes, busca o histórico de conversas com aquela pessoa, o que está público sobre a empresa, e monta um resumo de uma página com os pontos em aberto.</p>
-    <p class="note"><b>Você entra na reunião sabendo com quem está falando. Isso muda a conversa inteira.</b></p>
+    <h2><em>09</em>Check-in, reserva e agendamento</h2>
+    <p>Check-in de voo que abre às 3h, horário de quadra que some em minutos, consulta que precisa ser remarcada, formulário chato de preencher toda vez.</p>
+    <p>Como o agente controla um navegador de verdade, ele faz o caminho que você faria: entra, preenche, escolhe e conclui. Você define o que ele pode concluir sozinho e o que precisa parar e te perguntar antes.</p>
+    <p class="note"><b>As tarefas que só existem porque alguém precisa clicar param de consumir o seu dia.</b></p>
   </div>
 
   <div class="sec" id="c10">
-    <h2><em>10</em>Seu dia começa antes de você</h2>
-    <p>São 7h da manhã. Você ainda está tomando café. Mas o agente já trabalhou: varreu a sua agenda, leu seus e-mails, puxou as métricas do dia anterior, verificou as pendências em aberto e identificou o que precisa de atenção hoje.</p>
-    <p>Tudo isso chega para você em um único resumo, organizado por prioridade, com contexto suficiente para você já saber o que fazer sem precisar ir atrás de cada informação separadamente.</p>
-    <p class="note"><b>Você não começa o dia se organizando. Você começa o dia executando.</b></p>
+    <h2><em>10</em>O que travou enquanto você dormia</h2>
+    <p>Alguma coisa quebrou às 2h: o site saiu do ar, uma integração parou, um pagamento falhou. Você descobre pelo cliente, às 9h, e já começa o dia atrasado.</p>
+    <p>O agente acompanha os canais de erro e os serviços que você indicar. Quando algo cai, ele registra o que aconteceu, junta o contexto, tenta o procedimento de recuperação que você autorizou e deixa o relato pronto.</p>
+    <p class="note"><b>Você acorda sabendo o que houve, o que já foi feito e o que sobrou para decidir. Não descobrindo pelo cliente.</b></p>
   </div>
 
 </main>

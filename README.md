@@ -53,7 +53,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
-| `CASOS` | `/conteudos/casos` | 10 casos de uso de agentes de IA |
+| `CASOS` | `/conteudos/casos` | OpenClaw: 10 casos de uso práticos |
 | `PROMPT` → por post | `/conteudos/estetica` | 5 prompts de retrato estético |
 | `PROMPT` → por post | `/conteudos/cinema` | 5 prompts de cinema |
 | `PROMPT` → por post | `/conteudos/poster` | 6 prompts de pôster de produto |
