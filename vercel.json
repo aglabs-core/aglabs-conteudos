@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/surpresa",
+      "destination": "/conteudos/surpresa",
+      "permanent": false
+    },
+    {
       "source": "/dicionario",
       "destination": "/conteudos/dicionario",
       "permanent": false
