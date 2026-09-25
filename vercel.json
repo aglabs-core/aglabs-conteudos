@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/style",
+      "destination": "/conteudos/style",
+      "permanent": false
+    },
+    {
       "source": "/anuncios",
       "destination": "/conteudos/anuncios",
       "permanent": false
