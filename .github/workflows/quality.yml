@@ -1,0 +1,40 @@
+name: Qualidade
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      # Site estático, sem build: confere o <head>, a prévia e o atalho de cada material.
+      - run: node scripts/checar-paginas.mjs
+
+      # Portão de produção: este passo só roda se todos os anteriores passaram.
+      # Passa a valer quando o secret DEPLOY_HOOK_URL existir (deploy hook da
+      # Vercel) e o deploy automático por push estiver desligado na plataforma.
+      # Sem o secret, nada muda.
+      - name: Disparar deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$DEPLOY_HOOK_URL" ]; then
+            echo "::notice::DEPLOY_HOOK_URL ausente: o deploy segue pelo automático da plataforma."
+            exit 0
+          fi
+          curl -fsS -X POST "$DEPLOY_HOOK_URL" -o /dev/null
