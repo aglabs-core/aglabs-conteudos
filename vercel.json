@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/estudio",
+      "destination": "/conteudos/estudio",
+      "permanent": false
+    },
+    {
       "source": "/style",
       "destination": "/conteudos/style",
       "permanent": false
