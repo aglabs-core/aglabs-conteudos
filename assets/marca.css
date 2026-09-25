@@ -21,3 +21,14 @@ header .brand-image, header .logo img {
   transform: translateY(1px); /* Alinhamento óptico com a altura das letras. */
 }
 header .wrap { height: 66px; max-width: 920px; }
+
+/* Chamada para o app, igual em todas as páginas de prompt. Cores com
+   fallback porque cada página define os próprios tokens. */
+.app-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px 24px; margin: 8px 0 0; padding: 22px 24px; border: 1px solid var(--line, #292a2d);
+  border-radius: 14px; }
+.app-cta-t { font-weight: 700; font-size: 17px; color: var(--ink, #f3f3f3); }
+.app-cta-d { margin: 4px 0 0; font-size: 14px; color: var(--muted, #a2a3aa); max-width: 520px; }
+.app-cta-btn { display: inline-block; padding: 11px 18px; border-radius: 999px; background: #a8c8f8;
+  color: #0f0f0f; font-weight: 700; font-size: 14px; text-decoration: none; white-space: nowrap; }
+.app-cta-btn:hover, .app-cta-btn:focus-visible { background: #c4dafb; }
