@@ -26,6 +26,8 @@ Projeto transferido para `D:\projetos github\conteudos-gratuito` com histórico 
 - `conteudos/colagem/index.html`: quatro prompts de colagem editorial. Palavra-chave `PROMPT`, slug pelo tema.
 - `conteudos/especifico/index.html`: dois prompts de conteúdo específico, em quatro etapas. Slug da palavra-chave `ESPECIFICO`.
 - `conteudos/claw/index.html`: link oficial do OpenClaw e cinco casos de uso. Slug da palavra-chave `CLAW`.
+- `assets/capas/`: prévias de link (1200×630) feitas a partir da capa de cada carrossel.
+- `scripts/checar-paginas.mjs`: confere o `<head>`, a prévia, o atalho e o catálogo de cada material.
 - `vercel.json`: URLs limpas e cabeçalhos de segurança.
 
 ## Prévia local
@@ -35,10 +37,12 @@ Na raiz, execute `python -m http.server 3045 --bind 127.0.0.1` e abra `http://12
 ## Adicionar material
 
 1. Crie `conteudos/<slug>/index.html` e a pasta `pacote/`, se houver arquivos.
-2. Defina título, descrição e âncoras. Use o guia de rotina como referência e mantenha o retorno à biblioteca.
+2. Defina título, descrição e âncoras. Use o guia de rotina como referência e mantenha o retorno à biblioteca. Ao copiar outra página, reescreva todo o `<head>`: `description`, `og:title`, `og:description`, `og:url`, canônica e `twitter:card` são do material novo.
+   A prévia do link (`og:image`) é a capa do carrossel em `assets/capas/<slug>.jpg`, 1200×630 e até 300 KB. Acima disso o WhatsApp não mostra a imagem. Sem carrossel, use `https://aglabs.ia.br/opengraph.jpg`.
 3. Adicione um `article` dentro de `#catalogo` em `index.html`, com título, resumo e link. Inclua temas e sinônimos em `data-keywords`. A busca e a contagem reconhecem todos os artigos automaticamente; a busca ignora acentos e maiúsculas. Atualize também a contagem inicial do HTML, exibida quando JavaScript estiver desativado.
 4. Se houver captura, use um script próprio e ajuste a origem e o destino do pacote. Não reutilize a origem `rotina` em outro material.
 5. Confira os links, o celular e os botões antes de publicar o post.
+6. Rode `node scripts/checar-paginas.mjs`. O mesmo teste roda no CI a cada push e pull request.
 
 ## Slug = palavra-chave do CTA
 
