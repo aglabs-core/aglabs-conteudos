@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A stack que publica uma conta sozinha | AG LABS</title>
+<meta name="description" content="As 6 etapas que publicam 2 posts por dia no Instagram: Claude, Replicate, render em HTML, Supabase, Postiz e n8n — e onde cada uma entra. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/stack">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A stack que publica uma conta sozinha | AG LABS">
+<meta property="og:description" content="Seis etapas, da tarefa agendada até a resposta no direct. O que cada uma faz e por que a ordem importa.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/stack">
+<meta property="og:image" content="https://aglabs.ia.br/opengraph.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/stack.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>A stack que publica<br><span>uma conta sozinha.</span></h1>
+    <p class="lead">Ningu&eacute;m pergunta a coisa certa. A pergunta n&atilde;o &eacute; &ldquo;qual IA voc&ecirc;
+    usa&rdquo; &mdash; &eacute; em que ordem as ferramentas se chamam. Estas s&atilde;o as seis etapas que
+    publicam dois posts por dia na @ag_labs, e o que cada uma resolve.</p>
+    <div class="meta">6 etapas &middot; 5 min de leitura</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#ordem">A ordem</a><a href="#e01">Claude</a><a href="#e02">Replicate</a><a href="#e03">HTML + navegador</a><a href="#e04">Supabase</a><a href="#e05">Postiz</a><a href="#e06">n8n</a><a href="#custo">O custo</a></nav>
+  </div>
+
+  <div class="sec" id="ordem">
+    <h2>A ordem importa mais que a escolha</h2>
+    <p>D&aacute; para trocar quase qualquer uma destas ferramentas por outra parecida e a
+    opera&ccedil;&atilde;o continua de p&eacute;. O que n&atilde;o d&aacute; para trocar &eacute; a <b>ordem</b>: cada etapa
+    entrega alguma coisa no formato exato que a pr&oacute;xima espera receber.</p>
+    <p class="note"><b>Onde a maioria trava.</b> Quase sempre entre a 04 e a 05 &mdash; a pessoa
+    gera a imagem, tem o arquivo na m&atilde;o e descobre que a API do Instagram n&atilde;o aceita
+    upload de arquivo, s&oacute; URL p&uacute;blica. A etapa chata &eacute; a que ningu&eacute;m conta.</p>
+  </div>
+
+  <div class="sec" id="e01">
+    <h2><em>01</em>Claude</h2>
+    <p class="sub">o que opera a conta &middot; <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai &#8599;</a></p>
+    <p>Abre no horário por tarefa agendada, lê a fila de posts, escolhe o próximo pela grade de pilares e chama todas as outras etapas.</p>
+    <p class="note">É a única das cinco que <b>executa</b> em vez de responder. Sem ela, as outras quatro seriam scripts que alguém precisa lembrar de rodar.</p>
+  </div>
+
+  <div class="sec" id="e02">
+    <h2><em>02</em>Replicate</h2>
+    <p class="sub">onde a imagem nasce &middot; <a href="https://replicate.com" target="_blank" rel="noopener">replicate.com &#8599;</a></p>
+    <p>Um endereço só para vários modelos de imagem, cobrados por uso, sem assinatura de cada um.</p>
+    <p class="note">Modelo diferente serve para coisa diferente: retrato pede um, cena dirigida pede outro. Usar um modelo só para tudo é o erro mais comum de quem começa.</p>
+  </div>
+
+  <div class="sec" id="e03">
+    <h2><em>03</em>HTML + navegador</h2>
+    <p class="sub">a etapa sem logo &middot; <span>sem site: é código seu</span></p>
+    <p>A arte não é feita em editor de imagem: cada slide é uma página web, e o navegador tira o print dela em 1080×1350.</p>
+    <p class="note">É o que faz um formato virar molde. Post novo é trocar o conteúdo, não redesenhar — e foi isso que permitiu ter vários formatos sem retrabalho.</p>
+  </div>
+
+  <div class="sec" id="e04">
+    <h2><em>04</em>Supabase</h2>
+    <p class="sub">a área de passagem &middot; <a href="https://supabase.com" target="_blank" rel="noopener">supabase.com &#8599;</a></p>
+    <p>Guarda os JPEGs por alguns minutos e serve cada um numa URL pública.</p>
+    <p class="note">Etapa que ninguém lembra até tentar publicar por API: <b>o Instagram não aceita arquivo</b>, ele busca uma URL. Depois de publicar, a pasta é limpa.</p>
+  </div>
+
+  <div class="sec" id="e05">
+    <h2><em>05</em>Postiz</h2>
+    <p class="sub">quem publica &middot; <a href="https://postiz.com" target="_blank" rel="noopener">postiz.com &#8599;</a></p>
+    <p>Recebe os slides na ordem e a legenda, e posta no Instagram, LinkedIn, Threads e Facebook.</p>
+    <p class="note">Um post, quatro canais, sem refazer nada. O trabalho de adaptar para cada rede é onde a maioria desiste de manter presença em mais de um lugar.</p>
+  </div>
+
+  <div class="sec" id="e06">
+    <h2><em>06</em>n8n</h2>
+    <p class="sub">quem responde &middot; <a href="https://n8n.io" target="_blank" rel="noopener">n8n.io &#8599;</a></p>
+    <p>Guarda as palavras-chave. Quando alguém comenta a palavra do post, o material sai no direct.</p>
+    <p class="note">É a única etapa que fala com quem está do outro lado — e a única que traz contato de verdade. Sem ela o carrossel acaba no like.</p>
+  </div>
+
+
+  <div class="sec" id="custo">
+    <h2>O que custa e o que n&atilde;o custa</h2>
+    <p>Das seis, tr&ecirc;s t&ecirc;m plano gratuito que aguenta come&ccedil;ar (Supabase, n8n e Postiz, com
+    limites), uma &eacute; paga por uso (Replicate cobra por imagem gerada), uma &eacute; assinatura
+    (Claude) e uma n&atilde;o custa nada porque &eacute; c&oacute;digo seu (o render em HTML).</p>
+    <p class="note"><b>O gargalo nunca foi a ferramenta.</b> Era o tempo entre ter a ideia e
+    ela estar no ar. S&atilde;o 45 edi&ccedil;&otilde;es publicadas em 37 dias, por uma pessoa e nenhum
+    designer &mdash; e o que mudou n&atilde;o foi a qualidade das ferramentas, foi elas pararem de
+    esperar por mim entre uma etapa e outra.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/stack.js" defer></script>
+</body>
+</html>
