@@ -59,6 +59,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
 | `STACK` | `/conteudos/stack` | A stack que publica a conta, 6 etapas |
 | `ESTUDIO` | `/conteudos/estudio` | Fundos de estúdio com IA, 5 prompts |
+| `PROMPT` → por post | `/conteudos/perfil-estudio` | 5 prompts de foto de perfil |
 | `PROMPT` → por post | `/conteudos/fragmentos` | 5 prompts de pôster editorial |
 | `PROMPT` → por post | `/conteudos/style` | 5 prompts de retrato street style |
 | `PROMPT` → por post | `/conteudos/anuncios` | 5 prompts de anúncio de produto |
