@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/respeito",
+      "destination": "/conteudos/respeito",
+      "permanent": false
+    },
+    {
       "source": "/perfil-estudio",
       "destination": "/conteudos/perfil-estudio",
       "permanent": false
