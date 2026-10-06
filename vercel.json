@@ -4,6 +4,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/orquestra",
+      "destination": "/conteudos/orquestra",
+      "permanent": false
+    },
+    {
+      "source": "/bolsa",
+      "destination": "/conteudos/bolsa",
+      "permanent": false
+    },
+    {
       "source": "/respeito",
       "destination": "/conteudos/respeito",
       "permanent": false

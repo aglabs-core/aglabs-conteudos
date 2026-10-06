@@ -57,6 +57,8 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
+| `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |
+| `PROMPT` → por post | `/conteudos/bolsa` | 6 prompts de campanha de produto |
 | `STACK` | `/conteudos/stack` | A stack que publica a conta, 6 etapas |
 | `ESTUDIO` | `/conteudos/estudio` | Fundos de estúdio com IA, 5 prompts |
 | `PROMPT` → por post | `/conteudos/respeito` | 5 prompts de foto de perfil realista |
