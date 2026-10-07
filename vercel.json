@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/motion",
+      "destination": "/conteudos/motion",
+      "permanent": false
+    },
+    {
       "source": "/orquestra",
       "destination": "/conteudos/orquestra",
       "permanent": false
