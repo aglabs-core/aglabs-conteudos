@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/compara",
+      "destination": "/conteudos/compara",
+      "permanent": false
+    },
+    {
       "source": "/potes",
       "destination": "/conteudos/potes",
       "permanent": false
