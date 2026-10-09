@@ -57,6 +57,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `perfil` | `/conteudos/perfil` | Foto de perfil em preto e branco |
 | `CLAW` | `/conteudos/claw` | OpenClaw |
 | `GPT` | `/conteudos/gpt` | 5 prompts cirúrgicos para o ChatGPT |
+| `EDITA` | `/conteudos/edita` | 7 prompts para o Claude editar vídeos |
 | `COMPARA` | `/conteudos/compara` | Comparativo Dots, Muse e Grok Bot |
 | `MOTION` | `/conteudos/motion` | 6 prompts de motion para o Claude |
 | `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |

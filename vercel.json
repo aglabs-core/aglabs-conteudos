@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/edita",
+      "destination": "/conteudos/edita",
+      "permanent": false
+    },
+    {
       "source": "/compara",
       "destination": "/conteudos/compara",
       "permanent": false

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7 prompts para o Claude editar seus vídeos | AG LABS</title>
+<meta name="description" content="Sete prompts, na ordem, para o Claude Code cortar silêncios, legendar e exportar seu vídeo bruto em MP4 com o ffmpeg. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/edita">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7 prompts para o Claude editar seus vídeos | AG LABS">
+<meta property="og:description" content="Você entrega o vídeo bruto e o Claude edita. Sete prompts para copiar.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/edita">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/edita.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Entregue o bruto.<br><span>O Claude edita.</span></h1>
+    <p class="lead">Sete prompts, na ordem, para o Claude cortar sil&ecirc;ncios, legendar e exportar o seu v&iacute;deo. Sem cadastro.</p>
+    <div class="meta">7 prompts &middot; Claude Code + ffmpeg &middot; 8 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#como">Antes de come&ccedil;ar</a><a href="#c1">Preparar</a><a href="#c2">Iniciar</a><a href="#c3">Briefing</a><a href="#c4">Referência</a><a href="#c5">Produzir</a><a href="#c6">Exportar</a><a href="#c7">Salvar</a><a href="#limites">Limites</a></nav>
+  </div>
+
+  <div class="sec" id="como">
+    <h2>Antes de come&ccedil;ar</h2>
+    <ol>
+      <li>Voc&ecirc; precisa do <b>Claude Code</b>: no app do Claude para computador, &eacute; a aba <b>Code</b>. Ele faz parte dos planos pagos do Claude.</li>
+      <li>Crie uma pasta vazia no computador, por exemplo <b>videos</b>, e abra essa pasta no Claude Code. Tudo acontece ali dentro; os arquivos n&atilde;o saem da sua m&aacute;quina.</li>
+      <li>A edi&ccedil;&atilde;o &eacute; feita pelo <b>ffmpeg</b>, um programa gratuito. Se voc&ecirc; n&atilde;o tiver, o primeiro prompt faz o Claude mostrar como instalar.</li>
+      <li>Cole os prompts <b>na ordem</b>, um por vez, e espere ele terminar antes do pr&oacute;ximo. Troque o que est&aacute; entre <b>colchetes</b>.</li>
+    </ol>
+    <p class="note">O Claude vai pedir permiss&atilde;o para rodar comandos e criar arquivos. Leia o que ele pede antes de aceitar: nesta pasta, ele s&oacute; deve mexer em teste/ e pronto/.</p>
+    <p class="note">Os prompts 1 e 7 voc&ecirc; usa uma vez. No dia a dia s&atilde;o o 2, 3, 5 e 6; o 4 s&oacute; quando quiser imitar o estilo de um v&iacute;deo.</p>
+  </div>
+
+  <div class="sec" id="c1">
+    <h2><em>01</em>Preparar</h2>
+    <p class="sub">Você prepara tudo uma vez e deixa o Claude pronto para editar.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 01 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Você vai ser meu editor de vídeo. Trabalhe só dentro desta pasta.
+
+1. Confira se o ffmpeg está instalado (ffmpeg -version). Se não estiver, me diga o comando para instalar no meu sistema e espere eu confirmar.
+2. Crie as pastas: bruto/ (meus vídeos originais), referencia/ (vídeos que eu quero imitar), teste/ e pronto/.
+3. Crie o arquivo METODO.md com o que você já sabe sobre mim: formato padrão vertical 1080x1920, 30 fps, legenda embutida, áudio em -16 LUFS.
+4. Nunca apague nem altere nada em bruto/. Todo arquivo novo vai para teste/ ou pronto/.
+
+Quando terminar, me mostre a estrutura criada e pare.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c2">
+    <h2><em>02</em>Iniciar</h2>
+    <p class="sub">Ele abre a sessão, relembra o contexto e pergunta o que vamos fazer hoje.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 02 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Leia o METODO.md e liste o que existe em bruto/ e em referencia/ (nome, duração e resolução de cada arquivo, usando ffprobe).
+
+Depois me pergunte, uma coisa por vez:
+- qual vídeo de bruto/ vamos editar hoje
+- se uso alguma referência
+- onde o vídeo vai ser publicado
+
+Não edite nada ainda.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c3">
+    <h2><em>03</em>Briefing</h2>
+    <p class="sub">Nada é editado no chute. Primeiro ele entende o vídeo, o objetivo e o formato.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 03 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Antes de editar, analise o vídeo que eu escolhi:
+
+1. Transcreva a fala com marcação de tempo (use o Whisper local; se não tiver, me diga como instalar).
+2. Liste os trechos de silêncio com mais de 0,6 s e as repetições de fala.
+3. Me devolva um plano de edição em tabela: trecho, o que acontece, manter ou cortar, e por quê.
+4. Diga a duração estimada do vídeo final.
+
+Objetivo deste vídeo: [EX.: REEL DE ATÉ 45 S QUE EXPLICA X E TERMINA COM CHAMADA PARA COMENTAR].
+Espere eu aprovar o plano.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c4">
+    <h2><em>04</em>Referência</h2>
+    <p class="sub">Se você quer um estilo específico, ele estuda a referência e transforma em ficha de estilo.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 04 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Estude o vídeo em referencia/[NOME DO ARQUIVO] e escreva uma ficha de estilo em referencia/ESTILO.md:
+
+- ritmo: duração média de cada corte
+- legenda: posição, tamanho, quantas palavras por vez, cor de destaque
+- enquadramento: zooms, cortes secos ou transições
+- som: tem trilha? em que volume em relação à voz?
+
+Tire um quadro a cada 2 segundos para olhar (ffmpeg) e baseie a ficha no que você viu, não em suposição. Diga também o que da referência você não consegue reproduzir só com ffmpeg.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c5">
+    <h2><em>05</em>Produzir</h2>
+    <p class="sub">Depois do seu OK, ele faz um teste curto e só então monta o vídeo inteiro.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 05 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Plano aprovado. Agora:
+
+1. Monte só os primeiros 10 segundos, seguindo o plano e a ficha de estilo: cortes, legenda embutida palavra a palavra e enquadramento vertical.
+2. Salve em teste/teste-10s.mp4 e me mostre 3 quadros dele.
+3. Espere o meu OK.
+
+Depois do OK, monte o vídeo inteiro com as mesmas regras e salve em teste/completo.mp4. Se eu pedir ajuste, mude uma coisa por vez.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c6">
+    <h2><em>06</em>Exportar</h2>
+    <p class="sub">No final, ele renderiza, confere som e imagem e deixa pronto para postar.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 06 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Exporte a versão final em pronto/[NOME].mp4:
+
+- 1080x1920, 30 fps, H.264 yuv420p, AAC 48 kHz, com faststart
+- áudio normalizado em -16 LUFS, sem estouro
+- arquivo abaixo de 50 MB
+
+Depois confira com ffprobe e me devolva: resolução, duração, tamanho e volume medido. Tire um quadro de capa em pronto/[NOME]-capa.jpg, escolhendo um momento com o texto legível. Se algo estiver fora do padrão, corrija antes de me avisar.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c7">
+    <h2><em>07</em>Salvar</h2>
+    <p class="sub">Quando funciona, você salva o método e no próximo vídeo só digita /edita.</p>
+    <div class="box">
+      <div class="bar"><span>prompt 07 &middot; cole no Claude Code</span><button data-copy>copiar</button></div>
+      <pre>Este vídeo ficou bom. Salve o método:
+
+1. Atualize o METODO.md com as decisões que funcionaram: ritmo de corte, estilo de legenda, volume da trilha e os comandos do ffmpeg que você usou.
+2. Crie o comando .claude/commands/edita.md com o passo a passo completo (iniciar, briefing, teste de 10 s, vídeo inteiro, exportar), lendo o METODO.md no começo.
+
+Da próxima vez eu só coloco o vídeo em bruto/ e digito /edita.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="limites">
+    <h2>O que ele faz bem e o que n&atilde;o faz</h2>
+    <ul>
+      <li><b>Faz bem:</b> cortar sil&ecirc;ncio e repeti&ccedil;&atilde;o, legenda embutida, enquadrar em vertical, zoom e corte seco, trilha no volume certo, exportar no padr&atilde;o das redes.</li>
+      <li><b>N&atilde;o faz:</b> efeito elaborado, corre&ccedil;&atilde;o de cor fina e anima&ccedil;&atilde;o complexa sobre o v&iacute;deo. Isso continua sendo trabalho de editor.</li>
+      <li><b>Confira sempre:</b> a legenda. A transcri&ccedil;&atilde;o erra nomes pr&oacute;prios e termos t&eacute;cnicos; pe&ccedil;a a corre&ccedil;&atilde;o antes de exportar.</li>
+      <li>V&iacute;deo longo demora: a transcri&ccedil;&atilde;o e o render rodam no seu computador. Comece com um v&iacute;deo de at&eacute; 2 minutos.</li>
+    </ul>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
