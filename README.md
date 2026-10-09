@@ -61,6 +61,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `COMPARA` | `/conteudos/compara` | Comparativo Dots, Muse e Grok Bot |
 | `MOTION` | `/conteudos/motion` | 6 prompts de motion para o Claude |
 | `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |
+| `PROMPT` → por post | `/conteudos/vigia` | 5 prompts de retrato estilo câmera de vigilância |
 | `PROMPT` → por post | `/conteudos/potes` | 6 prompts de pôster de produto (bolo de pote) |
 | `PROMPT` → por post | `/conteudos/bolsa` | 6 prompts de campanha de produto |
 | `STACK` | `/conteudos/stack` | A stack que publica a conta, 6 etapas |

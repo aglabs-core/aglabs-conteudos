@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/vigia",
+      "destination": "/conteudos/vigia",
+      "permanent": false
+    },
+    {
       "source": "/edita",
       "destination": "/conteudos/edita",
       "permanent": false
