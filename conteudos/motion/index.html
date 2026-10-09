@@ -40,8 +40,8 @@
     <div class="kick">material gratuito</div>
     <h1>Motion com o Claude<br><span>sem After Effects.</span></h1>
     <p class="lead">Seis prompts para o Claude escrever a anima&ccedil;&atilde;o em c&oacute;digo e entregar o v&iacute;deo em MP4. Sem cadastro.</p>
-    <div class="meta">11 prompts &middot; 11 pr&eacute;vias em v&iacute;deo &middot; 8 min</div>
-    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#c1">Título Cinético</a><a href="#c2">Contador</a><a href="#c3">Gráfico De Barras</a><a href="#c4">Entrada De Logo</a><a href="#c5">Faixa De Notícia</a><a href="#c6">Citação</a><a href="#completos">V&iacute;deos completos</a></nav>
+    <div class="meta">12 prompts &middot; 12 pr&eacute;vias em v&iacute;deo &middot; 9 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#c1">Título Cinético</a><a href="#c2">Contador</a><a href="#c3">Gráfico De Barras</a><a href="#c4">Entrada De Logo</a><a href="#c5">Faixa De Notícia</a><a href="#c6">Citação</a><a href="#completos">V&iacute;deos completos</a><a href="#claro">Parede clara</a></nav>
   </div>
 
   <div class="sec" id="como">
@@ -168,6 +168,37 @@
     <div class="box">
       <div class="bar"><span>v&iacute;deo 05 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
       <pre>Crie um vídeo de apresentação pessoal de 15 segundos. Fundo preto alternando com [COR], tipografia bold com uma palavra por frase em itálico serifado, transições em cortina e em círculo, números com contagem. DADOS: [NOME], [CARGO], foto anexada, Instagram [@]. CENAS: 1) entra uma pílula colorida que se fecha num círculo; 2) a foto em círculo, com o nome se revelando ao lado e o cargo embaixo; 3) [FRASE DE IMPACTO]; 4) dois números com contagem: [DESTAQUE 1] e [DESTAQUE 2]; 5) o @ e um botão "Seguir" sendo clicado. Use a foto anexada dentro do círculo. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="claro">
+    <h2><em>06</em>Parede clara, texto fino</h2>
+    <p class="sub">O estilo do reel "Esse v&iacute;deo tem 13 segundos": fundo claro com sombra de janela, uma ideia por cena e um detalhe em degrad&ecirc;.</p>
+    <video src="/assets/motion/v06-parede-clara.mp4" poster="/assets/motion/v06-parede-clara.jpg" controls loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>v&iacute;deo 06 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
+      <pre>Crie uma animação de motion design em código (HTML e CSS) e me entregue o resultado em MP4, 1080x1920, 30 fps, com cerca de 13 segundos. Se você tiver as skills hyperframes, remotion ou video-use, use a que der o melhor resultado; se não tiver, renderize o HTML quadro a quadro com um navegador headless e monte o vídeo com o ffmpeg.
+
+ESTILO (siga à risca)
+- Fundo: parede cinza-claro (#E4E4E4) com sombras de janela em faixas diagonais, bem desfocadas, que se deslocam devagar durante o vídeo todo.
+- Tipografia: Inter. Frases em peso fino (300), preto, com uma palavra em peso extra-bold. Texto centralizado, pequeno em relação ao quadro, com muito espaço vazio em volta.
+- Cor de destaque: um degradê de magenta (#E6007E) para laranja (#FF8A00), usado só em uma palavra ou um elemento por cena.
+- Movimento: cada palavra entra sozinha, subindo 30 px com um leve desfoque que some. Cada cena sai com desfoque e um pequeno zoom. Curvas suaves, nada de quique exagerado. Uma ideia por cena, troca a cada 1,5 a 2 segundos.
+- No topo, fixo, pequeno: [SEU @].
+
+CENAS
+1. "[FRASE DE ABERTURA, EX.: Esse vídeo tem]" e, em seguida, um anel fino em degradê que se desenha como um relógio, com "[NÚMERO] [UNIDADE]" no centro.
+2. Uma pílula preta de cantos arredondados com o texto "[FRASE CURTA EM MAIÚSCULAS]", a última palavra em degradê, entrando da esquerda.
+3. Um ícone quadrado escuro de cantos bem arredondados, com [SÍMBOLO OU SIGLA] em degradê, e embaixo "[COM O QUÊ FOI FEITO]".
+4. Outro ícone igual, com "[O QUE VOCÊ NÃO USOU]", riscado por uma barra preta. Depois a frase "[apenas com]" e, grande e em degradê, "[SUA PALAVRA-CHAVE]".
+5. Uma pergunta: "[SUA PERGUNTA]", com um ponto de interrogação gigante e desfocado no canto.
+6. Um botão em degradê "[Seguir]", um cursor que chega e clica, e o botão vira "[Seguindo]".
+7. Fechamento: "comenta" em peso fino e, enorme e em degradê, "[SUA PALAVRA]".
+
+REGRAS
+- Sem imagens externas, sem logotipos de terceiros e sem áudio.
+- Todo o texto precisa ficar entre 220 px do topo e 1500 px, para não cair embaixo dos botões do Instagram.
+- Antes de renderizar o vídeo inteiro, me mostre 4 quadros para eu aprovar o estilo.</pre>
     </div>
   </div>
 
