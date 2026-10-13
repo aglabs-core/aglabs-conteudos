@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/caixinha",
+      "destination": "/conteudos/caixinha",
+      "permanent": false
+    },
+    {
       "source": "/vigia",
       "destination": "/conteudos/vigia",
       "permanent": false
