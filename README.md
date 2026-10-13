@@ -63,6 +63,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |
 | `PROMPT` → por post | `/conteudos/vigia` | 5 prompts de retrato estilo câmera de vigilância |
 | `CAIXA` | `/conteudos/caixinha` | Trend da caixinha: prompt e caixa vazia |
+| `HERMES` | `/conteudos/hermes` | Hermes Agent: 5 projetos para a empresa |
 | `PROMPT` → por post | `/conteudos/potes` | 6 prompts de pôster de produto (bolo de pote) |
 | `PROMPT` → por post | `/conteudos/bolsa` | 6 prompts de campanha de produto |
 | `STACK` | `/conteudos/stack` | A stack que publica a conta, 6 etapas |

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Agent: 5 projetos para começar na empresa | AG LABS</title>
+<meta name="description" content="Cinco projetos com o Hermes Agent para a empresa: atendente no WhatsApp, relatório diário, follow-up do CRM, equipe de conteúdo e o agente que aprende. O que ligar e o texto para colar.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/hermes">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hermes Agent: 5 projetos para começar na empresa | AG LABS">
+<meta property="og:description" content="Cinco projetos de empresa com o Hermes Agent, com o texto para colar em cada um.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/hermes">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/hermes.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Hermes Agent<br><span>5 projetos.</span></h1>
+    <p class="lead">Cinco projetos para colocar o Hermes para trabalhar na empresa, com o que ligar e o texto para colar em cada um. Sem cadastro.</p>
+    <div class="meta">5 projetos &middot; 5 textos para copiar &middot; 12 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#antes">Antes de come&ccedil;ar</a><a href="#p1">Atendente no WhatsApp</a><a href="#p2">Relatório das 8h</a><a href="#p3">Follow-up do CRM</a><a href="#p4">Equipe de conteúdo</a><a href="#p5">O agente que aprende</a><a href="#pronto">Quer pronto?</a></nav>
+  </div>
+
+  <div class="sec" id="antes">
+    <h2>Antes de come&ccedil;ar</h2>
+    <p>O Hermes Agent &eacute; um agente de c&oacute;digo aberto da Nous Research (licen&ccedil;a MIT). Ele roda num servidor simples, conversa por WhatsApp, Telegram, Slack, Discord, Signal e e-mail, tem agendador pr&oacute;prio e cria habilidades com o que aprende.</p>
+    <ol>
+      <li><b>Instale</b> num servidor Linux ou no seu computador (Linux, macOS ou WSL2):</li>
+    </ol>
+    <div class="box">
+      <div class="bar"><span>terminal &middot; instala&ccedil;&atilde;o</span><button data-copy>copiar</button></div>
+      <pre>curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash</pre>
+    </div>
+    <ol start="2">
+      <li><b>Configure</b> com <code>hermes setup</code>: ele pergunta o modelo e as ferramentas. Voc&ecirc; precisa de uma chave de um provedor de IA.</li>
+      <li><b>Ligue os canais</b> com <code>hermes gateway setup</code> e depois <code>hermes gateway start</code>.</li>
+      <li>Se algo n&atilde;o funcionar, rode <code>hermes doctor</code>.</li>
+    </ol>
+    <p class="note">No Windows existe instalador pr&oacute;prio em PowerShell. Os comandos e a documenta&ccedil;&atilde;o completa est&atilde;o em <a href="https://hermes-agent.nousresearch.com/docs/">hermes-agent.nousresearch.com/docs</a>. Este guia foi conferido com a documenta&ccedil;&atilde;o em 13/10/2026.</p>
+    <p class="note">Os textos abaixo s&atilde;o pontos de partida. Troque o que est&aacute; entre colchetes e ajuste depois de ver as primeiras respostas.</p>
+  </div>
+
+  <div class="sec" id="p1">
+    <h2><em>01</em>Atendente no WhatsApp</h2>
+    <p>Responde os clientes com base nos documentos da empresa e chama uma pessoa quando não sabe.</p>
+    <img src="/assets/hermes/p1.jpg" alt="Diagrama do projeto: Atendente no WhatsApp" loading="lazy" width="1020" height="580" style="display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:14px 0 18px">
+    <ol><li>Rode <code>hermes gateway setup</code> e ligue o WhatsApp. Ligue também o Telegram ou o Slack: é por lá que ele avisa a equipe.</li><li>Crie uma pasta com os seus documentos: preços, horários, regras de troca, perguntas frequentes. Arquivo de texto simples funciona melhor.</li><li>Mande a instrução abaixo para o agente, uma vez. Depois teste você mesmo, como se fosse um cliente.</li></ol>
+    <div class="box">
+      <div class="bar"><span>texto para colar no agente</span><button data-copy>copiar</button></div>
+      <pre>Você é o atendente da [NOME DA EMPRESA] no WhatsApp.
+
+Responda só com base nos arquivos da pasta [CAMINHO DA PASTA]. Antes de responder, procure a informação lá.
+
+Regras:
+- Tom: [educado e direto / informal / etc.]. Respostas curtas, sem textão.
+- Se a resposta não estiver nos arquivos, não invente. Diga que vai confirmar com a equipe e me avise no [Telegram/Slack] com o nome do cliente e a pergunta.
+- Não combine preço, prazo ou desconto que não esteja escrito nos arquivos.
+- Guarde na memória o nome do cliente e o que ele já perguntou.
+- Quando eu te passar a resposta de uma dúvida nova, salve para usar da próxima vez.</pre>
+    </div>
+    <p class="note">Comece com o agente respondendo só para você e para um colega. Abra para os clientes depois de uma semana lendo as respostas.</p>
+  </div>
+
+  <div class="sec" id="p2">
+    <h2><em>02</em>Relatório das 8h</h2>
+    <p>Todo dia útil, um resumo no seu Telegram, sem ninguém pedir.</p>
+    <img src="/assets/hermes/p2.jpg" alt="Diagrama do projeto: Relatório das 8h" loading="lazy" width="1020" height="580" style="display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:14px 0 18px">
+    <ol><li>Ligue o Telegram no <code>hermes gateway setup</code> e defina a conversa principal com <code>/sethome</code>.</li><li>Dê acesso às fontes: a planilha de vendas (arquivo ou um servidor MCP de planilhas) e a agenda.</li><li>Mande o pedido abaixo. O agendador é do próprio Hermes: você escreve o horário em português.</li></ol>
+    <div class="box">
+      <div class="bar"><span>texto para colar no agente</span><button data-copy>copiar</button></div>
+      <pre>Todo dia útil às 8h, me mande aqui no Telegram um resumo com:
+
+1. Vendas de ontem (total e número de pedidos) e a diferença para a média dos últimos 7 dias. Fonte: [PLANILHA].
+2. Os compromissos de hoje. Fonte: [AGENDA].
+3. Qualquer coisa fora do normal que você notar nos números.
+
+Formato: no máximo 8 linhas, sem introdução. Se uma fonte falhar, diga qual foi em vez de pular.</pre>
+    </div>
+    <p class="note">É o melhor primeiro projeto. Se o número vier errado, corrija na conversa: ele ajusta a tarefa agendada.</p>
+  </div>
+
+  <div class="sec" id="p3">
+    <h2><em>03</em>Follow-up do CRM</h2>
+    <p>Encontra os negócios parados e escreve o retorno. Você aprova o que sai.</p>
+    <img src="/assets/hermes/p3.jpg" alt="Diagrama do projeto: Follow-up do CRM" loading="lazy" width="1020" height="580" style="display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:14px 0 18px">
+    <ol><li>Ligue o seu CRM por MCP (veja se ele tem servidor MCP) ou pela API, com uma chave só de leitura no começo.</li><li>Ligue o canal em que você quer aprovar: Telegram ou Slack.</li><li>Mande a instrução abaixo.</li></ol>
+    <div class="box">
+      <div class="bar"><span>texto para colar no agente</span><button data-copy>copiar</button></div>
+      <pre>Todo dia útil às 9h:
+
+1. Abra o CRM e liste os negócios abertos sem contato há mais de [3] dias.
+2. Para cada um, leia as últimas mensagens e escreva um retorno curto, citando o ponto em que a conversa parou. Sem "só passando para saber".
+3. Me mande a lista aqui: cliente, valor, dias parado e o rascunho.
+4. Não envie nada ao cliente. Espere eu responder "aprovado", "editar: ..." ou "pular" para cada item.
+5. Depois de enviar o que eu aprovei, registre no CRM a data e o texto.</pre>
+    </div>
+    <p class="note">Deixe o envio manual nas primeiras semanas. Só ligue o disparo pelo agente quando os rascunhos estiverem saindo do jeito que você escreveria.</p>
+  </div>
+
+  <div class="sec" id="p4">
+    <h2><em>04</em>Equipe de conteúdo</h2>
+    <p>Um agente coordena três subagentes: um pesquisa, um escreve, um revisa.</p>
+    <img src="/assets/hermes/p4.jpg" alt="Diagrama do projeto: Equipe de conteúdo" loading="lazy" width="1020" height="580" style="display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:14px 0 18px">
+    <ol><li>Escreva um arquivo com o tom de voz da marca e cole três ou quatro posts que você considera bons.</li><li>Ligue uma ferramenta de busca na web em <code>hermes tools</code>.</li><li>Mande o pedido abaixo, trocando o tema.</li></ol>
+    <div class="box">
+      <div class="bar"><span>texto para colar no agente</span><button data-copy>copiar</button></div>
+      <pre>Preciso de [5] posts para o Instagram sobre [TEMA], para [PÚBLICO].
+
+Trabalhe com três subagentes:
+- Pesquisador: levanta fatos, números e fontes de cada post. Tudo com link.
+- Redator: escreve cada post seguindo o arquivo [GUIA DA MARCA].
+- Revisor: confere cada afirmação contra a fonte e o tom contra o guia. O que não passar volta para o redator com o motivo.
+
+Me entregue um arquivo por post, com o texto final, as fontes e uma linha dizendo o que o revisor mandou corrigir.</pre>
+    </div>
+    <p class="note">O revisor é o que faz diferença. Sem ele, o resultado é o de um agente só, com mais custo.</p>
+  </div>
+
+  <div class="sec" id="p5">
+    <h2><em>05</em>O agente que aprende</h2>
+    <p>Você ensina um processo uma vez e ele guarda o passo a passo.</p>
+    <img src="/assets/hermes/p5.jpg" alt="Diagrama do projeto: O agente que aprende" loading="lazy" width="1020" height="580" style="display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:14px 0 18px">
+    <ol><li>Escolha uma tarefa que se repete e tem regra: fechar o caixa, montar proposta, conferir estoque.</li><li>Faça a tarefa junto com o agente uma vez, corrigindo no caminho.</li><li>No final, mande o texto abaixo. Na próxima vez, chame a habilidade pelo nome com <code>/nome-da-habilidade</code>.</li></ol>
+    <div class="box">
+      <div class="bar"><span>texto para colar no agente</span><button data-copy>copiar</button></div>
+      <pre>Acabamos de fazer [TAREFA]. Crie uma habilidade com o passo a passo que funcionou, incluindo:
+
+- De onde vem cada dado.
+- As correções que eu fiz no caminho, como regra.
+- O que conferir antes de me entregar.
+- Em que situação você deve parar e me perguntar.
+
+Me mostre o arquivo antes de salvar.</pre>
+    </div>
+    <p class="note">As habilidades ficam em arquivos de texto. Abra e leia de vez em quando: se a regra mudou na empresa, mude no arquivo.</p>
+  </div>
+
+  <div class="sec" id="pronto">
+    <h2>Quer receber pronto?</h2>
+    <p>O Agente Corporativo da AG LABS &eacute; um agente como este, instalado, ligado aos seus canais e configurado para a sua empresa.</p>
+    <p><a href="https://wa.me/556493259857" style="display:inline-block;padding:11px 18px;border-radius:8px;background:#1746E0;color:#fff;font-weight:600;text-decoration:none">Falar com a AG LABS no WhatsApp</a></p>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
