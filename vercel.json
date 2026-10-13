@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/splash",
+      "destination": "/conteudos/splash",
+      "permanent": false
+    },
+    {
       "source": "/hermes",
       "destination": "/conteudos/hermes",
       "permanent": false
