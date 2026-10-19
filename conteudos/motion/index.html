@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>6 prompts de motion para o Claude | AG LABS</title>
-<meta name="description" content="Seis prompts para o Claude criar animações em código e entregar o vídeo em MP4: título cinético, contador, gráfico, logo, faixa de notícia e citação. Material gratuito da AG LABS.">
+<title>Motion com o Claude | AG LABS</title>
+<meta name="description" content="Prompts para o Claude criar motion em código e entregar o vídeo em MP4: animações curtas, vídeos completos e o reel de 13 segundos.">
 <link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/motion">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="6 prompts de motion para o Claude | AG LABS">
-<meta property="og:description" content="Motion com o Claude, sem After Effects. Seis prompts para copiar.">
+<meta property="og:title" content="Motion com o Claude | AG LABS">
+<meta property="og:description" content="Prompts para o Claude criar motion em código e entregar o vídeo em MP4: animações curtas, vídeos completos e o reel de 13 segundos.">
 <meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/motion">
 <meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/motion.jpg">
 <meta property="og:locale" content="pt_BR">
@@ -25,6 +25,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="stylesheet" href="/assets/marca.css">
+<script>
+(function(){var h=location.hash.slice(1);if(!h)return;var m={como:"prompts#como",completos:"completos",claro:"claro"};
+if(/^c[1-6]$/.test(h))m[h]="prompts#"+h;if(/^v[1-5]$/.test(h))m[h]="completos#"+h;
+if(m[h])location.replace("/conteudos/motion/"+m[h]);})();
+</script>
 </head>
 <body>
 
@@ -39,167 +44,24 @@
     <a class="back" href="/">&larr; Todos os materiais</a>
     <div class="kick">material gratuito</div>
     <h1>Motion com o Claude<br><span>sem After Effects.</span></h1>
-    <p class="lead">Seis prompts para o Claude escrever a anima&ccedil;&atilde;o em c&oacute;digo e entregar o v&iacute;deo em MP4. Sem cadastro.</p>
-    <div class="meta">12 prompts &middot; 12 pr&eacute;vias em v&iacute;deo &middot; 9 min</div>
-    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#c1">Título Cinético</a><a href="#c2">Contador</a><a href="#c3">Gráfico De Barras</a><a href="#c4">Entrada De Logo</a><a href="#c5">Faixa De Notícia</a><a href="#c6">Citação</a><a href="#completos">V&iacute;deos completos</a><a href="#claro">Parede clara</a></nav>
+    <p class="lead">Prompts para o Claude escrever a anima&ccedil;&atilde;o em c&oacute;digo e entregar o v&iacute;deo em MP4. Cada pacote tem a sua p&aacute;gina. Sem cadastro.</p>
+    <div class="meta">3 pacotes &middot; 12 prompts</div>
   </div>
 
-  <div class="sec" id="como">
-    <h2>Como usar</h2>
-    <ol>
-      <li>Escolha a anima&ccedil;&atilde;o e copie o prompt.</li>
-      <li>Troque <b>o que est&aacute; entre par&ecirc;nteses</b>: a frase, o n&uacute;mero, os dados, a cor.</li>
-      <li>Cole no Claude. Ele escreve a anima&ccedil;&atilde;o em c&oacute;digo e renderiza o <b>MP4 em 1080&times;1920</b>, pronto para o Reels.</li>
-      <li>N&atilde;o gostou de um detalhe? Pe&ccedil;a o ajuste (&ldquo;mais r&aacute;pido&rdquo;, &ldquo;troca a cor&rdquo;, &ldquo;fonte mais pesada&rdquo;) e ele renderiza de novo.</li>
-    </ol>
-    <p class="note"><b>Para sair em MP4,</b> o Claude precisa poder executar c&oacute;digo: funciona no Claude Code e no app com cria&ccedil;&atilde;o de arquivos ligada. Se voc&ecirc; tiver as skills <b>hyperframes</b>, <b>remotion</b> ou <b>video-use</b> instaladas, o prompt j&aacute; manda usar a que der o melhor acabamento. Sem execu&ccedil;&atilde;o de c&oacute;digo, ele entrega a anima&ccedil;&atilde;o rodando e explica como exportar.</p>
-    <p class="note">As pr&eacute;vias abaixo foram feitas em c&oacute;digo e renderizadas em MP4, do mesmo jeito.</p>
-  </div>
-
-  <div class="sec" id="c1">
-    <h2><em>01</em>Título Cinético</h2>
-    <p class="sub">Uma palavra por vez, no ritmo</p>
-    <video src="/assets/motion/01-titulo-cinetico.mp4" poster="/assets/motion/01-titulo-cinetico.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 01 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de tipografia cinética para Reels. TEXTO: "(SUA FRASE DE ATÉ 8 PALAVRAS)". Mostre uma palavra por vez, enorme, em caixa alta, ocupando quase toda a largura. A cada palavra o fundo alterna entre preto e branco e o texto inverte de cor. As trocas começam lentas (0,6 s) e aceleram até 0,3 s. A última palavra entra com um bloco de cor (LARANJA #F0622A) atrás dela e fica parada. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 8 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="c2">
-    <h2><em>02</em>Contador</h2>
-    <p class="sub">Um número que sobe até o resultado</p>
-    <video src="/assets/motion/02-contador.mp4" poster="/assets/motion/02-contador.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 02 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de número em destaque. NÚMERO FINAL: (1.248). RÓTULO: "(clientes atendidos em 2026)". Fundo escuro (#0B0C0E). O número começa em zero e sobe até o valor final em 2,5 segundos, desacelerando no fim, com separador de milhar em português. Embaixo, uma barra fina enche junto com a contagem. Quando o número para, o rótulo sobe com fade e um brilho rápido passa pelo número. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 6 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="c3">
-    <h2><em>03</em>Gráfico De Barras</h2>
-    <p class="sub">Barras que crescem uma a uma</p>
-    <video src="/assets/motion/03-grafico.mp4" poster="/assets/motion/03-grafico.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 03 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de gráfico de barras verticais. DADOS: (Jan 12, Fev 18, Mar 27, Abr 41). TÍTULO: "(Vendas por mês)". Fundo claro. O título entra primeiro. Depois as barras crescem da base, uma de cada vez, com 0,25 s de intervalo, e o valor de cada uma aparece em cima quando ela termina de subir. A barra mais alta fica na cor de destaque (AZUL #2F7DF6) e as outras em cinza. No fim, uma linha fina liga o topo das barras. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 7 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="c4">
-    <h2><em>04</em>Entrada De Logo</h2>
-    <p class="sub">O nome da marca se montando</p>
-    <video src="/assets/motion/04-logo.mp4" poster="/assets/motion/04-logo.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 04 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de abertura de marca. NOME: "(SUA MARCA)". FRASE: "(sua frase de apoio)". Fundo branco. Um círculo na cor da marca (#111111) cresce do centro, encolhe e vira o ponto final do nome. As letras do nome entram uma a uma, de baixo para cima, com 0,05 s de diferença. A frase de apoio aparece por último, em cinza, com fade. Tudo centralizado. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 5 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="c5">
-    <h2><em>05</em>Faixa De Notícia</h2>
-    <p class="sub">A tarja que entra na base do vídeo</p>
-    <video src="/assets/motion/05-faixa-noticia.mp4" poster="/assets/motion/05-faixa-noticia.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 05 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de faixa de notícia (lower third) com fundo transparente simulado em xadrez cinza, para ser gravada e usada por cima de um vídeo. ETIQUETA: "(URGENTE)". MANCHETE: "(sua manchete em uma linha)". A etiqueta vermelha (#E5262B) desliza da esquerda, e logo depois a faixa branca com a manchete abre para a direita como uma cortina. Fica 4 segundos na tela e sai na ordem inversa. Posição: terço inferior do palco. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 7 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="c6">
-    <h2><em>06</em>Citação</h2>
-    <p class="sub">Frase que se escreve linha a linha</p>
-    <video src="/assets/motion/06-citacao.mp4" poster="/assets/motion/06-citacao.jpg" controls muted loop playsinline preload="none" style="display:block;width:220px;max-width:60%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>prompt 06 &middot; troque o que est&aacute; entre par&ecirc;nteses</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de citação. FRASE: "(sua frase de até 20 palavras)". AUTOR: "(nome)". Fundo creme (#F3EEE4), fonte serifada grande. Uma aspa grande de abertura aparece primeiro. A frase entra linha por linha, cada linha revelada por uma máscara da esquerda para a direita, com 0,4 s entre elas. No fim, um traço curto se desenha e o nome do autor aparece ao lado. REGRAS: construa a animação em HTML, CSS e JavaScript num único arquivo, sem imagens externas, com palco fixo de 1080x1920 e easing suave (cubic-bezier), nada de movimento linear. A animação dura cerca de 8 segundos e termina num quadro final parado. ENTREGA: renderize e me entregue o vídeo em MP4 (1080x1920, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="completos">
-    <h2>V&iacute;deos completos</h2>
-    <p>Cinco prompts maiores, com v&aacute;rias cenas, transi&ccedil;&otilde;es e fechamento. Aqui voc&ecirc; troca o que est&aacute; entre <b>colchetes</b>: nome, frases, cor.</p>
-  </div>
-
-  <div class="sec" id="v1">
-    <h2><em>01</em>Apresentação de app</h2>
-    <p class="sub">Lançamento minimalista em preto e branco</p>
-    <video src="/assets/motion/v01-apresentacao-app.mp4" poster="/assets/motion/v01-apresentacao-app.jpg" controls muted loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 01 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie um motion de 30 segundos no estilo lançamento de app minimalista, em preto e branco. Títulos grandes revelados palavra por palavra, mockups da interface desenhados em CSS e o fundo alternando entre preto e branco a cada cena, com transição em cortina. MARCA: [NOME]. LOGO: [descreva o símbolo]. FRASE: [TAGLINE]. CENAS: 1) abertura com o logo se montando; 2) [FRASE 1]; 3) [FRASE 2]; 4) a tela principal do app, com os itens entrando um a um; 5) [FRASE 3]; 6) logo + frase + botão "Baixe agora". Crie a interface de cada cena de acordo com a frase. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="v2">
-    <h2><em>02</em>Showreel de motion</h2>
-    <p class="sub">Os princípios da animação, desenhados à mão</p>
-    <video src="/assets/motion/v02-showreel.mp4" poster="/assets/motion/v02-showreel.jpg" controls muted loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 02 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie um showreel de motion designer de 15 segundos baseado nos princípios da animação. Visual de caderno: fundo creme, traço azul-escuro, um vermelho de destaque e anotações manuscritas com setas. CENAS: 1) uma bolinha entra quicando, com estica e achata (squash and stretch) em cada batida, e as notas "estica" e "achata!" aparecem escritas à mão; 2) as palavras [PALAVRA 1] e [PALAVRA 2] entram animadas pelo próprio significado, em fonte condensada pesada; 3) um mostrador circular carrega de 0 a 100% com antecipação e desaceleração; 4) assinatura manuscrita: [NOME] + [CARGO]. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="v3">
-    <h2><em>03</em>Lançamento de app</h2>
-    <p class="sub">Celular flutuando e cards saltando da tela</p>
-    <video src="/assets/motion/v03-lancamento-app.mp4" poster="/assets/motion/v03-lancamento-app.jpg" controls muted loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 03 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie um vídeo promocional de app de 30 segundos, no estilo lançamento de loja de apps. Fundo escuro com brilho colorido em [COR], um celular desenhado em CSS flutuando em leve rotação, títulos com a palavra-chave em [COR], zoom na tela e cards de notificação saltando do celular, com transições em desfoque. APP: [NOME]. FRASE: [TAGLINE]. CENAS: 1) o celular entra girando; 2) [FRASE 1]; 3) [FRASE 2]; 4) três cards saltam da tela: [RECURSO 1], [RECURSO 2], [RECURSO 3]; 5) celulares em leque; 6) logo + frase. Crie a tela do app de cada cena de acordo com a frase. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="v4">
-    <h2><em>04</em>Produto em destaque</h2>
-    <p class="sub">Comercial de duas cores, tipografia gigante</p>
-    <video src="/assets/motion/v04-produto-destaque.mp4" poster="/assets/motion/v04-produto-destaque.jpg" controls muted loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 04 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie um comercial de 15 segundos para [PRODUTO], em duas cores: [COR] e quase preto. Tipografia extrabold em caixa alta, o produto desenhado em CSS como protagonista, transições rápidas com desfoque de movimento. MARCA: [NOME]. FRASE: [TAGLINE]. CENAS: 1) [FRASE 1] explode na tela, palavra por palavra; 2) close no produto girando, com os selos [BENEFÍCIO 1], [BENEFÍCIO 2] e [BENEFÍCIO 3] aparecendo em volta; 3) três palavras em sequência: [PALAVRA 1], [PALAVRA 2], [PALAVRA 3]; 4) logo + frase, com o fundo abrindo em círculo. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="v5">
-    <h2><em>05</em>Motion de apresentação</h2>
-    <p class="sub">Vídeo de apresentação pessoal</p>
-    <video src="/assets/motion/v05-apresentacao-pessoal.mp4" poster="/assets/motion/v05-apresentacao-pessoal.jpg" controls muted loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 05 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie um vídeo de apresentação pessoal de 15 segundos. Fundo preto alternando com [COR], tipografia bold com uma palavra por frase em itálico serifado, transições em cortina e em círculo, números com contagem. DADOS: [NOME], [CARGO], foto anexada, Instagram [@]. CENAS: 1) entra uma pílula colorida que se fecha num círculo; 2) a foto em círculo, com o nome se revelando ao lado e o cargo embaixo; 3) [FRASE DE IMPACTO]; 4) dois números com contagem: [DESTAQUE 1] e [DESTAQUE 2]; 5) o @ e um botão "Seguir" sendo clicado. Use a foto anexada dentro do círculo. REGRAS: construa em HTML, CSS e JavaScript num único arquivo, palco fixo de 1920x1080, sem imagens externas (desenhe as telas e os objetos em CSS ou SVG), easing suave e transições rápidas entre as cenas, sem cortes secos. ENTREGA: renderize e me entregue o vídeo em MP4 (1920x1080, 30 fps, H.264), além do arquivo HTML. Se você tiver as skills hyperframes, remotion ou video-use disponíveis, use a que der o melhor acabamento para renderizar; se não tiver, renderize quadro a quadro com um navegador sem interface e ffmpeg. Se neste ambiente não for possível gerar o MP4, diga isso com clareza e entregue a animação rodando, com o passo a passo para exportar.</pre>
-    </div>
-  </div>
-
-  <div class="sec" id="claro">
-    <h2><em>06</em>Parede clara, texto fino</h2>
-    <p class="sub">O estilo do reel "Esse v&iacute;deo tem 13 segundos": fundo claro com sombra de janela, uma ideia por cena e um detalhe em degrad&ecirc;.</p>
-    <video src="/assets/motion/v06-parede-clara.mp4" poster="/assets/motion/v06-parede-clara.jpg" controls loop playsinline preload="none" style="display:block;width:300px;max-width:80%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
-    <div class="box">
-      <div class="bar"><span>v&iacute;deo 06 &middot; troque o que est&aacute; entre colchetes</span><button data-copy>copiar</button></div>
-      <pre>Crie uma animação de motion design em código (HTML e CSS) e me entregue o resultado em MP4, 1080x1920, 30 fps, com cerca de 13 segundos. Se você tiver as skills hyperframes, remotion ou video-use, use a que der o melhor resultado; se não tiver, renderize o HTML quadro a quadro com um navegador headless e monte o vídeo com o ffmpeg.
-
-ESTILO (siga à risca)
-- Fundo: parede cinza-claro (#E4E4E4) com sombras de janela em faixas diagonais, bem desfocadas, que se deslocam devagar durante o vídeo todo.
-- Tipografia: Inter. Frases em peso fino (300), preto, com uma palavra em peso extra-bold. Texto centralizado, pequeno em relação ao quadro, com muito espaço vazio em volta.
-- Cor de destaque: um degradê de magenta (#E6007E) para laranja (#FF8A00), usado só em uma palavra ou um elemento por cena.
-- Movimento: cada palavra entra sozinha, subindo 30 px com um leve desfoque que some. Cada cena sai com desfoque e um pequeno zoom. Curvas suaves, nada de quique exagerado. Uma ideia por cena, troca a cada 1,5 a 2 segundos.
-- No topo, fixo, pequeno: [SEU @].
-
-CENAS
-1. "[FRASE DE ABERTURA, EX.: Esse vídeo tem]" e, em seguida, um anel fino em degradê que se desenha como um relógio, com "[NÚMERO] [UNIDADE]" no centro.
-2. Uma pílula preta de cantos arredondados com o texto "[FRASE CURTA EM MAIÚSCULAS]", a última palavra em degradê, entrando da esquerda.
-3. Um ícone quadrado escuro de cantos bem arredondados, com [SÍMBOLO OU SIGLA] em degradê, e embaixo "[COM O QUÊ FOI FEITO]".
-4. Outro ícone igual, com "[O QUE VOCÊ NÃO USOU]", riscado por uma barra preta. Depois a frase "[apenas com]" e, grande e em degradê, "[SUA PALAVRA-CHAVE]".
-5. Uma pergunta: "[SUA PERGUNTA]", com um ponto de interrogação gigante e desfocado no canto.
-6. Um botão em degradê "[Seguir]", um cursor que chega e clica, e o botão vira "[Seguindo]".
-7. Fechamento: "comenta" em peso fino e, enorme e em degradê, "[SUA PALAVRA]".
-
-REGRAS
-- Sem imagens externas, sem logotipos de terceiros e sem áudio.
-- Todo o texto precisa ficar entre 220 px do topo e 1500 px, para não cair embaixo dos botões do Instagram.
-- Antes de renderizar o vídeo inteiro, me mostre 4 quadros para eu aprovar o estilo.</pre>
-    </div>
+  <div class="sec" id="packs">
+    <h2>Escolha o pacote</h2>
+    <a href="/conteudos/motion/prompts" style="display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px solid rgba(128,128,128,.25);color:inherit;text-decoration:none">
+      <img src="/assets/motion/01-titulo-cinetico.jpg" alt="" width="96" height="96" loading="lazy" style="width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none">
+      <span><b style="display:block;font-size:1.05em">6 prompts de motion &rarr;</b><span class="sub">Título cinético, contador, gráfico, logo, faixa de notícia e citação. Animações curtas.</span></span>
+    </a>
+    <a href="/conteudos/motion/completos" style="display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px solid rgba(128,128,128,.25);color:inherit;text-decoration:none">
+      <img src="/assets/motion/v01-apresentacao-app.jpg" alt="" width="96" height="96" loading="lazy" style="width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none">
+      <span><b style="display:block;font-size:1.05em">5 vídeos completos &rarr;</b><span class="sub">Apresentação de app, showreel, lançamento, produto e apresentação pessoal.</span></span>
+    </a>
+    <a href="/conteudos/motion/claro" style="display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px solid rgba(128,128,128,.25);color:inherit;text-decoration:none">
+      <img src="/assets/motion/v06-parede-clara.jpg" alt="" width="96" height="96" loading="lazy" style="width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none">
+      <span><b style="display:block;font-size:1.05em">Vídeo de 13 segundos &rarr;</b><span class="sub">Parede clara, texto fino e detalhe em degradê: o prompt do reel.</span></span>
+    </a>
   </div>
 
 </main>
