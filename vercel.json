@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/perfume",
+      "destination": "/conteudos/perfume",
+      "permanent": false
+    },
+    {
       "source": "/splash",
       "destination": "/conteudos/splash",
       "permanent": false
