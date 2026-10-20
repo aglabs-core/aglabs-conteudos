@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/estilos",
+      "destination": "/conteudos/estilos",
+      "permanent": false
+    },
+    {
       "source": "/luxo",
       "destination": "/conteudos/luxo",
       "permanent": false
