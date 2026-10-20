@@ -135,3 +135,14 @@ Somente a chave pública do Supabase fica no navegador. As permissões do banco 
 ## Hospedagem
 
 Projeto estático compatível com Vercel: sem comando de build, raiz como diretório público. A página de rotina mantém os metadados originais de `aglabs.ia.br`; ajuste canonical e Open Graph se a publicação usar outro domínio. Links para o site institucional são absolutos.
+
+---
+
+## Card na biblioteca
+
+Cada card da home mostra a capa do post à esquerda e o texto à direita. Ao adicionar um material novo,
+salve o slide 01 do post (ou um quadro do vídeo) em `assets/posts/<slug>.jpg`, 480x600, e use no card:
+
+```html
+<a class="cover" href="/conteudos/<slug>/" tabindex="-1" aria-hidden="true"><img src="/assets/posts/<slug>.jpg" alt="" loading="lazy" width="480" height="600"></a>
+```
