@@ -4,6 +4,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/luxo",
+      "destination": "/conteudos/luxo",
+      "permanent": false
+    },
+    {
       "source": "/servicos",
       "destination": "/conteudos/servicos",
       "permanent": false
