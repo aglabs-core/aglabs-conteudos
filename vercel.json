@@ -242,6 +242,21 @@
       "source": "/obvio",
       "destination": "/conteudos/obvio",
       "permanent": false
+    },
+    {
+      "source": "/arquivo",
+      "destination": "/conteudos/arquivo",
+      "permanent": false
+    },
+    {
+      "source": "/black-friday",
+      "destination": "/conteudos/black-friday",
+      "permanent": false
+    },
+    {
+      "source": "/fluxo",
+      "destination": "/conteudos/fluxo",
+      "permanent": false
     }
   ],
   "headers": [

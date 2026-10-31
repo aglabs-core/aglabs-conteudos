@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comentou, recebeu: o mapa do fluxo que entrega o material na DM | AG LABS</title>
+<meta name="description" content="As 4 etapas do fluxo que responde comentários com o material certo na DM, o que você precisa ter e os erros que evitamos.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/fluxo">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Comentou, recebeu: o mapa do fluxo que entrega o material na DM | AG LABS">
+<meta property="og:description" content="As 4 etapas do fluxo que responde comentários com o material certo na DM, o que você precisa ter e os erros que evitamos.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/fluxo">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/fluxo.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Comentou,<br><span>recebeu.</span></h1>
+    <p class="lead">O mapa do fluxo que entrega o material na DM de quem comenta uma palavra, sem ninguém digitar.</p>
+    <div class="meta">mapa · atualizado em 31/10/2026 · 4 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#mapa">As 4 etapas</a><a href="#precisa">O que precisa</a><a href="#regras">Regras da Meta</a><a href="#erros">Erros comuns</a></nav>
+  </div>
+
+  <div class="sec" id="mapa">
+    <h2>As 4 etapas</h2>
+    <ol>
+      <li><b>O Instagram avisa</b> o n8n que chegou um comentário (webhook da Meta).</li>
+      <li><b>O n8n confere</b> de qual post ele veio (media_id) e qual palavra foi escrita.</li>
+      <li><b>Busca na tabela</b> a mensagem daquele post. Sem linha do post, usa a mensagem padrão da palavra.</li>
+      <li><b>Responde no privado</b> para quem comentou, com o link do material.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="precisa">
+    <h2>O que você precisa ter</h2>
+    <ul>
+      <li>Conta <b>profissional</b> do Instagram ligada a uma página do Facebook.</li>
+      <li>Um app na <b>Meta for Developers</b> com permissão de mensagens e comentários.</li>
+      <li>O <b>n8n</b> (na nuvem ou no seu servidor) com o webhook do Instagram.</li>
+      <li>Uma <b>tabela de mensagens</b>: palavra, media_id do post e o texto com o link.</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="regras">
+    <h2>As regras da Meta</h2>
+    <ul>
+      <li><b>Uma mensagem por comentário</b>, enviada como resposta privada.</li>
+      <li>Só dá para responder comentários de <b>até 7 dias</b>.</li>
+      <li>A conversa abre com um link para o post comentado.</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="erros">
+    <h2>Erros que já tivemos (e como evitar)</h2>
+    <ul>
+      <li><b>Post sem media_id na tabela:</b> a pessoa recebe a mensagem genérica da palavra, não a do post. Cadastre a linha assim que o post sair.</li>
+      <li><b>A mesma página em dois posts:</b> confunde quem recebe. Cada post com a sua página.</li>
+      <li><b>Palavra diferente na legenda e na tabela:</b> ninguém recebe nada. Use a mesma palavra nos dois lugares.</li>
+    </ul>
+    <p class="note">Quer que a gente monte esse fluxo no seu Instagram? <a href="https://wa.me/556493259857">Fale com a AG LABS no WhatsApp</a>.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
