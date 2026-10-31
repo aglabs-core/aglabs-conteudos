@@ -257,6 +257,16 @@
       "source": "/fluxo",
       "destination": "/conteudos/fluxo",
       "permanent": false
+    },
+    {
+      "source": "/ausencia",
+      "destination": "/conteudos/ausencia",
+      "permanent": false
+    },
+    {
+      "source": "/contexto",
+      "destination": "/conteudos/contexto",
+      "permanent": false
     }
   ],
   "headers": [
