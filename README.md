@@ -42,7 +42,7 @@ Na raiz, execute `python -m http.server 3045 --bind 127.0.0.1` e abra `http://12
 3. Adicione um `article` dentro de `#catalogo` em `index.html`, com título, resumo e link. Inclua temas e sinônimos em `data-keywords`. A busca e a contagem reconhecem todos os artigos automaticamente; a busca ignora acentos e maiúsculas. Atualize também a contagem inicial do HTML, exibida quando JavaScript estiver desativado.
 4. Se houver captura, use um script próprio e ajuste a origem e o destino do pacote. Não reutilize a origem `rotina` em outro material.
 5. Confira os links, o celular e os botões antes de publicar o post.
-6. Rode `node scripts/checar-paginas.mjs`. O mesmo teste roda no CI a cada push e pull request.
+6. Rode `node scripts/checar-paginas.mjs` e `node --test scripts/destinos-publicos.test.mjs`. Os mesmos testes rodam no CI a cada push e pull request. O contato de atendimento é `https://wa.me/5564993259857`, conforme `01 - Empresa/Políticas Comerciais e de Suporte.md` no vault (versão `de1d0c3bb8be8215dc651ded42f3d6264aa4cb51`). Isso não substitui números próprios de lembretes de produtos.
 
 ## Slug = palavra-chave do CTA
 
