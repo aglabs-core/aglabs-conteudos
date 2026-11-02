@@ -267,6 +267,16 @@
       "source": "/contexto",
       "destination": "/conteudos/contexto",
       "permanent": false
+    },
+    {
+      "source": "/cardapio",
+      "destination": "/conteudos/cardapio",
+      "permanent": false
+    },
+    {
+      "source": "/robots",
+      "destination": "/conteudos/robots",
+      "permanent": false
     }
   ],
   "headers": [

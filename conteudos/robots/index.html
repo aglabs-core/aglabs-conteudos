@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robots.txt: tire o seu site do treino de IA sem sumir da busca | AG LABS</title>
+<meta name="description" content="O robots.txt pronto para tirar o seu site do treino de IA, o sinal novo anunciado em 30/10/2026 e os robôs que você deve deixar abertos. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/robots">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="robots.txt: tire o seu site do treino de IA sem sumir da busca | AG LABS">
+<meta property="og:description" content="O robots.txt pronto para copiar: fora do treino, dentro das respostas da IA.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/robots">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/robots.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Fora do treino de IA<br><span>sem sumir da busca.</span></h1>
+    <p class="lead">O robots.txt pronto para copiar, o sinal novo anunciado em 30/10/2026 e os rob&ocirc;s que voc&ecirc; deve deixar abertos para continuar aparecendo nas respostas da IA. Sem cadastro.</p>
+    <div class="meta">1 arquivo pronto &middot; 1 prompt &middot; 5 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#novo">O que mudou</a><a href="#arquivo">O arquivo pronto</a><a href="#aberto">O que deixar aberto</a><a href="#onde">Onde editar</a><a href="#prompt">Prompt de revis&atilde;o</a><a href="#fontes">Fontes</a></nav>
+  </div>
+
+  <div class="sec" id="novo">
+    <h2>O que mudou</h2>
+    <p>Em 30/10/2026, Microsoft, OpenAI, Google e Anthropic anunciaram apoio a um sinal &uacute;nico no robots.txt para dizer se o conte&uacute;do de um site pode ser usado para <b>treinar</b> modelos de IA. Hoje &eacute; preciso uma linha para cada rob&ocirc; de cada empresa; a proposta troca isso por uma s&oacute;:</p>
+    <div class="box">
+      <div class="bar"><span>sinal novo &middot; rascunho no IETF</span><button data-copy>copiar</button></div>
+      <pre>User-Agent: __usage_ai-training
+Disallow: /</pre>
+    </div>
+    <ol>
+      <li><b>Ainda &eacute; rascunho.</b> A proposta foi enviada ao IETF (o grupo que cuida do robots.txt) e n&atilde;o &eacute; padr&atilde;o final.</li>
+      <li><b>Datas da Microsoft:</b> a configura&ccedil;&atilde;o de transi&ccedil;&atilde;o abre no Bing Webmaster Tools em 15/12/2026, e as novas prefer&ecirc;ncias passam a valer na coleta a partir de 01/02/2027.</li>
+      <li><b>OpenAI e Microsoft</b> disseram que adotam nos pr&oacute;ximos meses; o <b>Google</b>, ao longo de 2027.</li>
+      <li><b>Treino e resposta s&atilde;o coisas separadas.</b> Sair do treino n&atilde;o pede para a IA deixar de ler o seu site quando um cliente pergunta algo.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="arquivo">
+    <h2><em>01</em>O arquivo pronto</h2>
+    <p>Cole no fim do seu robots.txt, sem apagar o que j&aacute; existe. As tr&ecirc;s primeiras regras j&aacute; funcionam hoje; a &uacute;ltima &eacute; o sinal novo, que passa a valer conforme cada empresa adotar.</p>
+    <div class="box">
+      <div class="bar"><span>robots.txt &middot; fora do treino de IA</span><button data-copy>copiar</button></div>
+      <pre># Fora do treino de IA (vale hoje)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Sinal único proposto em 30/10/2026 (rascunho no IETF)
+User-Agent: __usage_ai-training
+Disallow: /</pre>
+    </div>
+    <p class="note">Quer liberar uma pasta, como a de imprensa? Logo abaixo do <b>Disallow: /</b> de cada bloco, acrescente <b>Allow: /imprensa/</b>.</p>
+    <ol>
+      <li><b>GPTBot</b> &mdash; rob&ocirc; da OpenAI que coleta conte&uacute;do para treinar os modelos.</li>
+      <li><b>ClaudeBot</b> &mdash; rob&ocirc; da Anthropic que coleta conte&uacute;do para treinar os modelos.</li>
+      <li><b>Google-Extended</b> &mdash; controla o uso do seu conte&uacute;do no treino do Gemini e nas respostas do app Gemini. Segundo o Google, <b>n&atilde;o</b> afeta a sua posi&ccedil;&atilde;o na Busca.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="aberto">
+    <h2><em>02</em>O que deixar aberto</h2>
+    <p>Estes rob&ocirc;s n&atilde;o treinam modelo: eles leem o seu site para responder algu&eacute;m. Se voc&ecirc; vende, bloquear qualquer um deles tira o seu neg&oacute;cio das respostas da IA.</p>
+    <ol>
+      <li><b>OAI-SearchBot</b> &mdash; mostra sites nas respostas de busca do ChatGPT.</li>
+      <li><b>ChatGPT-User</b> &mdash; visita a p&aacute;gina quando um usu&aacute;rio pede no ChatGPT.</li>
+      <li><b>Claude-SearchBot</b> &mdash; indexa sites para a busca do Claude.</li>
+      <li><b>Claude-User</b> &mdash; visita a p&aacute;gina quando um usu&aacute;rio pede no Claude.</li>
+      <li><b>Googlebot</b> &mdash; o rob&ocirc; da Busca do Google. Nunca bloqueie.</li>
+    </ol>
+    <p class="note">Regra pr&aacute;tica: se o nome tem &ldquo;Search&rdquo; ou &ldquo;User&rdquo;, &eacute; resposta, n&atilde;o treino.</p>
+  </div>
+
+  <div class="sec" id="onde">
+    <h2><em>03</em>Onde editar</h2>
+    <ol>
+      <li>Abra <b>seusite.com.br/robots.txt</b> no navegador para ver o arquivo atual.</li>
+      <li>O arquivo fica na raiz do site. Em WordPress, Wix, Shopify e afins, ele costuma ser editado nas configura&ccedil;&otilde;es de SEO da plataforma ou por um plugin de SEO.</li>
+      <li>Cada subdom&iacute;nio tem o seu robots.txt. Se a loja est&aacute; em <b>loja.seusite.com.br</b>, repita l&aacute;.</li>
+      <li>Depois de salvar, abra o endere&ccedil;o de novo e confira se as linhas apareceram.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="prompt">
+    <h2><em>04</em>Prompt de revis&atilde;o</h2>
+    <p>Antes de publicar, cole o seu robots.txt atual no ChatGPT, no Claude ou no Gemini com este pedido:</p>
+    <div class="box">
+      <div class="bar"><span>prompt &middot; revise o meu robots.txt</span><button data-copy>copiar</button></div>
+      <pre>Você é especialista em SEO técnico. Abaixo está o robots.txt do meu site [cole o endereço do site].
+
+Meu objetivo: tirar o conteúdo do treino de modelos de IA (GPTBot, ClaudeBot, Google-Extended e o sinal __usage_ai-training) e continuar aparecendo na Busca do Google e nas respostas de busca do ChatGPT e do Claude (OAI-SearchBot, ChatGPT-User, Claude-SearchBot e Claude-User).
+
+1. Diga se alguma regra atual bloqueia algo que eu quero manter aberto.
+2. Aponte linhas repetidas ou em conflito.
+3. Me devolva o arquivo final completo, pronto para colar, com um comentário curto acima de cada bloco.
+
+Meu robots.txt atual:
+[cole aqui]</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="fontes">
+    <h2>Fontes</h2>
+    <ol>
+      <li>Microsoft Bing Blog, 30/10/2026: <a href="https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/">Your content, your choice</a></li>
+      <li>IETF, rascunho de 30/10/2026: <a href="https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/">Machine-Readable Training Preference Signal</a></li>
+      <li>SiliconANGLE, 30/10/2026: <a href="https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/">Google, Anthropic and others to support new AI crawling opt-out standard</a></li>
+      <li>OpenAI: <a href="https://developers.openai.com/api/docs/bots">rob&ocirc;s da OpenAI</a> &middot; Anthropic: <a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">rob&ocirc;s da Anthropic</a> &middot; Google: <a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers">Google-Extended</a></li>
+    </ol>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
