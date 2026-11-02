@@ -44,6 +44,21 @@ Na raiz, execute `python -m http.server 3045 --bind 127.0.0.1` e abra `http://12
 5. Confira os links, o celular e os botões antes de publicar o post.
 6. Rode `node scripts/checar-paginas.mjs` e `node --test scripts/destinos-publicos.test.mjs`. Os mesmos testes rodam no CI a cada push e pull request. O contato de atendimento é `https://wa.me/5564993259857`, conforme `01 - Empresa/Políticas Comerciais e de Suporte.md` no vault (versão `de1d0c3bb8be8215dc651ded42f3d6264aa4cb51`). Isso não substitui números próprios de lembretes de produtos.
 
+## Sitemap e canônicas
+
+O `index.html` continua sendo a fonte de publicação: o sitemap deriva dos links dos `article` em `#catalogo`, mais subguias explicitamente ligados dentro de cada guia (por exemplo, os três de motion). Não varre pastas nem usa o sitemap anterior como manifesto. Páginas fora do catálogo/árvore pública, `noindex`/`none`, exemplos, drafts, páginas privadas e pacotes não entram. Os caminhos públicos precisam existir e ter uma única canônica própria, no domínio de conteúdo e sem barra final (exceto a home).
+
+Depois de alterar o catálogo ou os subguias públicos:
+
+```sh
+node scripts/gerar-sitemap.mjs
+node scripts/checar-paginas.mjs
+node --test scripts/sitemap.test.mjs
+node scripts/gerar-sitemap.mjs --check
+```
+
+O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (55 materiais + 3 subguias + home = 59 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
+
 ## Slug = palavra-chave do CTA
 
 Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o post pede no comentário. Post novo já nasce com o endereço definido, e quem responde os comentários sabe o link de cabeça.
