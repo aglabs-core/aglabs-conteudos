@@ -4,6 +4,7 @@
 // passou a mandar link sem título nem prévia. Sem dependências: `node scripts/checar-paginas.mjs`.
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import "./destinos-publicos.test.mjs";
+import "./sitemap.test.mjs";
 
 const SITE = "https://conteudo.aglabs.ia.br";
 const redirects = new Set(
