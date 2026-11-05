@@ -277,6 +277,16 @@
       "source": "/robots",
       "destination": "/conteudos/robots",
       "permanent": false
+    },
+    {
+      "source": "/gif",
+      "destination": "/conteudos/gif",
+      "permanent": false
+    },
+    {
+      "source": "/termos",
+      "destination": "/conteudos/termos",
+      "permanent": false
     }
   ],
   "headers": [

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dicionário da IA no negócio: 8 termos | AG LABS</title>
+<meta name="description" content="Os 8 termos de IA que todo fornecedor fala e ninguém explica, com exemplo prático e a pergunta certa para fazer. Material gratuito da AG LABS.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/termos">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dicionário da IA no negócio: 8 termos | AG LABS">
+<meta property="og:description" content="Prompt, contexto, token, alucinação, agente, automação, RAG e integração, explicados para quem tem negócio.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/termos">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/termos.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Dicion&aacute;rio da IA<br><span>no neg&oacute;cio.</span></h1>
+    <p class="lead">Os 8 termos que aparecem em toda conversa sobre IA. Cada um com o que &eacute;, um exemplo de verdade num neg&oacute;cio e a pergunta para fazer ao fornecedor. Sem cadastro.</p>
+    <div class="meta">8 termos &middot; 8 perguntas &middot; 1 prompt &middot; 5 min</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#prompt">Prompt</a><a href="#contexto">Contexto</a><a href="#token">Token</a><a href="#alucinacao">Alucinação</a><a href="#agente">Agente</a><a href="#automacao">Automação</a><a href="#rag">Base de conhecimento</a><a href="#integracao">Integração</a><a href="#prompt">Prompt explicador</a></nav>
+  </div>
+  <div class="sec" id="prompt">
+    <h2><em>01</em>Prompt</h2>
+    <p>É o pedido que você escreve para a IA. Quanto mais ele diz quem fala, para quem, o quê e em que formato, menos a resposta sai genérica.</p>
+    <p><b>No neg&oacute;cio:</b> Em vez de "faz um post sobre a promoção", você escreve: "Você é a dona de uma loja de roupa infantil em Goiânia. Escreva a legenda da promoção de 20% em vestidos, para mães de 25 a 40 anos, em 4 linhas, tom leve."</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;O prompt que vocês usam fica salvo e eu posso ajustar?&rdquo;</p>
+  </div>
+  <div class="sec" id="contexto">
+    <h2><em>02</em>Contexto</h2>
+    <p>É tudo o que a IA sabe sobre o seu negócio naquela conversa: preços, horários, tom de voz, perguntas frequentes. Sem contexto, ela responde como qualquer empresa.</p>
+    <p><b>No neg&oacute;cio:</b> Os Projetos do ChatGPT e do Claude guardam arquivos fixos (tabela de preços, políticas, FAQ) que entram em toda conversa daquele projeto.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;De onde a IA tira as informações da minha empresa, e quem atualiza quando muda?&rdquo;</p>
+  </div>
+  <div class="sec" id="token">
+    <h2><em>03</em>Token</h2>
+    <p>É o pedacinho de texto que a IA lê e escreve. Uma palavra pode virar mais de um token. É por token que as ferramentas medem o limite da conversa e que a API cobra.</p>
+    <p><b>No neg&oacute;cio:</b> Colar um PDF de 80 páginas para tirar uma dúvida de uma linha gasta tokens à toa e pode empurrar informação importante para fora do limite.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;O custo mensal é fixo ou varia com o uso (tokens)? Tem teto?&rdquo;</p>
+  </div>
+  <div class="sec" id="alucinacao">
+    <h2><em>04</em>Alucinação</h2>
+    <p>É quando a IA inventa uma informação e fala com toda a certeza. Acontece mais com número, data, preço, nome de lei e link.</p>
+    <p><b>No neg&oacute;cio:</b> O assistente responde ao cliente que a entrega é grátis acima de R$ 100, mas a sua regra é acima de R$ 150. Ele completou o que parecia provável.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;O que acontece quando a IA não sabe a resposta? Ela passa para um humano?&rdquo;</p>
+  </div>
+  <div class="sec" id="agente">
+    <h2><em>05</em>Agente</h2>
+    <p>É a IA que não só responde, mas executa tarefas: consulta a agenda, cria o pedido, manda o lembrete. Ela recebe um objetivo, escolhe os passos e usa as ferramentas que você liberou.</p>
+    <p><b>No neg&oacute;cio:</b> No WhatsApp, o cliente pede um horário; o agente olha a agenda, oferece dois horários, confirma e manda o lembrete na véspera.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;O que o agente pode fazer sozinho e o que precisa da minha aprovação?&rdquo;</p>
+  </div>
+  <div class="sec" id="automacao">
+    <h2><em>06</em>Automação (fluxo)</h2>
+    <p>É uma sequência de passos que roda sozinha quando algo acontece. O "algo acontece" é o gatilho. Ferramentas comuns: n8n, Make e Zapier.</p>
+    <p><b>No neg&oacute;cio:</b> Chegou um pedido na loja: a planilha é atualizada, o cliente recebe a confirmação e você recebe o aviso no celular. Ninguém digitou nada.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;Se um passo do fluxo falhar, quem fica sabendo e como?&rdquo;</p>
+  </div>
+  <div class="sec" id="rag">
+    <h2><em>07</em>Base de conhecimento (RAG)</h2>
+    <p>São os seus documentos que a IA consulta antes de responder: catálogo, contrato, manual, FAQ. Ela busca o trecho certo e responde em cima dele, em vez de chutar. RAG é o nome técnico disso.</p>
+    <p><b>No neg&oacute;cio:</b> Você sobe o manual de garantia. Quando o cliente pergunta "a garantia cobre queda?", a IA procura o trecho no manual e responde citando a regra.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;Como eu atualizo os documentos que a IA consulta?&rdquo;</p>
+  </div>
+  <div class="sec" id="integracao">
+    <h2><em>08</em>Integração (API e MCP)</h2>
+    <p>É o que liga a IA aos sistemas que você já usa: agenda, planilha, CRM, loja, WhatsApp. A API é a porta de entrada de cada sistema. O MCP (Model Context Protocol) é um padrão aberto que conecta a IA a várias dessas portas do mesmo jeito.</p>
+    <p><b>No neg&oacute;cio:</b> Sem integração, a IA diz "consulte o seu pedido no site". Com integração, ela mesma consulta o pedido e responde o status.</p>
+    <p class="note">Pergunte ao fornecedor: &ldquo;Integra com quais sistemas que eu já uso? O que precisa ser trocado?&rdquo;</p>
+  </div>
+  <div class="sec" id="prompt">
+    <h2>Prompt explicador</h2>
+    <p>Apareceu um termo que n&atilde;o est&aacute; aqui? Cole este prompt no ChatGPT, no Claude ou no Gemini e troque o que est&aacute; entre colchetes.</p>
+    <div class="box">
+      <div class="bar"><span>prompt &middot; cole e troque os colchetes</span><button data-copy>copiar</button></div>
+      <pre>Eu tenho um negócio de [o que você vende] e não sou da área de tecnologia. Me explique o termo "[termo]" em até 5 linhas, sem jargão. Depois dê um exemplo de como ele aparece num negócio como o meu e diga uma pergunta que eu devo fazer a um fornecedor que me oferecer isso. Se o termo tiver mais de um significado, diga qual é o mais comum em IA.</pre>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
