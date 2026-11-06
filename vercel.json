@@ -284,6 +284,11 @@
       "permanent": false
     },
     {
+      "source": "/loop",
+      "destination": "/conteudos/loop",
+      "permanent": false
+    },
+    {
       "source": "/termos",
       "destination": "/conteudos/termos",
       "permanent": false
