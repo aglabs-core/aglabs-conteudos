@@ -69,6 +69,11 @@
       "permanent": false
     },
     {
+      "source": "/carrossel",
+      "destination": "/conteudos/carrossel",
+      "permanent": false
+    },
+    {
       "source": "/bolsa",
       "destination": "/conteudos/bolsa",
       "permanent": false

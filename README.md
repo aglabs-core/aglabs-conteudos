@@ -57,7 +57,7 @@ node --test scripts/sitemap.test.mjs
 node scripts/gerar-sitemap.mjs --check
 ```
 
-O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (60 materiais + 3 subguias + home = 64 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
+O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (61 materiais + 3 subguias + home = 65 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
 
 ## Slug = palavra-chave do CTA
 
