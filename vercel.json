@@ -74,6 +74,11 @@
       "permanent": false
     },
     {
+      "source": "/mundos",
+      "destination": "/conteudos/mundos",
+      "permanent": false
+    },
+    {
       "source": "/bolsa",
       "destination": "/conteudos/bolsa",
       "permanent": false
