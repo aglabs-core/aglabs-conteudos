@@ -284,6 +284,16 @@
       "permanent": false
     },
     {
+      "source": "/natal",
+      "destination": "/conteudos/natal",
+      "permanent": false
+    },
+    {
+      "source": "/omni",
+      "destination": "/conteudos/omni",
+      "permanent": false
+    },
+    {
       "source": "/loop",
       "destination": "/conteudos/loop",
       "permanent": false
