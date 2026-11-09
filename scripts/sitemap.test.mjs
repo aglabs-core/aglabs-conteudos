@@ -13,7 +13,7 @@ const locations = () => [...read('sitemap.xml').matchAll(/<loc>([^<]+)<\/loc>/g)
 test('every indexable catalog guide is present exactly once at its canonical URL', () => {
   const catalog = read('index.html').split('id="catalogo"')[1].split('</section>')[0];
   const paths = [...new Set([...catalog.matchAll(/href="(\/conteudos\/[^"#?]+)"/g)].map((m) => m[1].replace(/\/$/, '')))];
-  assert.equal(paths.length, 62, 'current public catalog baseline');
+  assert.equal(paths.length, 64, 'current public catalog baseline');
   const urls = locations();
   const missing = [];
   for (const path of paths) {
@@ -33,7 +33,7 @@ test('the library landing page has a self canonical', () => {
 
 test('generated sitemap is fresh, unique and retains the three public motion subguides', () => {
   const urls = sitemapUrls(new URL('../', import.meta.url).pathname);
-  assert.equal(urls.length, 66, '62 catalog guides + 3 linked subguides + home');
+  assert.equal(urls.length, 68, '64 catalog guides + 3 linked subguides + home');
   assert.equal(new Set(urls).size, urls.length);
   for (const slug of ['prompts', 'completos', 'claro']) assert.ok(urls.includes(`${SITE}/conteudos/motion/${slug}`));
   assert.deepEqual(locations(), urls);

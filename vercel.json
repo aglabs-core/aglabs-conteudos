@@ -312,6 +312,16 @@
       "source": "/termos",
       "destination": "/conteudos/termos",
       "permanent": false
+    },
+    {
+      "source": "/tarefa",
+      "destination": "/conteudos/tarefa",
+      "permanent": false
+    },
+    {
+      "source": "/fachada",
+      "destination": "/conteudos/fachada",
+      "permanent": false
     }
   ],
   "headers": [
