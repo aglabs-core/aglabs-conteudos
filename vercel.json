@@ -322,6 +322,16 @@
       "source": "/fachada",
       "destination": "/conteudos/fachada",
       "permanent": false
+    },
+    {
+      "source": "/skills",
+      "destination": "/conteudos/skills",
+      "permanent": false
+    },
+    {
+      "source": "/perguntas",
+      "destination": "/conteudos/perguntas",
+      "permanent": false
     }
   ],
   "headers": [
