@@ -57,7 +57,7 @@ node --test scripts/sitemap.test.mjs
 node scripts/gerar-sitemap.mjs --check
 ```
 
-O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (67 materiais + 4 subguias + home = 72 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
+O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (68 materiais + 4 subguias + home = 73 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
 
 ## Slug = palavra-chave do CTA
 
@@ -76,6 +76,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `COMPARA` | `/conteudos/compara` | Comparativo Dots, Muse e Grok Bot |
 | `MOTION` | `/conteudos/motion` | 6 prompts de motion para o Claude |
 | `CRIA` | `/conteudos/cria` | O Claude é absurdo: 6 criações em código |
+| `AVALIAR` | `/conteudos/avaliar` | Peça avaliação no Google com um link só |
 | `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |
 | `PROMPT` → por post | `/conteudos/vigia` | 5 prompts de retrato estilo câmera de vigilância |
 | `CAIXA` | `/conteudos/caixinha` | Trend da caixinha: prompt e caixa vazia |
