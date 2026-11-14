@@ -74,6 +74,11 @@
       "permanent": false
     },
     {
+      "source": "/cria",
+      "destination": "/conteudos/cria",
+      "permanent": false
+    },
+    {
       "source": "/mundos",
       "destination": "/conteudos/mundos",
       "permanent": false

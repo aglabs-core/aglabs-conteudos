@@ -46,7 +46,7 @@ Na raiz, execute `python -m http.server 3045 --bind 127.0.0.1` e abra `http://12
 
 ## Sitemap e canônicas
 
-O `index.html` continua sendo a fonte de publicação: o sitemap deriva dos links dos `article` em `#catalogo`, mais subguias explicitamente ligados dentro de cada guia (por exemplo, os três de motion). Não varre pastas nem usa o sitemap anterior como manifesto. Páginas fora do catálogo/árvore pública, `noindex`/`none`, exemplos, drafts, páginas privadas e pacotes não entram. Os caminhos públicos precisam existir e ter uma única canônica própria, no domínio de conteúdo e sem barra final (exceto a home).
+O `index.html` continua sendo a fonte de publicação: o sitemap deriva dos links dos `article` em `#catalogo`, mais subguias explicitamente ligados dentro de cada guia (por exemplo, os quatro de motion). Não varre pastas nem usa o sitemap anterior como manifesto. Páginas fora do catálogo/árvore pública, `noindex`/`none`, exemplos, drafts, páginas privadas e pacotes não entram. Os caminhos públicos precisam existir e ter uma única canônica própria, no domínio de conteúdo e sem barra final (exceto a home).
 
 Depois de alterar o catálogo ou os subguias públicos:
 
@@ -57,7 +57,7 @@ node --test scripts/sitemap.test.mjs
 node scripts/gerar-sitemap.mjs --check
 ```
 
-O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (62 materiais + 3 subguias + home = 66 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
+O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (67 materiais + 4 subguias + home = 72 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
 
 ## Slug = palavra-chave do CTA
 
@@ -75,6 +75,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `EDITA` | `/conteudos/edita` | 7 prompts para o Claude editar vídeos |
 | `COMPARA` | `/conteudos/compara` | Comparativo Dots, Muse e Grok Bot |
 | `MOTION` | `/conteudos/motion` | 6 prompts de motion para o Claude |
+| `CRIA` | `/conteudos/cria` | O Claude é absurdo: 6 criações em código |
 | `ORQUESTRA` | `/conteudos/orquestra` | O Claude como maestro: mapa das 5 camadas |
 | `PROMPT` → por post | `/conteudos/vigia` | 5 prompts de retrato estilo câmera de vigilância |
 | `CAIXA` | `/conteudos/caixinha` | Trend da caixinha: prompt e caixa vazia |

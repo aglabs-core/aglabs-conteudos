@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Claude é absurdo: 6 criações em código + os prompts | AG LABS</title>
+<meta name="description" content="Os 6 prompts das criações em Three.js do post: relógio mecânico, luminária de lava, globo de neve, ilha flutuante, teclado mecânico e vela acesa.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/cria">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="O Claude é absurdo: 6 criações em código + os prompts | AG LABS">
+<meta property="og:description" content="Os 6 prompts das criações em Three.js do post: relógio mecânico, luminária de lava, globo de neve, ilha flutuante, teclado mecânico e vela acesa.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/cria">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/cria.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>O Claude &eacute; absurdo<br><span>6 cria&ccedil;&otilde;es em c&oacute;digo.</span></h1>
+    <p class="lead">Rel&oacute;gio mec&acirc;nico, lumin&aacute;ria de lava, globo de neve, ilha flutuante, teclado e vela: os prompts para o Claude construir cada cena em Three.js. Sem cadastro.</p>
+    <div class="meta">6 prompts &middot; 6 pr&eacute;vias em v&iacute;deo</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#como">Como usar</a><a href="#c1">Relógio mecânico que funciona</a><a href="#c2">Luminária de lava de verdade</a><a href="#c3">Globo de neve com vidro de verdade</a><a href="#c4">Ilha flutuante com dia e noite</a><a href="#c5">Teclado mecânico que digita sozinho</a><a href="#c6">Vela acesa com chama viva</a></nav>
+  </div>
+
+  <div class="sec" id="como">
+    <h2>Como usar</h2>
+    <ol>
+      <li>Escolha a cria&ccedil;&atilde;o e copie o prompt. As regras t&eacute;cnicas j&aacute; v&ecirc;m no fim de cada um.</li>
+      <li>Cole no Claude. Ele escreve a cena inteira num arquivo HTML, que roda no navegador.</li>
+      <li>Quer mudar algo? Pe&ccedil;a o ajuste: &ldquo;deixa a luz mais quente&rdquo;, &ldquo;troca a casinha por um farol&rdquo;, &ldquo;c&acirc;mera mais perto&rdquo;.</li>
+      <li>Para virar v&iacute;deo do Reels, pe&ccedil;a ao Claude o passo a passo de grava&ccedil;&atilde;o em MP4 (o prompt j&aacute; deixa a anima&ccedil;&atilde;o pronta para isso).</li>
+    </ol>
+    <p class="note"><b>Nada aqui &eacute; v&iacute;deo gerado por IA.</b> Cada pr&eacute;via abaixo &eacute; c&oacute;digo Three.js renderizado quadro a quadro: luz, sombra, vidro e movimento calculados no navegador.</p>
+    <p class="note">O resultado muda um pouco a cada vez que voc&ecirc; pede. Se a primeira vers&atilde;o vier simples, pe&ccedil;a &ldquo;mais detalhe e acabamento realista&rdquo;.</p>
+  </div>
+
+  <div class="sec" id="c1">
+    <h2><em>01</em>Relógio mecânico que funciona</h2>
+    <p class="sub">Engrenagens de latão que encaixam de verdade</p>
+    <video src="/assets/cria/1-relogio.mp4" poster="/assets/cria/1-relogio.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 1 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js o movimento de um relógio mecânico visto de cima, em close. Uma platina de aço com granulação circular (perlage) desenhada em canvas, um trem de 3 engrenagens de latão com raios vazados e um pinhão de aço em cada eixo. As engrenagens precisam engrenar de verdade: calcule a distância entre eixos pelo módulo dos dentes e a velocidade de cada uma pela razão entre os números de dentes. Coloque rubis vermelhos nos eixos, uma ponte de aço com listras de Genebra presa por parafusos azulados e um balanço com espiral que oscila para lá e para cá. Fundo grafite, luz quente de um lado e um contraluz azulado do outro.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c2">
+    <h2><em>02</em>Luminária de lava de verdade</h2>
+    <p class="sub">Cera em metaballs dentro do vidro</p>
+    <video src="/assets/cria/2-lava.mp4" poster="/assets/cria/2-lava.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 2 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js uma luminária de lava sobre uma mesa de madeira escura, num quarto escuro. Base e tampa de metal feitas com LatheGeometry; garrafa de vidro com MeshPhysicalMaterial (transmission); líquido rosado translúcido que brilha mais embaixo, perto da lâmpada. A cera é feita com MarchingCubes: 6 bolhas laranja que sobem e descem em ritmos diferentes, se juntam e se separam, mais uma poça no fundo. Uma luz pontual quente dentro da base ilumina a mesa, e um bloom leve faz a cera brilhar. A câmera gira devagar em volta.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c3">
+    <h2><em>03</em>Globo de neve com vidro de verdade</h2>
+    <p class="sub">Vidro com refração e neve que assenta</p>
+    <video src="/assets/cria/3-globo.mp4" poster="/assets/cria/3-globo.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 3 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js um globo de neve sobre uma base de madeira envernizada com dois frisos dourados. Dentro: um monte de neve, uma casinha vermelha com telhado nevado e janelas acesas, e quatro pinheiros. O vidro é uma esfera com MeshPhysicalMaterial (transmission, ior 1.33) que reflete e distorce o que está atrás. No começo o globo é sacudido; a neve (mil partículas) rodopia rápido, desacelera e assenta devagar sobre a casinha. Fundo de sala aconchegante com bokeh quente desfocado, desenhado em canvas.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c4">
+    <h2><em>04</em>Ilha flutuante com dia e noite</h2>
+    <p class="sub">Um dia inteiro em 8 segundos</p>
+    <video src="/assets/cria/4-ilha.mp4" poster="/assets/cria/4-ilha.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 4 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js uma ilha flutuante low poly (flatShading): grama no topo, terra e uma rocha pontuda embaixo, com vértices deslocados sem abrir rachaduras. Em cima, uma casinha, cinco árvores, um poste, um lago e uma cachoeira caindo pela borda. Em 8 segundos, passe um dia inteiro: céu azul, pôr do sol laranja e noite azul-escura com estrelas e lua. O sol desce, as nuvens mudam de cor e, ao anoitecer, as janelas e o poste acendem. A ilha flutua e gira devagar.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c5">
+    <h2><em>05</em>Teclado mecânico que digita sozinho</h2>
+    <p class="sub">Teclas que descem e luz RGB</p>
+    <video src="/assets/cria/5-teclado.mp4" poster="/assets/cria/5-teclado.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 5 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js um teclado mecânico 60% com case de alumínio escuro e teclas em RoundedBoxGeometry: alfas off-white, modificadores cinza, Esc e Enter em azul, com a legenda de cada tecla desenhada em canvas. As teclas A, G, espaço, L, A, B, S descem uma a uma, e o texto &quot;AG LABS&quot; aparece flutuando atrás do teclado com um cursor piscando. Por baixo das teclas, uma luz RGB faz uma onda de cor da esquerda para a direita; a tecla apertada acende mais forte. Mesa escura e câmera passando de um lado para o outro.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+  <div class="sec" id="c6">
+    <h2><em>06</em>Vela acesa com chama viva</h2>
+    <p class="sub">Chama em shader e luz que oscila</p>
+    <video src="/assets/cria/6-vela.mp4" poster="/assets/cria/6-vela.jpg" controls muted loop playsinline preload="none" style="display:block;width:560px;max-width:100%;border-radius:12px;margin:14px 0 18px;border:1px solid rgba(128,128,128,.25)"></video>
+    <div class="box">
+      <div class="bar"><span>cria&ccedil;&atilde;o 6 &middot; prompt completo</span><button data-copy>copiar</button></div>
+      <pre>Crie em Three.js três velas sobre uma mesa de madeira, num ambiente escuro com bokeh quente. As velas são LatheGeometry com a borda de cima derretida, gotas de cera escorridas na lateral e brilho interno perto do topo. A chama é um ShaderMaterial em um plano voltado para a câmera, em formato de gota, com base azulada, miolo branco-amarelado e tremulação feita com senos. Uma luz pontual em cada chama oscila de intensidade e projeta sombra na madeira. Uma gota de cera escorre devagar durante o vídeo.
+
+Faça tudo num único arquivo HTML com Three.js (r160, via importmap do jsDelivr), sem imagens externas: texturas desenhadas em canvas. Use luz física (ACESFilmic, sombras suaves, RoomEnvironment para os reflexos), câmera com um movimento lento de 8 a 10 segundos e easing suave. Deixe a animação dependente só do tempo, para eu poder gravar em vídeo. No fim, me diga como gravar em MP4.</pre>
+    </div>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>
