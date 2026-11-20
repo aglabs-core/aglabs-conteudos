@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nod, o agente do n8n: passo a passo para instalar | AG LABS</title>
+<meta name="description" content="Como instalar o Nod, o agente pessoal open source do n8n, no Mac, no Windows e no Linux, conectar o modelo de IA e passar a primeira tarefa. Com os cuidados de custo e as limitações da versão de teste.">
+<link rel="canonical" href="https://conteudo.aglabs.ia.br/conteudos/nod">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nod, o agente do n8n: passo a passo para instalar | AG LABS">
+<meta property="og:description" content="Como instalar o Nod, o agente pessoal open source do n8n, no Mac, no Windows e no Linux, conectar o modelo de IA e passar a primeira tarefa. Com os cuidados de custo e as limitações da versão de teste.">
+<meta property="og:url" content="https://conteudo.aglabs.ia.br/conteudos/nod">
+<meta property="og:image" content="https://conteudo.aglabs.ia.br/assets/capas/nod.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F0F0F">
+<link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/marca.css">
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="logo" href="/" aria-label="AG LABS — início"><img src="/assets/logo-ag.png" alt="" width="24" height="24"><span>LABS</span></a>
+  <nav aria-label="Navegação principal"><a href="/">Biblioteca</a><a href="https://instagram.com/ag_labs">Instagram ↗</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <a class="back" href="/">&larr; Todos os materiais</a>
+    <div class="kick">material gratuito</div>
+    <h1>Nod, o agente do n8n.<br><span>Passo a passo para instalar.</span></h1>
+    <p class="lead">O Nod é um agente pessoal open source do n8n Labs que trabalha no seu computador, com navegador próprio, e pede o seu ok antes de agir. Aqui está como instalar, conectar o modelo de IA e passar a primeira tarefa. Sem cadastro.</p>
+    <div class="meta">Mac &middot; Windows &middot; Linux &middot; 1 primeira tarefa &middot; cuidados</div>
+    <nav class="jump" aria-label="Neste guia"><a href="#antes">Antes de instalar</a><a href="#mac">Mac</a><a href="#windows">Windows</a><a href="#linux">Linux</a><a href="#modelo">Modelo de IA</a><a href="#tarefa">Primeira tarefa</a><a href="#cuidados">Cuidados</a></nav>
+  </div>
+
+  <div class="sec" id="antes">
+    <h2>1. Antes de instalar</h2>
+    <ul>
+      <li><b>Mac:</b> macOS 14 ou mais novo, com chip Apple ou Intel.</li>
+      <li><b>Windows (versão de teste):</b> Windows 11 de 64 bits. Para o Nod rodar no próprio computador, ele usa o WSL 2, com virtualização ligada e pelo menos 20 GB livres.</li>
+      <li><b>Linux (versão de teste):</b> computador Intel ou AMD de 64 bits, Flatpak e o chaveiro do sistema (GNOME Keyring ou KWallet).</li>
+      <li><b>Modelo de IA:</b> uma conta ChatGPT Plus ou Pro, uma chave de API (OpenAI, Anthropic, Gemini, OpenRouter e outras) ou um modelo rodando no seu computador.</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="mac">
+    <h2>2. Instalar no Mac</h2>
+    <ol>
+      <li>Veja o seu chip em <b>menu Apple &rarr; Sobre Este Mac</b>.</li>
+      <li>Baixe o instalador certo: <a href="https://github.com/n8n-io/nod/releases/latest/download/nod-arm64.dmg">chip Apple</a> ou <a href="https://github.com/n8n-io/nod/releases/latest/download/nod-x64.dmg">Intel</a>.</li>
+      <li>Abra o arquivo, arraste o <b>Nod</b> para <b>Aplicativos</b> e abra por lá. Na primeira vez, o Mac pergunta se quer abrir um app baixado da internet: clique em <b>Abrir</b>.</li>
+      <li>Na tela de boas-vindas, escolha <b>Get started</b>.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="windows">
+    <h2>3. Instalar no Windows</h2>
+    <ol>
+      <li>Baixe o <a href="https://github.com/n8n-io/nod/releases/latest/download/nod-Setup-x64.exe">instalador para Windows</a> e execute. Se o Windows avisar que o app é novo, confirme que quer instalar.</li>
+      <li>Na tela de boas-vindas, escolha <b>Get started</b>.</li>
+      <li>Se o Nod pedir o WSL, siga as instruções e aceite o pedido de administrador. Pode ser preciso reiniciar.</li>
+    </ol>
+  </div>
+
+  <div class="sec" id="linux">
+    <h2>4. Instalar no Linux</h2>
+    <p>Baixe da <a href="https://github.com/n8n-io/nod/releases/latest">página de versões</a> todos os arquivos <b>nod-linux-x64.flatpak.partNN</b> e o <b>SHA256SUMS-linux-x64</b> para uma pasta vazia. Depois, nessa pasta:</p>
+    <div class="box">
+      <div class="bar"><span>terminal &middot; Linux</span><button data-copy>copiar</button></div>
+      <pre>flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+cat nod-linux-x64.flatpak.part[0-9][0-9] &gt; nod-linux-x64.flatpak &amp;&amp; sha256sum --check SHA256SUMS-linux-x64 &amp;&amp; flatpak install --user ./nod-linux-x64.flatpak
+flatpak run io.n8n.Nod</pre>
+    </div>
+    <p class="note">Deixe o chaveiro do sistema desbloqueado durante a configuração: sem ele, o Nod não salva as chaves.</p>
+  </div>
+
+  <div class="sec" id="modelo">
+    <h2>5. Conectar o modelo de IA</h2>
+    <p>No app, abra <b>Settings &rarr; Models &rarr; Add connection</b> e escolha um caminho:</p>
+    <ul>
+      <li><b>ChatGPT Plus ou Pro:</b> escolha <b>OpenAI</b>, depois <b>Sign in with ChatGPT</b>, entre na sua conta e autorize. Em outros planos o login não funciona.</li>
+      <li><b>Chave de API:</b> escolha o provedor, cole a chave e clique em <b>Connect</b>.</li>
+      <li><b>Modelo no seu computador:</b> escolha <b>OpenAI-compatible</b>. O Nod já preenche o endereço do Ollama (<code>http://localhost:11434/v1</code>). Aí não há custo por pedido.</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="tarefa">
+    <h2>6. A primeira tarefa</h2>
+    <p>Comece com uma tarefa pequena da sua lista. Um exemplo para colar:</p>
+    <div class="box">
+      <div class="bar"><span>pedido &middot; cole no Nod</span><button data-copy>copiar</button></div>
+      <pre>Compare estes três fornecedores e coloque o preço e o prazo de entrega numa tabela: [FORNECEDOR 1], [FORNECEDOR 2], [FORNECEDOR 3].</pre>
+    </div>
+    <p>Antes de enviar, pagar, postar ou apagar algo que você não pediu, o Nod pergunta. As senhas e os cartões ficam guardados no seu computador, e o modelo não vê.</p>
+  </div>
+
+  <div class="sec" id="cuidados">
+    <h2>7. Cuidados</h2>
+    <ul>
+      <li><b>Custo:</b> o Nod é grátis (licença Apache 2.0), mas o provedor de IA cobra o uso. Defina o limite mensal e acompanhe o custo de cada tarefa em <b>Usage</b>. Segundo o n8n, alguns testadores gastaram mais do que esperavam.</li>
+      <li><b>Notebook dormindo:</b> se o computador dorme ou você fecha o app, nada roda. Para tarefas agendadas, deixe <b>Open at login</b> ligado ou use um servidor.</li>
+      <li><b>Versão de teste:</b> cada instalação tem um dono só, e o Nod não faz ligações.</li>
+    </ul>
+    <p class="note">Fontes: <a href="https://blog.n8n.io/meet-nod/">anúncio do n8n (10/11/2026)</a>, <a href="https://nod.n8n.io/docs/get-started/install-desktop/">guia de instalação</a>, <a href="https://nod.n8n.io/docs/connect/models/">guia de modelos</a> e <a href="https://github.com/n8n-io/nod">repositório oficial</a>.</p>
+  </div>
+
+</main>
+
+<footer><div class="wrap">
+  <span>AG LABS Intelligence · Rio Verde/GO</span>
+  <span><a href="https://instagram.com/ag_labs">@ag_labs</a> · <a href="https://aglabs.ia.br">aglabs.ia.br</a></span>
+</div></footer>
+
+<script src="/assets/style.js" defer></script>
+</body>
+</html>

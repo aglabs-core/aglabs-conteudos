@@ -352,6 +352,11 @@
       "source": "/perguntas",
       "destination": "/conteudos/perguntas",
       "permanent": false
+    },
+    {
+      "source": "/nod",
+      "destination": "/conteudos/nod",
+      "permanent": false
     }
   ],
   "headers": [

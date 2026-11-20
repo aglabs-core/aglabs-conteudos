@@ -57,7 +57,7 @@ node --test scripts/sitemap.test.mjs
 node scripts/gerar-sitemap.mjs --check
 ```
 
-O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (70 materiais + 4 subguias + home = 75 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
+O portão existente `node scripts/checar-paginas.mjs` também importa os testes de sitemap: o CI valida páginas, destinos e sitemap antes do deploy de main, sem alterar o workflow e sem regenerar silenciosamente um sitemap desatualizado. O teste registra a contagem atual (71 materiais + 4 subguias + home = 76 URLs únicas); atualize essa expectativa apenas quando a publicação pública mudar de fato. Não inclua ofertas, atalhos de redirect, arquivos baixáveis ou páginas privadas para aumentar a contagem.
 
 ## Slug = palavra-chave do CTA
 
@@ -115,6 +115,7 @@ Cada página mora em `conteudos/<palavra-chave>/`, exatamente a palavra que o po
 | `OPERACAO` | `/conteudos/operacao` | 5 agentes de IA para o pequeno negócio |
 | `CHROME` | `/conteudos/chrome` | 10 tarefas chatas que o Claude faz no Chrome |
 | `MARCA` | `/conteudos/marca` | E-mails da sua marca com o Claude Design |
+| `NOD` | `/conteudos/nod` | Nod: instalação e primeira tarefa |
 | `HUMANO` | `/conteudos/humano` | 7 vícios de texto de IA: checklist e prompt de revisão |
 
 Palavra-chave não se repete entre posts: é assim que se sabe de qual post veio o comentário.
