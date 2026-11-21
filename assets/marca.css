@@ -32,3 +32,7 @@ header .wrap { height: 66px; max-width: 920px; }
 .app-cta-btn { display: inline-block; padding: 11px 18px; border-radius: 999px; background: #a8c8f8;
   color: #0f0f0f; font-weight: 700; font-size: 14px; text-decoration: none; white-space: nowrap; }
 .app-cta-btn:hover, .app-cta-btn:focus-visible { background: #c4dafb; }
+
+/* Próximo passo no fim de cada material, pelo produto do tema. Usa a mesma
+   chamada .app-cta; o WhatsApp é sempre o oficial (64) 99325-9857. */
+.proximo-passo { margin: 32px 0 48px; }
